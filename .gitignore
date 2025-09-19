@@ -30,6 +30,9 @@
 .pdf
 /public/**/*.mp4
 /public/**/*.mp3
+/bootstrap/cache/
+/bootstrap/
+
 
 
 /resources/views/Home/resources/
