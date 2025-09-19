@@ -177,7 +177,7 @@ Route::get('/accelerate', \App\Livewire\Accelerate::class);
 
 
 //////////////////////ITIL 4
-Route::get('/itilfourpractices', \App\Livewire\Pmway\Itil\ItilFourPractices::class)->name('itilfourpractices');
+Route::get('/itilfour', \App\Livewire\Pmway\Itil\ItilFourPractices::class)->name('itilfour');
 Route::get('/view-pdf/{filename}', function ($filename) {
     $filePath = base_path('resources/views/livewire/pmway/itil/itil4guides/' . $filename);
     if (file_exists($filePath)) {

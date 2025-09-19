@@ -84,5 +84,5 @@ $class = Flux::classes()
     });
 ?>
 
-<span <?php echo e($attributes->class($class)); ?>><?php echo e($slot); ?></span>
+<span <?php echo e($attributes->class($class)); ?> data-flux-navlist-badge><?php echo e($slot); ?></span>
 <?php /**PATH C:\xampp\htdocs\pmway\vendor\livewire\flux\stubs\resources\views\flux\navlist\badge.blade.php ENDPATH**/ ?>

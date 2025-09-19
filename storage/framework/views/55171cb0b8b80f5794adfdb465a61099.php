@@ -1,6 +1,7 @@
 <?php $iconTrailing ??= $attributes->pluck('icon:trailing'); ?>
 <?php $iconLeading ??= $attributes->pluck('icon:leading'); ?>
 <?php $iconVariant ??= $attributes->pluck('icon:variant'); ?>
+<?php $maskDynamic ??= $attributes->pluck('mask:dynamic'); ?>
 
 <?php $attributes ??= new \Illuminate\View\ComponentAttributeBag;
 
@@ -11,6 +12,7 @@ $__propNames = \Illuminate\View\ComponentAttributeBag::extractPropNames(([
     'variant' => 'outline',
     'iconTrailing' => null,
     'iconLeading' => null,
+    'maskDynamic' => null,
     'expandable' => null,
     'clearable' => null,
     'copyable' => null,
@@ -44,6 +46,7 @@ foreach (array_filter(([
     'variant' => 'outline',
     'iconTrailing' => null,
     'iconLeading' => null,
+    'maskDynamic' => null,
     'expandable' => null,
     'clearable' => null,
     'copyable' => null,
@@ -250,7 +253,7 @@ $classes = Flux::classes()
                 <?php echo e($attributes->except('class')->class($type === 'file' ? '' : $classes)); ?>
 
                 <?php if(isset($name)): ?> name="<?php echo e($name); ?>" <?php endif; ?>
-                <?php if($mask): ?> x-mask="<?php echo e($mask); ?>" <?php endif; ?>
+                <?php if($maskDynamic): ?> x-mask:dynamic="<?php echo e($maskDynamic); ?>" <?php elseif($mask): ?> x-mask="<?php echo e($mask); ?>" <?php endif; ?>
                 <?php if($invalid): ?> aria-invalid="true" data-invalid <?php endif; ?>
                 <?php if(is_numeric($size)): ?> size="<?php echo e($size); ?>" <?php endif; ?>
                 data-flux-control
