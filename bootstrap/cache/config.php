@@ -1,46 +1,46 @@
 <?php return array (
-  'concurrency' => 
+  'concurrency' =>
   array (
     'default' => 'process',
   ),
-  'cors' => 
+  'cors' =>
   array (
-    'paths' => 
+    'paths' =>
     array (
       0 => 'api/*',
       1 => 'sanctum/csrf-cookie',
     ),
-    'allowed_methods' => 
+    'allowed_methods' =>
     array (
       0 => '*',
     ),
-    'allowed_origins' => 
+    'allowed_origins' =>
     array (
       0 => '*',
     ),
-    'allowed_origins_patterns' => 
+    'allowed_origins_patterns' =>
     array (
     ),
-    'allowed_headers' => 
+    'allowed_headers' =>
     array (
       0 => '*',
     ),
-    'exposed_headers' => 
+    'exposed_headers' =>
     array (
     ),
     'max_age' => 0,
     'supports_credentials' => false,
   ),
-  'hashing' => 
+  'hashing' =>
   array (
     'driver' => 'bcrypt',
-    'bcrypt' => 
+    'bcrypt' =>
     array (
       'rounds' => '12',
       'verify' => true,
       'limit' => NULL,
     ),
-    'argon' => 
+    'argon' =>
     array (
       'memory' => 65536,
       'threads' => 1,
@@ -49,15 +49,15 @@
     ),
     'rehash_on_login' => true,
   ),
-  'view' => 
+  'view' =>
   array (
-    'paths' => 
+    'paths' =>
     array (
       0 => 'C:\\xampp\\htdocs\\pmway\\resources\\views',
     ),
     'compiled' => 'C:\\xampp\\htdocs\\pmway\\storage\\framework\\views',
   ),
-  'app' => 
+  'app' =>
   array (
     'name' => 'PMWay',
     'env' => 'local',
@@ -71,15 +71,15 @@
     'faker_locale' => 'en_US',
     'cipher' => 'AES-256-CBC',
     'key' => 'base64:aN/N4MV7GR+OoWCNVzKNo0wA+KJ2r796cibunhVQ3yQ=',
-    'previous_keys' => 
+    'previous_keys' =>
     array (
     ),
-    'maintenance' => 
+    'maintenance' =>
     array (
       'driver' => 'file',
       'store' => 'database',
     ),
-    'providers' => 
+    'providers' =>
     array (
       0 => 'Illuminate\\Auth\\AuthServiceProvider',
       1 => 'Illuminate\\Broadcasting\\BroadcastServiceProvider',
@@ -109,7 +109,7 @@
       25 => 'App\\Providers\\AuthServiceProvider',
       26 => 'App\\Providers\\VoltServiceProvider',
     ),
-    'aliases' => 
+    'aliases' =>
     array (
       'App' => 'Illuminate\\Support\\Facades\\App',
       'Arr' => 'Illuminate\\Support\\Arr',
@@ -159,37 +159,37 @@
       'Vite' => 'Illuminate\\Support\\Facades\\Vite',
     ),
   ),
-  'auth' => 
+  'auth' =>
   array (
-    'defaults' => 
+    'defaults' =>
     array (
       'guard' => 'web',
       'passwords' => 'users',
     ),
-    'guards' => 
+    'guards' =>
     array (
-      'web' => 
+      'web' =>
       array (
         'driver' => 'session',
         'provider' => 'users',
       ),
-      'sanctum' => 
+      'sanctum' =>
       array (
         'driver' => 'sanctum',
         'provider' => NULL,
       ),
     ),
-    'providers' => 
+    'providers' =>
     array (
-      'users' => 
+      'users' =>
       array (
         'driver' => 'eloquent',
         'model' => 'App\\Models\\User',
       ),
     ),
-    'passwords' => 
+    'passwords' =>
     array (
-      'users' => 
+      'users' =>
       array (
         'provider' => 'users',
         'table' => 'password_reset_tokens',
@@ -199,35 +199,35 @@
     ),
     'password_timeout' => 10800,
   ),
-  'broadcasting' => 
+  'broadcasting' =>
   array (
     'default' => 'pusher',
-    'connections' => 
+    'connections' =>
     array (
-      'reverb' => 
+      'reverb' =>
       array (
         'driver' => 'reverb',
         'key' => NULL,
         'secret' => NULL,
         'app_id' => NULL,
-        'options' => 
+        'options' =>
         array (
           'host' => NULL,
           'port' => 443,
           'scheme' => 'https',
           'useTLS' => true,
         ),
-        'client_options' => 
+        'client_options' =>
         array (
         ),
       ),
-      'pusher' => 
+      'pusher' =>
       array (
         'driver' => 'pusher',
         'key' => 'c0273664d9e761424a07',
         'secret' => 'ff3827d83c6ebf465dc5',
         'app_id' => '2041252',
-        'options' => 
+        'options' =>
         array (
           'cluster' => 'eu',
           'host' => '',
@@ -236,32 +236,32 @@
           'encrypted' => true,
         ),
       ),
-      'ably' => 
+      'ably' =>
       array (
         'driver' => 'ably',
         'key' => NULL,
       ),
-      'log' => 
+      'log' =>
       array (
         'driver' => 'log',
       ),
-      'null' => 
+      'null' =>
       array (
         'driver' => 'null',
       ),
     ),
   ),
-  'cache' => 
+  'cache' =>
   array (
     'default' => 'database',
-    'stores' => 
+    'stores' =>
     array (
-      'array' => 
+      'array' =>
       array (
         'driver' => 'array',
         'serialize' => false,
       ),
-      'database' => 
+      'database' =>
       array (
         'driver' => 'database',
         'connection' => NULL,
@@ -269,27 +269,27 @@
         'lock_connection' => NULL,
         'lock_table' => NULL,
       ),
-      'file' => 
+      'file' =>
       array (
         'driver' => 'file',
         'path' => 'C:\\xampp\\htdocs\\pmway\\storage\\framework/cache/data',
         'lock_path' => 'C:\\xampp\\htdocs\\pmway\\storage\\framework/cache/data',
       ),
-      'memcached' => 
+      'memcached' =>
       array (
         'driver' => 'memcached',
         'persistent_id' => NULL,
-        'sasl' => 
+        'sasl' =>
         array (
           0 => NULL,
           1 => NULL,
         ),
-        'options' => 
+        'options' =>
         array (
         ),
-        'servers' => 
+        'servers' =>
         array (
-          0 => 
+          0 =>
           array (
             'host' => '127.0.0.1',
             'port' => 11211,
@@ -297,13 +297,13 @@
           ),
         ),
       ),
-      'redis' => 
+      'redis' =>
       array (
         'driver' => 'redis',
         'connection' => 'cache',
         'lock_connection' => 'default',
       ),
-      'dynamodb' => 
+      'dynamodb' =>
       array (
         'driver' => 'dynamodb',
         'key' => NULL,
@@ -312,19 +312,19 @@
         'table' => 'cache',
         'endpoint' => NULL,
       ),
-      'octane' => 
+      'octane' =>
       array (
         'driver' => 'octane',
       ),
     ),
     'prefix' => 'pmway_cache_',
   ),
-  'database' => 
+  'database' =>
   array (
     'default' => 'mysql',
-    'connections' => 
+    'connections' =>
     array (
-      'sqlite' => 
+      'sqlite' =>
       array (
         'driver' => 'sqlite',
         'url' => NULL,
@@ -335,7 +335,7 @@
         'journal_mode' => NULL,
         'synchronous' => NULL,
       ),
-      'mysql' => 
+      'mysql' =>
       array (
         'driver' => 'mysql',
         'url' => NULL,
@@ -351,11 +351,11 @@
         'prefix_indexes' => true,
         'strict' => true,
         'engine' => NULL,
-        'options' => 
+        'options' =>
         array (
         ),
       ),
-      'mariadb' => 
+      'mariadb' =>
       array (
         'driver' => 'mariadb',
         'url' => NULL,
@@ -371,11 +371,11 @@
         'prefix_indexes' => true,
         'strict' => true,
         'engine' => NULL,
-        'options' => 
+        'options' =>
         array (
         ),
       ),
-      'pgsql' => 
+      'pgsql' =>
       array (
         'driver' => 'pgsql',
         'url' => NULL,
@@ -390,7 +390,7 @@
         'search_path' => 'public',
         'sslmode' => 'prefer',
       ),
-      'sqlsrv' => 
+      'sqlsrv' =>
       array (
         'driver' => 'sqlsrv',
         'url' => NULL,
@@ -404,21 +404,21 @@
         'prefix_indexes' => true,
       ),
     ),
-    'migrations' => 
+    'migrations' =>
     array (
       'table' => 'migrations',
       'update_date_on_publish' => true,
     ),
-    'redis' => 
+    'redis' =>
     array (
       'client' => 'phpredis',
-      'options' => 
+      'options' =>
       array (
         'cluster' => 'redis',
         'prefix' => 'pmway_database_',
         'persistent' => false,
       ),
-      'default' => 
+      'default' =>
       array (
         'url' => NULL,
         'host' => '127.0.0.1',
@@ -427,7 +427,7 @@
         'port' => '6379',
         'database' => '0',
       ),
-      'cache' => 
+      'cache' =>
       array (
         'url' => NULL,
         'host' => '127.0.0.1',
@@ -438,19 +438,19 @@
       ),
     ),
   ),
-  'filesystems' => 
+  'filesystems' =>
   array (
     'default' => 'local',
-    'disks' => 
+    'disks' =>
     array (
-      'local' => 
+      'local' =>
       array (
         'driver' => 'local',
         'root' => 'C:\\xampp\\htdocs\\pmway\\storage\\app/private',
         'serve' => true,
         'throw' => false,
       ),
-      'public' => 
+      'public' =>
       array (
         'driver' => 'local',
         'root' => 'C:\\xampp\\htdocs\\pmway\\storage\\app/public',
@@ -458,7 +458,7 @@
         'visibility' => 'public',
         'throw' => false,
       ),
-      's3' => 
+      's3' =>
       array (
         'driver' => 's3',
         'key' => NULL,
@@ -471,38 +471,38 @@
         'throw' => false,
       ),
     ),
-    'links' => 
+    'links' =>
     array (
       'C:\\xampp\\htdocs\\pmway\\public\\storage' => 'C:\\xampp\\htdocs\\pmway\\storage\\app/public',
     ),
   ),
-  'logging' => 
+  'logging' =>
   array (
     'default' => 'stack',
-    'deprecations' => 
+    'deprecations' =>
     array (
       'channel' => NULL,
       'trace' => false,
     ),
-    'channels' => 
+    'channels' =>
     array (
-      'stack' => 
+      'stack' =>
       array (
         'driver' => 'stack',
-        'channels' => 
+        'channels' =>
         array (
           0 => 'single',
         ),
         'ignore_exceptions' => false,
       ),
-      'single' => 
+      'single' =>
       array (
         'driver' => 'single',
         'path' => 'C:\\xampp\\htdocs\\pmway\\storage\\logs/laravel.log',
         'level' => 'debug',
         'replace_placeholders' => true,
       ),
-      'daily' => 
+      'daily' =>
       array (
         'driver' => 'daily',
         'path' => 'C:\\xampp\\htdocs\\pmway\\storage\\logs/laravel.log',
@@ -510,7 +510,7 @@
         'days' => 14,
         'replace_placeholders' => true,
       ),
-      'slack' => 
+      'slack' =>
       array (
         'driver' => 'slack',
         'url' => NULL,
@@ -519,67 +519,67 @@
         'level' => 'debug',
         'replace_placeholders' => true,
       ),
-      'papertrail' => 
+      'papertrail' =>
       array (
         'driver' => 'monolog',
         'level' => 'debug',
         'handler' => 'Monolog\\Handler\\SyslogUdpHandler',
-        'handler_with' => 
+        'handler_with' =>
         array (
           'host' => NULL,
           'port' => NULL,
           'connectionString' => 'tls://:',
         ),
-        'processors' => 
+        'processors' =>
         array (
           0 => 'Monolog\\Processor\\PsrLogMessageProcessor',
         ),
       ),
-      'stderr' => 
+      'stderr' =>
       array (
         'driver' => 'monolog',
         'level' => 'debug',
         'handler' => 'Monolog\\Handler\\StreamHandler',
         'formatter' => NULL,
-        'with' => 
+        'with' =>
         array (
           'stream' => 'php://stderr',
         ),
-        'processors' => 
+        'processors' =>
         array (
           0 => 'Monolog\\Processor\\PsrLogMessageProcessor',
         ),
       ),
-      'syslog' => 
+      'syslog' =>
       array (
         'driver' => 'syslog',
         'level' => 'debug',
         'facility' => 8,
         'replace_placeholders' => true,
       ),
-      'errorlog' => 
+      'errorlog' =>
       array (
         'driver' => 'errorlog',
         'level' => 'debug',
         'replace_placeholders' => true,
       ),
-      'null' => 
+      'null' =>
       array (
         'driver' => 'monolog',
         'handler' => 'Monolog\\Handler\\NullHandler',
       ),
-      'emergency' => 
+      'emergency' =>
       array (
         'path' => 'C:\\xampp\\htdocs\\pmway\\storage\\logs/laravel.log',
       ),
     ),
   ),
-  'mail' => 
+  'mail' =>
   array (
     'default' => 'smtp',
-    'mailers' => 
+    'mailers' =>
     array (
-      'smtp' => 
+      'smtp' =>
       array (
         'transport' => 'smtp',
         'scheme' => NULL,
@@ -587,77 +587,77 @@
         'host' => 'smtp.eu.mailgun.org',
         'port' => '587',
         'username' => 'postmaster@pmway.hopto.org',
-        'password' => '35e269f5dabafdbc8aab71e70ed54a7d-77751bfc-12eb49ec',
+        'password' => '',
         'timeout' => NULL,
         'local_domain' => NULL,
       ),
-      'ses' => 
+      'ses' =>
       array (
         'transport' => 'ses',
       ),
-      'postmark' => 
+      'postmark' =>
       array (
         'transport' => 'postmark',
       ),
-      'resend' => 
+      'resend' =>
       array (
         'transport' => 'resend',
       ),
-      'sendmail' => 
+      'sendmail' =>
       array (
         'transport' => 'sendmail',
         'path' => '/usr/sbin/sendmail -bs -i',
       ),
-      'log' => 
+      'log' =>
       array (
         'transport' => 'log',
         'channel' => NULL,
       ),
-      'array' => 
+      'array' =>
       array (
         'transport' => 'array',
       ),
-      'failover' => 
+      'failover' =>
       array (
         'transport' => 'failover',
-        'mailers' => 
+        'mailers' =>
         array (
           0 => 'smtp',
           1 => 'log',
         ),
       ),
-      'roundrobin' => 
+      'roundrobin' =>
       array (
         'transport' => 'roundrobin',
-        'mailers' => 
+        'mailers' =>
         array (
           0 => 'ses',
           1 => 'postmark',
         ),
       ),
     ),
-    'from' => 
+    'from' =>
     array (
       'address' => 'markjoncorrigan@gmail.com',
       'name' => 'PMWay',
     ),
-    'markdown' => 
+    'markdown' =>
     array (
       'theme' => 'default',
-      'paths' => 
+      'paths' =>
       array (
         0 => 'C:\\xampp\\htdocs\\pmway\\resources\\views/vendor/mail',
       ),
     ),
   ),
-  'permission' => 
+  'permission' =>
   array (
-    'models' => 
+    'models' =>
     array (
       'permission' => 'Spatie\\Permission\\Models\\Permission',
       'role' => 'Spatie\\Permission\\Models\\Role',
     ),
-    'table_names' => 
+    'table_names' =>
     array (
       'roles' => 'roles',
       'permissions' => 'permissions',
@@ -665,7 +665,7 @@
       'model_has_roles' => 'model_has_roles',
       'role_has_permissions' => 'role_has_permissions',
     ),
-    'column_names' => 
+    'column_names' =>
     array (
       'role_pivot_key' => NULL,
       'permission_pivot_key' => NULL,
@@ -681,9 +681,9 @@
     'display_permission_in_exception' => false,
     'display_role_in_exception' => false,
     'enable_wildcard_permission' => false,
-    'cache' => 
+    'cache' =>
     array (
-      'expiration_time' => 
+      'expiration_time' =>
       \DateInterval::__set_state(array(
          'from_string' => true,
          'date_string' => '24 hours',
@@ -692,16 +692,16 @@
       'store' => 'default',
     ),
   ),
-  'purifier' => 
+  'purifier' =>
   array (
     'encoding' => 'UTF-8',
     'finalize' => true,
     'ignoreNonStrings' => false,
     'cachePath' => 'C:\\xampp\\htdocs\\pmway\\storage\\app/purifier',
     'cacheFileMode' => 493,
-    'settings' => 
+    'settings' =>
     array (
-      'default' => 
+      'default' =>
       array (
         'HTML.Doctype' => 'HTML 4.01 Transitional',
         'HTML.Allowed' => 'div,h1, h2, h3, h4, h5,b,strong,i,em,u,a[href|title],ul,ol,li,p[style],br,span[style],img[width|height|alt|src]',
@@ -709,99 +709,99 @@
         'AutoFormat.AutoParagraph' => true,
         'AutoFormat.RemoveEmpty' => true,
       ),
-      'test' => 
+      'test' =>
       array (
         'Attr.EnableID' => 'true',
       ),
-      'youtube' => 
+      'youtube' =>
       array (
         'HTML.SafeIframe' => 'true',
         'URI.SafeIframeRegexp' => '%^(http://|https://|//)(www.youtube.com/embed/|player.vimeo.com/video/)%',
       ),
-      'custom_definition' => 
+      'custom_definition' =>
       array (
         'id' => 'html5-definitions',
         'rev' => 1,
         'debug' => false,
-        'elements' => 
+        'elements' =>
         array (
-          0 => 
+          0 =>
           array (
             0 => 'section',
             1 => 'Block',
             2 => 'Flow',
             3 => 'Common',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'nav',
             1 => 'Block',
             2 => 'Flow',
             3 => 'Common',
           ),
-          2 => 
+          2 =>
           array (
             0 => 'article',
             1 => 'Block',
             2 => 'Flow',
             3 => 'Common',
           ),
-          3 => 
+          3 =>
           array (
             0 => 'aside',
             1 => 'Block',
             2 => 'Flow',
             3 => 'Common',
           ),
-          4 => 
+          4 =>
           array (
             0 => 'header',
             1 => 'Block',
             2 => 'Flow',
             3 => 'Common',
           ),
-          5 => 
+          5 =>
           array (
             0 => 'footer',
             1 => 'Block',
             2 => 'Flow',
             3 => 'Common',
           ),
-          6 => 
+          6 =>
           array (
             0 => 'address',
             1 => 'Block',
             2 => 'Flow',
             3 => 'Common',
           ),
-          7 => 
+          7 =>
           array (
             0 => 'hgroup',
             1 => 'Block',
             2 => 'Required: h1 | h2 | h3 | h4 | h5 | h6',
             3 => 'Common',
           ),
-          8 => 
+          8 =>
           array (
             0 => 'figure',
             1 => 'Block',
             2 => 'Optional: (figcaption, Flow) | (Flow, figcaption) | Flow',
             3 => 'Common',
           ),
-          9 => 
+          9 =>
           array (
             0 => 'figcaption',
             1 => 'Inline',
             2 => 'Flow',
             3 => 'Common',
           ),
-          10 => 
+          10 =>
           array (
             0 => 'video',
             1 => 'Block',
             2 => 'Optional: (source, Flow) | (Flow, source) | Flow',
             3 => 'Common',
-            4 => 
+            4 =>
             array (
               'src' => 'URI',
               'type' => 'Text',
@@ -812,124 +812,124 @@
               'controls' => 'Bool',
             ),
           ),
-          11 => 
+          11 =>
           array (
             0 => 'source',
             1 => 'Block',
             2 => 'Flow',
             3 => 'Common',
-            4 => 
+            4 =>
             array (
               'src' => 'URI',
               'type' => 'Text',
             ),
           ),
-          12 => 
+          12 =>
           array (
             0 => 's',
             1 => 'Inline',
             2 => 'Inline',
             3 => 'Common',
           ),
-          13 => 
+          13 =>
           array (
             0 => 'var',
             1 => 'Inline',
             2 => 'Inline',
             3 => 'Common',
           ),
-          14 => 
+          14 =>
           array (
             0 => 'sub',
             1 => 'Inline',
             2 => 'Inline',
             3 => 'Common',
           ),
-          15 => 
+          15 =>
           array (
             0 => 'sup',
             1 => 'Inline',
             2 => 'Inline',
             3 => 'Common',
           ),
-          16 => 
+          16 =>
           array (
             0 => 'mark',
             1 => 'Inline',
             2 => 'Inline',
             3 => 'Common',
           ),
-          17 => 
+          17 =>
           array (
             0 => 'wbr',
             1 => 'Inline',
             2 => 'Empty',
             3 => 'Core',
           ),
-          18 => 
+          18 =>
           array (
             0 => 'ins',
             1 => 'Block',
             2 => 'Flow',
             3 => 'Common',
-            4 => 
+            4 =>
             array (
               'cite' => 'URI',
               'datetime' => 'CDATA',
             ),
           ),
-          19 => 
+          19 =>
           array (
             0 => 'del',
             1 => 'Block',
             2 => 'Flow',
             3 => 'Common',
-            4 => 
+            4 =>
             array (
               'cite' => 'URI',
               'datetime' => 'CDATA',
             ),
           ),
         ),
-        'attributes' => 
+        'attributes' =>
         array (
-          0 => 
+          0 =>
           array (
             0 => 'iframe',
             1 => 'allowfullscreen',
             2 => 'Bool',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'table',
             1 => 'height',
             2 => 'Text',
           ),
-          2 => 
+          2 =>
           array (
             0 => 'td',
             1 => 'border',
             2 => 'Text',
           ),
-          3 => 
+          3 =>
           array (
             0 => 'th',
             1 => 'border',
             2 => 'Text',
           ),
-          4 => 
+          4 =>
           array (
             0 => 'tr',
             1 => 'width',
             2 => 'Text',
           ),
-          5 => 
+          5 =>
           array (
             0 => 'tr',
             1 => 'height',
             2 => 'Text',
           ),
-          6 => 
+          6 =>
           array (
             0 => 'tr',
             1 => 'border',
@@ -937,18 +937,18 @@
           ),
         ),
       ),
-      'custom_attributes' => 
+      'custom_attributes' =>
       array (
-        0 => 
+        0 =>
         array (
           0 => 'a',
           1 => 'target',
           2 => 'Enum#_blank,_self,_target,_top',
         ),
       ),
-      'custom_elements' => 
+      'custom_elements' =>
       array (
-        0 => 
+        0 =>
         array (
           0 => 'u',
           1 => 'Inline',
@@ -958,16 +958,16 @@
       ),
     ),
   ),
-  'queue' => 
+  'queue' =>
   array (
     'default' => 'sync',
-    'connections' => 
+    'connections' =>
     array (
-      'sync' => 
+      'sync' =>
       array (
         'driver' => 'sync',
       ),
-      'database' => 
+      'database' =>
       array (
         'driver' => 'database',
         'connection' => NULL,
@@ -976,7 +976,7 @@
         'retry_after' => 90,
         'after_commit' => false,
       ),
-      'beanstalkd' => 
+      'beanstalkd' =>
       array (
         'driver' => 'beanstalkd',
         'host' => 'localhost',
@@ -985,7 +985,7 @@
         'block_for' => 0,
         'after_commit' => false,
       ),
-      'sqs' => 
+      'sqs' =>
       array (
         'driver' => 'sqs',
         'key' => NULL,
@@ -996,7 +996,7 @@
         'region' => 'us-east-1',
         'after_commit' => false,
       ),
-      'redis' => 
+      'redis' =>
       array (
         'driver' => 'redis',
         'connection' => 'default',
@@ -1006,21 +1006,21 @@
         'after_commit' => false,
       ),
     ),
-    'batching' => 
+    'batching' =>
     array (
       'database' => 'mysql',
       'table' => 'job_batches',
     ),
-    'failed' => 
+    'failed' =>
     array (
       'driver' => 'database-uuids',
       'database' => 'mysql',
       'table' => 'failed_jobs',
     ),
   ),
-  'sanctum' => 
+  'sanctum' =>
   array (
-    'stateful' => 
+    'stateful' =>
     array (
       0 => 'localhost',
       1 => 'localhost:3000',
@@ -1029,56 +1029,56 @@
       4 => '::1',
       5 => '',
     ),
-    'guard' => 
+    'guard' =>
     array (
       0 => 'web',
     ),
     'expiration' => NULL,
     'token_prefix' => '',
-    'middleware' => 
+    'middleware' =>
     array (
       'authenticate_session' => 'Laravel\\Sanctum\\Http\\Middleware\\AuthenticateSession',
       'encrypt_cookies' => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
       'validate_csrf_token' => 'Illuminate\\Foundation\\Http\\Middleware\\ValidateCsrfToken',
     ),
   ),
-  'scout' => 
+  'scout' =>
   array (
     'driver' => 'database',
     'prefix' => '',
     'queue' => false,
     'after_commit' => false,
-    'chunk' => 
+    'chunk' =>
     array (
       'searchable' => 500,
       'unsearchable' => 500,
     ),
     'soft_delete' => false,
     'identify' => false,
-    'algolia' => 
+    'algolia' =>
     array (
       'id' => '',
       'secret' => '',
-      'index-settings' => 
+      'index-settings' =>
       array (
       ),
     ),
-    'meilisearch' => 
+    'meilisearch' =>
     array (
       'host' => 'http://localhost:7700',
       'key' => NULL,
-      'index-settings' => 
+      'index-settings' =>
       array (
       ),
     ),
-    'typesense' => 
+    'typesense' =>
     array (
-      'client-settings' => 
+      'client-settings' =>
       array (
         'api_key' => 'xyz',
-        'nodes' => 
+        'nodes' =>
         array (
-          0 => 
+          0 =>
           array (
             'host' => 'localhost',
             'port' => '8108',
@@ -1086,7 +1086,7 @@
             'protocol' => 'http',
           ),
         ),
-        'nearest_node' => 
+        'nearest_node' =>
         array (
           'host' => 'localhost',
           'port' => '8108',
@@ -1098,37 +1098,37 @@
         'num_retries' => 3,
         'retry_interval_seconds' => 1,
       ),
-      'model-settings' => 
+      'model-settings' =>
       array (
       ),
     ),
   ),
-  'services' => 
+  'services' =>
   array (
-    'postmark' => 
+    'postmark' =>
     array (
       'token' => NULL,
     ),
-    'resend' => 
+    'resend' =>
     array (
       'key' => NULL,
     ),
-    'ses' => 
+    'ses' =>
     array (
       'key' => NULL,
       'secret' => NULL,
       'region' => 'us-east-1',
     ),
-    'slack' => 
+    'slack' =>
     array (
-      'notifications' => 
+      'notifications' =>
       array (
         'bot_user_oauth_token' => NULL,
         'channel' => NULL,
       ),
     ),
   ),
-  'session' => 
+  'session' =>
   array (
     'driver' => 'file',
     'lifetime' => '120',
@@ -1138,7 +1138,7 @@
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
-    'lottery' => 
+    'lottery' =>
     array (
       0 => 2,
       1 => 100,
@@ -1151,12 +1151,12 @@
     'same_site' => 'lax',
     'partitioned' => false,
   ),
-  'twigbridge' => 
+  'twigbridge' =>
   array (
-    'twig' => 
+    'twig' =>
     array (
       'extension' => 'twig',
-      'environment' => 
+      'environment' =>
       array (
         'debug' => true,
         'charset' => 'utf-8',
@@ -1165,26 +1165,26 @@
         'strict_variables' => false,
         'autoescape' => 'html',
         'optimizations' => -1,
-        'paths' => 
+        'paths' =>
         array (
           0 => 'C:\\xampp\\htdocs\\pmway\\resources\\views',
         ),
       ),
-      'safe_classes' => 
+      'safe_classes' =>
       array (
-        'Illuminate\\Contracts\\Support\\Htmlable' => 
+        'Illuminate\\Contracts\\Support\\Htmlable' =>
         array (
           0 => 'html',
         ),
       ),
-      'globals' => 
+      'globals' =>
       array (
         'auth' => 'auth',
       ),
     ),
-    'extensions' => 
+    'extensions' =>
     array (
-      'enabled' => 
+      'enabled' =>
       array (
         0 => 'TwigBridge\\Extension\\Laravel\\Event',
         1 => 'TwigBridge\\Extension\\Loader\\Facades',
@@ -1203,32 +1203,32 @@
         14 => 'TwigBridge\\Extension\\Laravel\\Gate',
         15 => 'TwigBridge\\Extension\\Laravel\\Vite',
       ),
-      'facades' => 
+      'facades' =>
       array (
       ),
-      'functions' => 
+      'functions' =>
       array (
         0 => 'elixir',
         1 => 'head',
         2 => 'last',
         3 => 'mix',
       ),
-      'filters' => 
+      'filters' =>
       array (
         'get' => 'data_get',
       ),
     ),
   ),
-  'debugbar' => 
+  'debugbar' =>
   array (
     'enabled' => NULL,
     'hide_empty_tabs' => true,
-    'except' => 
+    'except' =>
     array (
       0 => 'telescope*',
       1 => 'horizon*',
     ),
-    'storage' => 
+    'storage' =>
     array (
       'enabled' => true,
       'open' => NULL,
@@ -1250,7 +1250,7 @@
     'defer_datasets' => false,
     'error_handler' => false,
     'clockwork' => false,
-    'collectors' => 
+    'collectors' =>
     array (
       'phpinfo' => false,
       'messages' => true,
@@ -1278,45 +1278,45 @@
       'jobs' => false,
       'pennant' => false,
     ),
-    'options' => 
+    'options' =>
     array (
-      'time' => 
+      'time' =>
       array (
         'memory_usage' => false,
       ),
-      'messages' => 
+      'messages' =>
       array (
         'trace' => true,
         'capture_dumps' => false,
       ),
-      'memory' => 
+      'memory' =>
       array (
         'reset_peak' => false,
         'with_baseline' => false,
         'precision' => 0,
       ),
-      'auth' => 
+      'auth' =>
       array (
         'show_name' => true,
         'show_guards' => true,
       ),
-      'gate' => 
+      'gate' =>
       array (
         'trace' => false,
       ),
-      'db' => 
+      'db' =>
       array (
         'with_params' => true,
-        'exclude_paths' => 
+        'exclude_paths' =>
         array (
         ),
         'backtrace' => true,
-        'backtrace_exclude_paths' => 
+        'backtrace_exclude_paths' =>
         array (
         ),
         'timeline' => false,
         'duration_background' => true,
-        'explain' => 
+        'explain' =>
         array (
           'enabled' => false,
         ),
@@ -1327,67 +1327,67 @@
         'soft_limit' => 100,
         'hard_limit' => 500,
       ),
-      'mail' => 
+      'mail' =>
       array (
         'timeline' => true,
         'show_body' => true,
       ),
-      'views' => 
+      'views' =>
       array (
         'timeline' => true,
         'data' => false,
         'group' => 50,
         'inertia_pages' => 'js/Pages',
-        'exclude_paths' => 
+        'exclude_paths' =>
         array (
           0 => 'vendor/filament',
         ),
       ),
-      'route' => 
+      'route' =>
       array (
         'label' => true,
       ),
-      'session' => 
+      'session' =>
       array (
-        'hiddens' => 
+        'hiddens' =>
         array (
         ),
       ),
-      'symfony_request' => 
+      'symfony_request' =>
       array (
         'label' => true,
-        'hiddens' => 
+        'hiddens' =>
         array (
         ),
       ),
-      'events' => 
+      'events' =>
       array (
         'data' => false,
-        'excluded' => 
+        'excluded' =>
         array (
         ),
       ),
-      'logs' => 
+      'logs' =>
       array (
         'file' => NULL,
       ),
-      'cache' => 
+      'cache' =>
       array (
         'values' => true,
       ),
     ),
     'inject' => true,
     'route_prefix' => '_debugbar',
-    'route_middleware' => 
+    'route_middleware' =>
     array (
     ),
     'route_domain' => NULL,
     'theme' => 'auto',
     'debug_backtrace_limit' => 50,
   ),
-  'livewire-alert' => 
+  'livewire-alert' =>
   array (
-    'alert' => 
+    'alert' =>
     array (
       'position' => 'top-end',
       'timer' => 3000,
@@ -1396,7 +1396,7 @@
       'showCancelButton' => false,
       'showConfirmButton' => false,
     ),
-    'confirm' => 
+    'confirm' =>
     array (
       'icon' => 'warning',
       'position' => 'center',
@@ -1409,19 +1409,19 @@
       'cancelButtonColor' => '#d33',
     ),
   ),
-  'livewire' => 
+  'livewire' =>
   array (
     'class_namespace' => 'App\\Livewire',
     'view_path' => 'C:\\xampp\\htdocs\\pmway\\resources\\views/livewire',
     'layout' => 'components.layouts.app',
     'lazy_placeholder' => NULL,
-    'temporary_file_upload' => 
+    'temporary_file_upload' =>
     array (
       'disk' => NULL,
       'rules' => NULL,
       'directory' => NULL,
       'middleware' => NULL,
-      'preview_mimes' => 
+      'preview_mimes' =>
       array (
         0 => 'png',
         1 => 'gif',
@@ -1446,7 +1446,7 @@
     'render_on_redirect' => false,
     'legacy_model_binding' => false,
     'inject_assets' => true,
-    'navigate' => 
+    'navigate' =>
     array (
       'show_progress_bar' => true,
       'progress_bar_color' => '#2299dd',
@@ -1454,11 +1454,11 @@
     'inject_morph_markers' => true,
     'pagination_theme' => 'tailwind',
   ),
-  'wire-elements-modal' => 
+  'wire-elements-modal' =>
   array (
     'include_css' => false,
     'include_js' => true,
-    'component_defaults' => 
+    'component_defaults' =>
     array (
       'modal_max_width' => '2xl',
       'close_modal_on_click_away' => true,
@@ -1468,7 +1468,7 @@
       'destroy_on_close' => false,
     ),
   ),
-  'ide-helper' => 
+  'ide-helper' =>
   array (
     'filename' => '_ide_helper.php',
     'models_filename' => '_ide_helper_models.php',
@@ -1481,41 +1481,41 @@
     'write_model_relation_exists_properties' => false,
     'write_eloquent_model_mixins' => false,
     'include_helpers' => false,
-    'helper_files' => 
+    'helper_files' =>
     array (
       0 => 'C:\\xampp\\htdocs\\pmway/vendor/laravel/framework/src/Illuminate/Support/helpers.php',
       1 => 'C:\\xampp\\htdocs\\pmway/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php',
     ),
-    'model_locations' => 
+    'model_locations' =>
     array (
       0 => 'app',
     ),
-    'ignored_models' => 
+    'ignored_models' =>
     array (
     ),
-    'model_hooks' => 
+    'model_hooks' =>
     array (
     ),
-    'extra' => 
+    'extra' =>
     array (
-      'Eloquent' => 
+      'Eloquent' =>
       array (
         0 => 'Illuminate\\Database\\Eloquent\\Builder',
         1 => 'Illuminate\\Database\\Query\\Builder',
       ),
-      'Session' => 
+      'Session' =>
       array (
         0 => 'Illuminate\\Session\\Store',
       ),
     ),
-    'magic' => 
+    'magic' =>
     array (
     ),
-    'interfaces' => 
+    'interfaces' =>
     array (
     ),
     'model_camel_case_properties' => false,
-    'type_overrides' => 
+    'type_overrides' =>
     array (
       'integer' => 'int',
       'boolean' => 'bool',
@@ -1523,30 +1523,30 @@
     'include_class_docblocks' => false,
     'force_fqn' => false,
     'use_generics_annotations' => true,
-    'macro_default_return_types' => 
+    'macro_default_return_types' =>
     array (
       'Illuminate\\Http\\Client\\Factory' => 'Illuminate\\Http\\Client\\PendingRequest',
     ),
-    'additional_relation_types' => 
+    'additional_relation_types' =>
     array (
     ),
-    'additional_relation_return_types' => 
+    'additional_relation_return_types' =>
     array (
     ),
     'enforce_nullable_relationships' => true,
-    'post_migrate' => 
+    'post_migrate' =>
     array (
     ),
   ),
-  'tinker' => 
+  'tinker' =>
   array (
-    'commands' => 
+    'commands' =>
     array (
     ),
-    'alias' => 
+    'alias' =>
     array (
     ),
-    'dont_alias' => 
+    'dont_alias' =>
     array (
       0 => 'App\\Nova',
     ),
