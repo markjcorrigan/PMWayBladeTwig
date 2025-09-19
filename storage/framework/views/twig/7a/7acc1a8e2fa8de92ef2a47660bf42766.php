@@ -1,0 +1,2910 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+use Twig\TemplateWrapper;
+
+/* C:\xampp\htdocs\pmway\resources\views/Home/waterfallvsagile.twig */
+class __TwigTemplate_10f6b020e6269015907eed3dc82d12c2 extends Template
+{
+    private Source $source;
+    /**
+     * @var array<string, Template>
+     */
+    private array $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'body' => [$this, 'block_body'],
+        ];
+    }
+
+    protected function doGetParent(array $context): bool|string|Template|TemplateWrapper
+    {
+        // line 1
+        return "base.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $context = TwigBridge\Node\EventNode::triggerLaravelEvents($this->getTemplateName(), $context);
+        $this->parent = $this->load("base.twig", 1);
+        yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 2
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_title(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        yield " ";
+        if ((($tmp =  !($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+            yield "PMWay";
+        }
+        yield " ";
+        if ((($tmp = ($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+            yield "Sprint Up Close";
+        }
+        yield "  ";
+        yield from [];
+    }
+
+    // line 3
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_body(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        // line 4
+        if ((($tmp = ($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+            // line 5
+            yield "
+<div class=\"container\" align=\"center\">
+        <style>
+                        /* Make the image fully responsive */
+
+                        body {
+                            /*     background-color: #c2e8fc !important; */
+                        }
+
+                        .customcolor {
+                            /*  background-color: #c2e8fc !important; */
+                            background-color: #fff !important;
+                        }
+
+                        .customcolorwhite {
+                            background-color: #fff !important;
+                        }
+
+
+
+
+                        .carousel {
+
+
+                            /* background-color: #c2e8fc !important; */
+                            background-color: #fff !important;
+                        }
+
+
+
+
+                        .card-body {
+                            /*      background-color: #c2e8fc !important; */
+                            background-color: #fff !important;
+
+                        }
+
+
+
+
+
+                        .carousel-indicators {
+                            position: absolute;
+                            bottom: -35px;
+                            /*              background-color: #c2e8fc !important; */
+                            background-color: #fff !important;
+                        }
+
+                        .carousel-indicators li {
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 100%;
+                            background-color: #040404;
+                        }
+
+                        }
+
+
+
+
+                        .navbar {
+                            position: relative;
+                            width: 100%;
+                            z-index: 10;
+                            max-width: 100%;
+                        }
+                        /* carousel */
+                        /*active slide indicator */
+
+                        .carousel-indicators .active {
+                            background: #fff none repeat scroll 0 0;
+                            border: 4px solid #040404;
+                        }
+
+                        .alignright {
+                            text-align: right;
+                            width: 30px;
+                        }
+
+                        .alignleft {
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        .aligncenter {
+                            text-align: center;
+                            width: 260px;
+                        }
+
+
+                        .pin {}
+
+                        .target {
+                            border: 2px solid black;
+                            display: inline-block;
+                        }
+
+                        .verticalalign {
+                            vertical-align: bottom;
+                        }
+
+
+
+video {
+
+  width: 100%    !important;
+
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+
+:root {
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, .4);
+  --btn-color: hsl(210, 80%, 42%);
+  --bg-color: #141218;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+buttontoilet {
+  position:relative;
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  font-family: \"Source Code Pro\";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: var(--text-color);
+
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  border-radius: 4px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+buttontoilet:focus {
+  outline-color: transparent;
+  box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after, buttontoilet::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+buttontoilet::after{
+  font-weight: 200;
+  top: -30px;
+  left: -20px;
+}
+
+.right, .left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.right {
+  left: 66%;
+}
+.left {
+  right: 66%;
+}
+.right::after {
+  top: -30px;
+  left: calc(-66% - 20px);
+
+  background-color: var(--bg-color);
+  color:transparent;
+  transition: transform .4s ease-out;
+  transform: translate(0, -90%) rotate(0deg)
+}
+
+buttontoilet:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg)
+}
+
+buttontoilet .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg)
+}
+
+buttontoilet .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg)
+}
+
+/* bubbles */
+buttontoilet::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
+
+
+
+.wrap {
+  height:100px;
+width:200px\";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+</style>
+
+
+        <h5>Project Type Selection (Traditional (Waterfall), Agile, Hybrid, Extreme)</h5>
+    ";
+            // line 247
+            if ((($tmp = ($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+                // line 248
+                yield "
+<p>Signed in with PMWay you can use the image directly below (click the approach) to go to the processes that are required for Traditional Project Management (PMBOK 6) or Agile Project Management (the Scrum Body of Knowledge V.4 (SBOK 4)).</p>
+    ";
+            }
+            // line 251
+            yield "    ";
+            if ((($tmp =  !($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+                // line 252
+                yield "\t<p><a href=\"/register\" target=_blank\" title=\"Registered\"><u>With</u></a> PMWay you can use the image directly below to drill down into the processes (inputs, tools and techniques, and outputs) that are required for Traditional Project Management (PMBOK 6) or Agile Project Management (the Scrum Body of Knowledge (SBOK 4)).  <br>For a high level overview of the Agile methods <a href=\"/agile\" target=_blank\" ><u>click here</u></a>.  <br>Remember that Agile (any project method) operated at <a href=\"/cmmi\" target=_blank\" ><u>CM Level 1</u></a> will have a dubious outcome.</p>
+    ";
+            }
+            // line 254
+            yield "   <img alt=\"TPM Processes\" class=\"img-fluid\" src=\"/images/waterfallvsagile.png\" usemap=\"#ImgMap1\">
+
+
+      <map id=\"ImgMap1\" name=\"ImgMap1\">
+\t\t  <area alt=\"\" coords=\"13,79,369,485\" href=\"/pmboksix/pmbokprocessnutshell\" shape=\"rect\" title=\"For the TPM Processes - click here\" target=\"_blank\">
+\t\t  <area alt=\"\" coords=\"369,78,862,486\" href=\"/scrumdashboards\" shape=\"rect\" title=\"For the APM (Scrum) processes click here\"  target=\"_blank\">
+
+\t  </map>
+
+
+
+
+
+
+
+
+<br><br>";
+            // line 270
+            if ((($tmp = ($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+                // line 271
+                yield "<p><small><i><a href=\"/images/howdoyouwanttowork.png\" target=\"_blank\">How do you want to work</a>?  <br>Following the project processes (steps), like following the steps in a cooking recipe, is a sure way to move <a href=\"gamestats\" target=\"_target\">production stats</a> up from <a href=\"/cmmi\" target=\"_blank\">Capability Maturity Level 1 to Capability Level 2+.</a></i><br>
+I.e. start to eliminate waste, rework and risk and improve on productivity and quality.</small></p>
+<!------------------------------------------------------------------------top of bsdropdown------------------------------------->
+<button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsemoredepth\" aria-expanded=\"false\" aria-controls=
+        \"collapsemoredepth\">Find out more</button>
+
+<div class=\"collapse\" id=\"collapsemoredepth\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">Find out more</h5>
+            <div class=\"card-body text-center\">
+
+
+
+        <p style=\"text-align:justify\">The project type selection matrix from Dr. Robert. K. Wysocki's awesome book 'Effective Project Management - Traditional, Agile, Hybrid, Extreme page 66' (below) shows one how to
+          quickly decide
+          what project method (project type) best suites the type of project based on the criteria of clarity or lack of clarity of the
+          project goal or solution clarity being considered.<br></p>
+        <p align=\"center\"><img alt=\"project selection matrix\" class=\"img-fluid\" src=\"/images/projectselectionlandscape.png\">
+<br>        <img alt=\"project selection matrix\" class=\"img-fluid\" src=\"/images/projselectmatrixnoshading.png\"><p><small>Project types slotted into the matrix</small></p>
+<button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsehybrid\" aria-expanded=\"false\" aria-controls=
+        \"collapsehybrid\">Hybrid Solutions - PMWay's reservations</button>
+
+<div class=\"collapse\" id=\"collapsehybrid\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">Why Hybrids are like Snowflakes</h5>
+            <div class=\"card-body text-center\">
+
+
+<p>Note:  PMWay is skeptical of hybrid solutions.  In our opinion it is far better to tailor the popular methods (PMBOK, PRINCE2 [or PRINCE2 Agile], or DSDM or SCRUMBOK) as these project methods and their processes are learned, well known and understood by millions of qualified experts.  If you need to run these lean, then tailor the processes, but in a way that maintains quality and method integrity.  I.e. why re-invent the wheel?  To illustrate the problem from a Scrum perspective <a href=\"/scrumrca\">snowflake scrum</a> is understood as being one of the <a href=\"scrumrca\" target=_blank\">7 dysfunctions</a>. This situation happens when a team or organization thinks it is \"unique,\" so it has to adapt Scrum to fit its needs. <em>You either do Scrum </em><em>or you don&rsquo;t do Scrum. Modifying Scrum does not fix the problems. Modifying Scrum will likely hide your problems &hellip; for a little while. When the problems are hidden, it may feel better, but those problems are still there. Ultimately, they will manifest as a lack of business agility and dysfunction.</em>'</p>
+
+<p>The above said... with an experienced team, operating above Capability Maturity Level 1, off a PMIS (Project Management Information System / Scrum board etc.), and using <a href=\"/measurement\" target=\"_blank\">Lead Time and Cycle Time</a> statistics, it will be possible to operate extremely and off hybrids.</p>
+   <p align=\"center\"><img alt=\"Lead Time Cycle Time\" class=\"img-fluid\" src=\"/images/leadtimescycletime.png\"><br>
+   <img alt=\"Lead Time Cycle Time from ideation\" class=\"img-fluid\" src=\"/images/idealeadtimecycletime.png\"><br>
+     <img alt=\"Lead Time Cycle Time pushing products through\" class=\"img-fluid\" src=\"/images/productsleadtimecycletime.jpeg\"></p>
+            </div>
+            <div class=\"card-footer\">
+
+            </div>
+        </div>
+    </div>
+</div><br><br>
+<p><small>Click the image and presentation icon below if you want to dig a little deeper into this broad subject.</small></p>
+   <p align=\"center\"><a href=\"/?slide=1\" target=\"_blank\"><img class=\"img-fluid\" src=\"/images/digdeeper.jpg\" title=\"\"></a></p>
+
+
+
+
+<!--<img alt=\"Dive In\" title=\"Click the button below\" class=\"img-fluid\" src=\"../images/divein.png\"><br>-->
+
+<br><div id=\"myBlock\" style=\"display: none;\">
+<p align=\"center\"><a href=\"/cmmi\" target=_blank\">  <img class=\"img-fluid\" src=\"/images/cmmproject2plus.png\" onmouseover=\"this.src='/images/cmmproject2plusshadedbezelled.png'\" onmouseout=\"this.src='/images/cmmproject2plus.png'\" title=\"Click the image to pin down where you think you are at.  How do you want to be remembered?  Time to up your 'game stats'?\" > </a>
+</p>
+</div>
+<p align=\"center\"><small>Or you can also click the presentation icon below<br>get a high level (jam packed) summary in presentation format.</small></p><br>
+  <p>               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"/itilfouroverview/index.html\" target=\"_blank\" title=\"need some ideas on how to do this?\"><img alt=\"presentation icon\" title=\"Do you need a high level presentation of ideas on how to do the above?\" class=\"img-fluid\" src=\"../images/presentationicon.png\"></a><br><!---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"/homeviewpdf/resources/itilfouroverview.pdf\" target=\"_blank\" title=\"view presentation in pdf\"><img alt=\"presentation icon\" title=\"view a summary of the above presentation in pdf\" target src=\"../images/pdf-iconlarger.png\"></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessible IT Strategy?--></p>
+<div class=\"container\" align=\"center\"><br>
+<p><small>Bottom line:  The goal should always be to try to...</small></p>
+
+<img alt=\"CM Model\" onclick=\"myFunction()\" class=\"img-fluid\"  src=\"../images/cmltwoplus.png\" id=\"myBlock\" title=\"Click here to show and hide the concise Capability Maturity Model\" ></div><br>
+
+
+
+
+<p><small>Operating at CM L2+ is not easy.  <br>Dive in for a high level overview of CM L1 behaviour <br>(and sometimes poking fun (lampooning) it as Edwards W. Deming did)<br>to understand the problems you will need to overcome,<br>if your desire is to \"<a href=\"/gamestats\" target=\"_blank\">up our game stats</a>\".</small></p><br>
+
+
+
+<buttontoilet  class=\"wrap btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsevixen\" aria-expanded=\"false\" aria-controls=
+        \"collapsevixen\" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wagile, Fragile, Aino&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(TPM & APM @ CML1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;etc.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</buttontoilet>
+
+<div class=\"collapse\" id=\"collapsevixen\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">
+
+
+<a href=\"/pin\" target=\"_blank\" ><img alt=\"\" class=\"img-fluid\" title=\"If things are chaotic possibly it is time to follow the project processes for your method and use them to tighten up and improve your game stats. Click the image to see the problem and solution. Where would you pin down where your teams are at?\" src=\"../images/outofthefireone.png\" onmouseover=\"this.src='/images/outofthefiretwo.png'\" onmouseout=\"this.src='/images/outofthefireone.png'\"></a><br></h5>
+
+
+
+
+
+            <div class=\"card-body text-center\">
+
+<p>The classic \"monkey trap\" helps to illustrate the problems of TPM and APM (Wagile, Fragile, Aino and TPM and APM run at Capability Maturity Level 1) etc., run as a flawed project management system; without sufficient understanding of the (stepwise) process approach that is needed for success to be able to run at Capability Maturity Level 2+</h5>
+
+
+<p>
+<img alt=\"Monkey Trap\" class=\"img-fluid\" src=\"../images/Monkey-trap.png\"></p>
+
+
+
+
+<br>
+<p>The classic \"coffee shop\" demonstration also illustrates how to follow an agile mindset and process orientated approach.<br>
+<a href=\"/coffee\" target=\"_blank\" title=\"Click the image if you want more information on what the do everything now trap is - exactly\"><img alt=\"Coffee Shop\" class=\"img-fluid\" src=\"../images/doeverythingsnipped.jpg\" height=200px width=400px></a></p>
+<br>
+
+<p>I.e. No <a href=\"../images/smart.jpg\" class=\"img-fluid\" target=\"_blank\"><u>SMART requirements</u></a> identified and no accurate planning and monitoring and control, rather
+extolling and pushing (driving heroic \"just do it\" behavior) to get more out of (trying to force / \"bully\" results) from the system than is possible (for resources / time allocated / clarity about requirements in respect of complicated solutions required).  This lack of clear and agreed <b>REQUIREMENTS (REQM)</b> and insufficient / inaccurate <b>PROJECT PLANNING (PP)</b> and <b>PROJECT MONITORING AND CONTROL (PMC)</b> means the team are operating at Capability Maturity Level 1.</p>
+<p><small>Without spoiling the fun you will have watching the (Deming) Red Bead video below, know that the above behavior is referred to by Project Managers, Software Engineers (and others in the know) as \"Management, using reward and punishment, to tamper with a stable system.  Typically these types of managers are not open to suggestions to improve and also do not faciliatate a Safety Culture so ultimately, project failures, will be the result\" </small></p>
+<br>
+
+<button class=\"btn btn-primary align-center \" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsepmboksafety\" aria-expanded=\"false\" aria-controls=
+        \"collapsepmboksafety\">Safety Culture</button>
+
+<div class=\"collapse\" id=\"collapsepmboksafety\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">Westrum's Typology of Organization Culture</h5>
+            <div class=\"card-body text-center\">
+
+<p>The book Accelerate refers to the Westrum Typology of Organizational Culture.<br>Accelerate (and ITIL etc.) state that Generative behavior on the right of the model is required for success in Agile and DevOps.<br>ITIL 4 calls this a \"safety culture.\"  The \"safety culture\" is needed for teams to align for agility and find solutions which approach may not be understood or tolerated in the Bureucratic and Pathelogical Organizational Cultures of the model.</p>
+<br>
+<img alt=\"\" class=\"img-fluid\" src=\"../images/westrum.png\"></p>
+<p>I.e. With Westrum in mind, Where would you pin your Oranizational Culture to be at?  Pathalogical, Bureaucratic or Open Minded and Generative.</p>
+<p align=\"left\"><a href=\"/pin\"  title=\"Click the pin to pin down your Organizational Culture.  I.e. what Organizational Culture do you have where you work!\" ><img id=\"pinthree\" class=\"img-fluid\" style=\"z-index:100\"  src=\"../images/pinlarge.png\" alt=\"pin\" ></a></p>
+            </div>
+            <div class=\"card-footer\">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<h3>The Monkey Trap above.  Do you really want to get free?</h3>
+<p align=\"center\">Along with <a href=\"../images/smart.jpg\" class=\"img-fluid\" target=\"_blank\"><u>SMART REQM's</u></a>: Find the CML2 processes <a href=\"/cmmidevdash\" target=_blank\"><u>Project Planning (PP) and Project Monitoring and Control (PMC)</u></a><br>Then<br><b><large>to set Scrum (Agile) free</large></b><br>it's simply<br><a href=\"../images/scrumsafelymin.pdf\" target=\"_blank\"><u><b>ONE</b></u></a>&nbsp;&nbsp;<a href=\"cv/images/projects/project-21.jpg\" target=\"_blank\"><u><b>TWO</b></u></a>&nbsp;&nbsp;<a href=\"/images/horserace.jpg\" target=\"_blank\"><u><b>THREE</b></u></a></p>
+
+
+<br>
+
+<button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsepmbokdis\" aria-expanded=\"false\" aria-controls=
+        \"collapsepmbokdis\">The 7 Scrum Dysfunctions<br>and how to fix these</button>
+
+<div class=\"collapse\" id=\"collapsepmbokdis\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">The Seven Scrum Dysfunctions and Root Cause Analysis</h5>
+            <div class=\"card-body text-center\">
+<p><a href=\"/scrumrca\" target=\"_blank\"><u>Click here</u></a> for the 7 Scrum dysfunctions (and using Root Cause Analysis (picking out the red beads explained below) etc.) give an idea of how to improve quality in the scrum (agile) project management system<br><i>- from Mastering Professional Scrum (2019) by Stephanie Ockerman and Simon Reindl.<br>Note:  Some links in this download are dependant on pmway.hopto.org being up.  I.e. see i on menu above.</i></p>
+<p>Run optimally a scrum team should be able to release working software in a 2 week sprint.  Then (demo's approved by the Product Owner) <b>they (the willing workers) have succeeded</b> and the goals for the team are reset during next sprint planning ceremony.  Scrum Master's role is to ensure a safety culture, productive team, process improvement from CM L2 (and CML2+ where possible) and good governance!
+            </div>
+            <div class=\"card-footer\">
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsetpmapm\" aria-expanded=\"false\" aria-controls=
+        \"collapsetpmapm\">TPM vs APM<br>in 2 minutes</button>
+
+<div class=\"collapse\" id=\"collapsetpmapm\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">TPM vs APM essence in 2 minutes</h5>
+            <div class=\"card-body text-center\">
+  <h5><b>Your \"Body of Knowledge\" Gateway</b></h5>
+
+                    <map id=\"ImgMap0\" name=\"ImgMap0\">
+                        <area coords=\"58, 53, 339, 351\" href=\"/pmboksix/fourone\" shape=\"rect\" title=\"Click here for the PMBOK Dashboard\">
+                    </map>
+                    <!--<img class=\"img-fluid\" alt=\"\" src=\"../images/dashheadsmaller.png\"  >-->
+              <img alt=\"\" class=\"img-fluid\" style=\"z-index:1\" src=\"../images/dashheadflat.png\" onmouseover=\"this.src='/images/dashheadraised.png'\" onmouseout=\"this.src='/images/dashheadflat.png'\">
+                    <br>
+
+    <a href=\"/pmboksix/fourone\" >    <img alt=\"\" class=\"img-fluid\" style=\"z-index:0\" src=\"../images/mainprocessdashraisednormalflat.png\" onmouseover=\"this.src='/images/mainprocessdashraisednormalbezelledone.png'\" onmouseout=\"this.src='/images/mainprocessdashraisednormalflat.png'\" title=\"Click the hand (process 4.1) to go the the PMBOK dashboard for PMBOK Process 4.1\"></a>
+
+                    <br>
+                    <br>
+
+                            <div class=\"card text-center\">
+                                <h5 class=\"card-header\" align=\"center\"></h5>
+                                <div class=\"card-body text-center\">
+                                    <p>The Project Management Body of Knowledge Guide (released September 2017)
+                                        <br>is the 'how to do it' checklist for Project Management Professionals.
+                                        <br>Click the image directly below for the PMBOK game, in a nutshell.
+                                        <br>
+                                        <a href=\"/thegame\" target=\"_blank\" title=\"Click the tile for a larger (more detailed) image of how to play the game\">
+                                            <img alt=\"The game\" class=\"img-fluid\"  id=\"game\" src=\"../images/TheGame.png\" ></a>
+                                            <br><i><b>If you understand the PMBOK you know this game is the same <br>for both Traditional and Agile Project Management!</b></i>
+
+                                        <br><br>The dashboard assists understanding of the PMBOK processes (+ &quot;ittos&quot;)
+                                        <br> to help you to pass the PMI exams and run projects better at <a href=\"/cmmi\"><strong>Capability
+                        Maturity Level 2+</strong></a>.
+                                        <br>The PMBOK processes (underpinned by the latest thinking found in the <i>
+                      <br>PMI Agile Certified Practitioner
+                      (PMI-ACP) qualification </i> and others)
+                                        <br> incorporates <a href=\"/agile\"><strong>Lean and Agile</strong></a> thinking.</p>
+                                    <p>Oh, also... do not forget that the PMBOK operates as a Standard!
+                                        <br> Check out where it is situated in the greater scheme of things
+                                        <br> as you <b>&quot;<a href=\"/?slide=2\" target=\"_blank\"><u>connect the dots</u></a>&quot;</b> below.</p>
+                                    <p>A quick note to those \"Traditional\" is not \"Agile\" out there.
+                                        <br>Find process 4.7 on the PMBOK dashboard above (Close Project or Phase).
+                                        <br>Did you know that &quot;tailoring&quot; these processes means you can run a project phase
+                                        <br>as... wait for it...
+                                        <br><b>&quot;<a href=\"/agile?slide=10\"
+                        target=\"_blank\"><u>a two week sprint!</u></a>&quot;</b>
+
+                                        <br>
+                                        <br> Operating thus, as a Professional who understands Project Management Process,
+                                        <br>(supported by your Executive [Executive Action Team (to EAT &quot;<a href=\"/removetheredbeads\" target=\"_blank\">the
+                      red beads,</a>&quot;)])
+                                        <br>using
+                                        <a href=\"/agile?slide=13\" target=\"_blank\">
+                      best selected project methodology</a>,
+                                        <br>there is less chance of dropping the ball.</p>
+
+                                    <img alt=\"drop the ball\" class=\"img-fluid\" src=\"../images/droptheball.png\">
+                                    <br>
+                                    <br><h6><b>Bottom Line</b></h6>
+                                    <p><b>While (when) BEST PRACTICE is understood,
+\t\t\t\t\t\t\t\t\t<br>BEST PRACTICAL (from an agile and lean perspective) can be better!</b></p>
+                                    <!--<a href=\"/removetheredbeads\" target=\"_blank\" title=\"Click the image to find out how and why to remove the Red Beads\"><img alt=\"\" class=\"img-fluid\" src=\"../images/redbeadremoved.png\"></a>-->
+                                </div>
+                                <div class=\"card-footer\">
+   <a href=\"/freedoms\" target=\"_blank\" title=\"Find out about the concepts of Freedoms, Barriers and Goals and how they can be made to work together for success\">Freedoms, Barriers, Goals</a> and <a href=\"../images/anyroad.jpg\" target=\"_blank\" title=\"Find out that if you do not know what your destination is, any road will take you there.  I.e. anywhere, nowhere!\">Destinations</a>
+
+                        </div>
+                    </div>
+
+            </div>
+            <div class=\"card-footer\">
+\t<h5>Phew...  Ok, finally.  Here is the 2 minute answer you were looking for</h5>
+<p>Note that <a href=\"../images/pmbok5gate.png\" target=\"_blank\"><u><b>Traditional Project Management</b></u></a> (TPM)'s <a href=\"../images/pmbokepm.jpg\" target=\"_blank\"><u><b>24 planning processes</b></u></a> (just under half of the total processes for the PMBOK are planning processes!) are replaced in Agile Project Management (APM) / Scrum by User Stories!  These \"User Stories\" must be approved as delivered each sprint by the Product Owner or the team are operating at Capability Maturity Level 1.  And the minute a sprint is approved the team have finished that race successfully (they are operating at CM LEvel 2+)!</p>
+<p>If you look carefully you will see that both <a href=\"/pmboksix/pmbokprocessnutshell\" target=\"_blank\">Traditional Project Management</a> and <a href=\"/agile?slide=10\" target=\"_blank\" >Agile Project Management (typically Scrum - the recommended agile method from the Project Management Institute)</a>, have Project Planning (PP) and Project Monitoring and Control (PMC) processes.  While the Requirements process is Traditional Project Management is a complex document produced up front(Detailed Document Up Front or DDUF), Agile (Scrum) only uses User Stories and short sprints.  Why.  Because, typically DDUF don't work and the plans produced are seldome hit on time and within budget (with dubious quality?).</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<p><a href=\"/removetheredbeads\" target=\"_blank\">Deming's Red Bead Experiment</a> goes a long way to clearly illustrate the causes and solutions for the \"monkey trap\" problem above. <br>Find this experiment on YouTube (<i>or watch a PMWay selected video from YouTube below</i>).  Deming is the father of the Capability Maturity Model (CMMi) we are using <a href=\"/cmmidevdash\" target=_blank\"><u>here</u></a> which is the output of the <a href=\"https://www.sei.cmu.edu/\" target=\"_blank\"><u>Software Engineering Institute at Carnegie Mellon University</u></a>.</p>
+<h3>Here is some more of Deming's wisdom:</h3>
+<p align=\"center\"><img class=\"img-fluid\" src=\"../images/demingoneessence.jpg\" alt=\"Deming Quotes\" ><br><img class=\"img-fluid\" src=\"../images/demingtwoessence.jpg\" alt=\"Deming essence\" ><br><img class=\"img-fluid\" src=\"../images/demingthreeessence.jpg\" alt=\"Deming essence\" >
+            </div>
+
+
+
+<div class=\"container\" align=\"center\">
+<h5>Red Bead Experiment</h5>
+<div class=\"flex-container\">
+  <div class=\"flex-item video-content\">
+
+<video controls poster=\"/images/redbeadremoved.png\" width=\"400\" height=\"400\" >
+<br><br>
+ <source src=\"";
+                // line 533
+                yield $this->env->getFunction('asset')->getCallable()("movies/redbeadexperiment.mp4");
+                yield "\" type=\"video/mp4\">
+
+    Your browser does not support the video tag.
+</video>
+</div>
+</div>
+<br>
+
+<h5>Solution:<br>If your Scrum Sprints are not producing approved value then Executives<br><b>YOU NEED TO PICK OUT / REMOVE / EAT THE RED BEADS!</b></h5>
+<p align=\"center\"><img class=\"img-fluid\" src=\"../images/eat.png\" alt=\"Executive Action Team: EAT the Red Beads\" ></p>
+<p>I.e. install scrum (or other TPM or APM) processes (DevOps etc., processes) that allow the method to operate correctly / <br>remove noise and obstacles (exhortations etc.) that is getting in the way.<br>
+and EAT (Executive Action Team) the Red Beads!</p>
+<p><a href=\"/scrumdashboards\">Click here for a 1000 foot overview of the Scrum Dashboards</a></p>
+<br>
+<br>
+
+<button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsepmbokcm\" aria-expanded=\"false\" aria-controls=
+        \"collapsepmbokcm\">FOR FUN:  CAPABILITY MATURITY LEVEL ONE</button>
+
+<div class=\"collapse\" id=\"collapsepmbokcm\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">The image below explains the problems typically found at Capability Maturity Level 1.</h5>
+            <div class=\"card-body text-center\">
+<p align=\"center\"><img class=\"img-fluid\" src=\"../images/cml1.png\" alt=\"For fun Capability Maturity Level 1\" ></p>
+
+<p>Or click here for some more fun:  <a href=\"/realstory\" target=\"_blank\">The Real Story at CM L1</a></p>
+<br><br>
+<br>
+<hr style=\"width:30%\">
+<p>Time to up your game stats?</p>
+<hr style=\"width:30%\">
+<br><br>
+<br>
+<p align=\"center\"><img class=\"img-fluid\" src=\"../images/cm.png\" alt=\"How do you want to be remembered\" ><br>The Capability Maturity model above is a simplified version <a href=\"/cmmidevdash\" target=_blank\"><u>of the one found here</u></a></p></div>
+    <br>
+  <br>
+<p align=\"left\"><a href=\"/pin\"  title=\"Click the pin to pin down to your Capability Maturity level.  Is it CM L1, L2, L3 etc.  I.e. what processes do you have control over. Bottom line: Focus on the process and not the outcome of the process!  If you cannot describe what you are doing as a process you do not know what you are doing!\" ><img id=\"pintwo\" class=\"img-fluid\" style=\"z-index:100\"  src=\"../images/pinlarge.png\" alt=\"pin\" ></a></p>
+
+<p align=\"left\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Finally (just for fun) click the red pin now if you want to do the Capability Maturity self assessment.</i></p>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!---------------------------------------------------NB bottom of bsdropdown---------------------------------------->
+            </div>
+            <div class=\"card-footer\">
+
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+
+
+
+            <div class=\"card-footer\">
+
+            </div>
+        </div>
+    </div>
+</div>
+    ";
+            }
+            // line 600
+            yield "<br>
+<br>
+
+
+<script>
+
+
+
+
+
+
+
+
+    <!--  <script src=\"/bootstrapfourthreeone/js/jquery.js\"></script>
+    <script src=\"/bootstrapfourthreeone/js/jquery-ui.js\"></script>
+    <link rel=\"stylesheet\" href=\"/bootstrapfourthreeone/css/jquery-ui.css\">-->
+<script src=\"/bootstrapfourfivetwo/js/jquery.js\"></script>
+    <script src=\"/bootstrapfourfivetwo/js/jquery-ui.js\"></script>
+   <!-- testing <link rel=\"stylesheet\" href=\"/bootstrapfourfivetwo/css/jquery-ui.css\"></link>-->
+
+
+    <script>
+     \t  \$(document).ready(function() {
+
+            function qs(key) {
+                key = key.replace(/[*+?^\$.\\[\\]{}()|\\\\\\/]/g, \"\\\\\$&\"); // escape RegEx meta chars
+                var match = location.search.match(new RegExp(\"[?&]\" + key + \"=([^&]+)(&|\$)\"));
+                var slide = match && decodeURIComponent(match[1].replace(/\\+/g, \" \"));
+
+                if (Math.floor(slide) == slide && \$.isNumeric(slide)) {
+
+                \t\$('#collapseopencarousel').collapse('show');
+                \t\$('html, body').animate({
+    scrollTop: \$(\"#collapseopencarousel\").offset().top
+}, 1000);
+
+
+
+                    return parseInt(slide);
+   \t\t\t\t}
+                else
+                    return 0;
+}
+
+
+            \$('#mycarousel').carousel((qs('slide')) - 1);
+            \$(\"#pin, #pintwo, #pinthree, #steps\").draggable({
+                revert: \"false\"
+            });
+            \$(\"#target, #targetforladder\").droppable({
+                greedy: true,
+                tolerance: 'touch',
+                drop: function(event, ui) {
+                    ui.draggable.draggable('option', 'revert', 'true');
+                    \$(this).css({
+                        'background-color': '#94be0f',
+                        'border': '3px solid navy',
+                        'display': 'inline-block'
+                    })
+                    alert(\"Awesome! Now move the pin out of the way and click the target underneath to see the processes your have mastered!   Remember Demings advice:  Work on the process, not the outcome of the process! \");
+
+                }
+            });
+
+        });
+
+
+function myFunction() {
+  var x = document.getElementById(\"myBlock\");
+  if (x.style.display === \"none\") {
+    x.style.display = \"block\";
+  } else {
+    x.style.display = \"none\";
+  }
+}
+
+
+    </script>
+
+<script>
+
+document.getElementById('myImg').onclick = function(e) {
+    document.getElementById('myDiv').style.display = 'block';
+}
+
+</script>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+";
+        }
+        // line 693
+        yield "    ";
+        if ((($tmp =  !($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+            // line 694
+            yield "<div class=\"container\" align=\"center\">
+    <style>
+        /* Make the image fully responsive */
+
+        body {
+            /*     background-color: #c2e8fc !important; */
+        }
+
+        .customcolor {
+            /*  background-color: #c2e8fc !important; */
+            background-color: #fff !important;
+        }
+
+        .customcolorwhite {
+            background-color: #fff !important;
+        }
+
+
+
+
+        .carousel {
+
+
+            /* background-color: #c2e8fc !important; */
+            background-color: #fff !important;
+        }
+
+
+
+
+        .card-body {
+            /*      background-color: #c2e8fc !important; */
+            background-color: #fff !important;
+
+        }
+
+
+
+
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: -35px;
+            /*              background-color: #c2e8fc !important; */
+            background-color: #fff !important;
+        }
+
+        .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #040404;
+        }
+
+        }
+
+
+
+
+        .navbar {
+            position: relative;
+            width: 100%;
+            z-index: 10;
+            max-width: 100%;
+        }
+        /* carousel */
+        /*active slide indicator */
+
+        .carousel-indicators .active {
+            background: #fff none repeat scroll 0 0;
+            border: 4px solid #040404;
+        }
+
+        .alignright {
+            text-align: right;
+            width: 30px;
+        }
+
+        .alignleft {
+            width: 30px;
+            height: 30px;
+        }
+
+        .aligncenter {
+            text-align: center;
+            width: 260px;
+        }
+
+
+        .pin {}
+
+        .target {
+            border: 2px solid black;
+            display: inline-block;
+        }
+
+        .verticalalign {
+            vertical-align: bottom;
+        }
+
+
+
+        video {
+
+            width: 100%    !important;
+
+
+        }
+
+
+        @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+
+        :root {
+            --text-color: hsla(210, 50%, 85%, 1);
+            --shadow-color: hsla(210, 40%, 52%, .4);
+            --btn-color: hsl(210, 80%, 42%);
+            --bg-color: #141218;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+
+        buttontoilet {
+            position:relative;
+            padding: 10px 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+
+            font-family: \"Source Code Pro\";
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: var(--text-color);
+
+            background-color: var(--btn-color);
+            box-shadow: var(--shadow-color) 2px 2px 22px;
+            border-radius: 4px;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        buttontoilet:focus {
+            outline-color: transparent;
+            box-shadow: var(--btn-color) 2px 2px 22px;
+        }
+
+        .right::after, buttontoilet::after {
+            content: var(--content);
+            display: block;
+            position: absolute;
+            white-space: nowrap;
+            padding: 40px 40px;
+            pointer-events:none;
+        }
+
+        buttontoilet::after{
+            font-weight: 200;
+            top: -30px;
+            left: -20px;
+        }
+
+        .right, .left {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }
+        .right {
+            left: 66%;
+        }
+        .left {
+            right: 66%;
+        }
+        .right::after {
+            top: -30px;
+            left: calc(-66% - 20px);
+
+            background-color: var(--bg-color);
+            color:transparent;
+            transition: transform .4s ease-out;
+            transform: translate(0, -90%) rotate(0deg)
+        }
+
+        buttontoilet:hover .right::after {
+            transform: translate(0, -47%) rotate(0deg)
+        }
+
+        buttontoilet .right:hover::after {
+            transform: translate(0, -50%) rotate(-7deg)
+        }
+
+        buttontoilet .left:hover ~ .right::after {
+            transform: translate(0, -50%) rotate(7deg)
+        }
+
+        /* bubbles */
+        buttontoilet::before {
+            content: '';
+            pointer-events: none;
+            opacity: .6;
+            background:
+                radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+                radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+                radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+            width: 100%;
+            height: 300%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            animation: bubbles 5s linear infinite both;
+        }
+
+        @keyframes bubbles {
+            from {
+                transform: translate();
+            }
+            to {
+                transform: translate(0, -66.666%);
+            }
+        }
+
+
+
+        .wrap {
+            height:100px;
+            width:200px\";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+
+
+    <h5>Project Type Selection (Traditional (Waterfall), Agile, Hybrid, Extreme)</h5>
+    ";
+            // line 935
+            if ((($tmp = ($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+                // line 936
+                yield "
+    <p>Signed in with PMWay you can use the image directly below (click the approach) to go to the processes that are required for Traditional Project Management (PMBOK 6) or Agile Project Management (the Scrum Body of Knowledge V.4 (SBOK 4)).</p>
+    ";
+            }
+            // line 939
+            yield "    ";
+            if ((($tmp =  !($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+                // line 940
+                yield "    <p><a href=\"/register\" target=_blank\" title=\"Registered\"><u>With</u></a> PMWay you can use the image directly below to drill down into the processes (inputs, tools and techniques, and outputs) that are required for Traditional Project Management (PMBOK 6) or Agile Project Management (the Scrum Body of Knowledge (SBOK 4)).  <br>For a high level overview of the Agile methods <a href=\"/agile\" target=_blank\" ><u>click here</u></a>.  <br>Remember that Agile (any project method) operated at <a href=\"/cmmi\" target=_blank\" ><u>CM Level 1</u></a> will have a dubious outcome.</p>
+    ";
+            }
+            // line 942
+            yield "    <img alt=\"TPM Processes\" class=\"img-fluid\" src=\"/images/waterfallvsagile.png\" usemap=\"#ImgMap1\">
+
+
+    <map id=\"ImgMap1\" name=\"ImgMap1\">
+        <area alt=\"\" coords=\"13,79,369,485\" href=\"/pmboksix/pmbokprocessnutshell\" shape=\"rect\" title=\"For the TPM Processes - click here\" target=\"_blank\">
+        <area alt=\"\" coords=\"369,78,862,486\" href=\"/scrumdashboards\" shape=\"rect\" title=\"For the APM (Scrum) processes click here\"  target=\"_blank\">
+
+    </map>
+
+
+
+
+
+
+
+
+    <br><br>";
+            // line 958
+            if ((($tmp = ($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+                // line 959
+                yield "    <p><small><i><a href=\"/images/howdoyouwanttowork.png\" target=\"_blank\">How do you want to work</a>?  <br>Following the project processes (steps), like following the steps in a cooking recipe, is a sure way to move <a href=\"gamestats\" target=\"_target\">production stats</a> up from <a href=\"/cmmi\" target=\"_blank\">Capability Maturity Level 1 to Capability Level 2+.</a></i><br>
+            I.e. start to eliminate waste, rework and risk and improve on productivity and quality.</small></p>
+    <!------------------------------------------------------------------------top of bsdropdown------------------------------------->
+    <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+    \"collapse\" data-target=\"#collapsemoredepth\" aria-expanded=\"false\" aria-controls=
+            \"collapsemoredepth\">Find out more</button>
+
+    <div class=\"collapse\" id=\"collapsemoredepth\">
+        <div class=\"container\">
+            <div class=\"card text-center\">
+                <h5 class=\"card-header\" align=\"center\">Find out more</h5>
+                <div class=\"card-body text-center\">
+
+
+
+                    <p style=\"text-align:justify\">The project type selection matrix from Dr. Robert. K. Wysocki's awesome book 'Effective Project Management - Traditional, Agile, Hybrid, Extreme page 66' (below) shows one how to
+                        quickly decide
+                        what project method (project type) best suites the type of project based on the criteria of clarity or lack of clarity of the
+                        project goal or solution clarity being considered.<br></p>
+                    <p align=\"center\"><img alt=\"project selection matrix\" class=\"img-fluid\" src=\"/images/projectselectionlandscape.png\">
+                        <br>        <img alt=\"project selection matrix\" class=\"img-fluid\" src=\"/images/projselectmatrixnoshading.png\"><p><small>Project types slotted into the matrix</small></p>
+                    <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+                    \"collapse\" data-target=\"#collapsehybrid\" aria-expanded=\"false\" aria-controls=
+                            \"collapsehybrid\">Hybrid Solutions - PMWay's reservations</button>
+
+                    <div class=\"collapse\" id=\"collapsehybrid\">
+                        <div class=\"container\">
+                            <div class=\"card text-center\">
+                                <h5 class=\"card-header\" align=\"center\">Why Hybrids are like Snowflakes</h5>
+                                <div class=\"card-body text-center\">
+
+
+                                    <p>Note:  PMWay is skeptical of hybrid solutions.  In our opinion it is far better to tailor the popular methods (PMBOK, PRINCE2 [or PRINCE2 Agile], or DSDM or SCRUMBOK) as these project methods and their processes are learned, well known and understood by millions of qualified experts.  If you need to run these lean, then tailor the processes, but in a way that maintains quality and method integrity.  I.e. why re-invent the wheel?  To illustrate the problem from a Scrum perspective <a href=\"/scrumrca\">snowflake scrum</a> is understood as being one of the <a href=\"scrumrca\" target=_blank\">7 dysfunctions</a>. This situation happens when a team or organization thinks it is \"unique,\" so it has to adapt Scrum to fit its needs. <em>You either do Scrum </em><em>or you don&rsquo;t do Scrum. Modifying Scrum does not fix the problems. Modifying Scrum will likely hide your problems &hellip; for a little while. When the problems are hidden, it may feel better, but those problems are still there. Ultimately, they will manifest as a lack of business agility and dysfunction.</em>'</p>
+
+                                    <p>The above said... with an experienced team, operating above Capability Maturity Level 1, off a PMIS (Project Management Information System / Scrum board etc.), and using <a href=\"/measurement\" target=\"_blank\">Lead Time and Cycle Time</a> statistics, it will be possible to operate extremely and off hybrids.</p>
+                                    <p align=\"center\"><img alt=\"Lead Time Cycle Time\" class=\"img-fluid\" src=\"/images/leadtimescycletime.png\"><br>
+                                        <img alt=\"Lead Time Cycle Time from ideation\" class=\"img-fluid\" src=\"/images/idealeadtimecycletime.png\"><br>
+                                        <img alt=\"Lead Time Cycle Time pushing products through\" class=\"img-fluid\" src=\"/images/productsleadtimecycletime.jpeg\"></p>
+                                </div>
+                                <div class=\"card-footer\">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <p><small>Click the image and presentation icon below if you want to dig a little deeper into this broad subject.</small></p>
+                    <p align=\"center\"><a href=\"/?slide=1\" target=\"_blank\"><img class=\"img-fluid\" src=\"/images/digdeeper.jpg\" title=\"\"></a></p>
+
+
+
+
+                    <!--<img alt=\"Dive In\" title=\"Click the button below\" class=\"img-fluid\" src=\"../images/divein.png\"><br>-->
+
+                    <br><div id=\"myBlock\" style=\"display: none;\">
+                        <p align=\"center\"><a href=\"/cmmi\" target=_blank\">  <img class=\"img-fluid\" src=\"/images/cmmproject2plus.png\" onmouseover=\"this.src='/images/cmmproject2plusshadedbezelled.png'\" onmouseout=\"this.src='/images/cmmproject2plus.png'\" title=\"Click the image to pin down where you think you are at.  How do you want to be remembered?  Time to up your 'game stats'?\" > </a>
+                        </p>
+                    </div>
+                    <p align=\"center\"><small>Or you can also click the presentation icon below<br>get a high level (jam packed) summary in presentation format.</small></p><br>
+                    <p>               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"/itilfouroverview/index.html\" target=\"_blank\" title=\"need some ideas on how to do this?\"><img alt=\"presentation icon\" title=\"Do you need a high level presentation of ideas on how to do the above?\" class=\"img-fluid\" src=\"../images/presentationicon.png\"></a><br><!---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"/homeviewpdf/resources/itilfouroverview.pdf\" target=\"_blank\" title=\"view presentation in pdf\"><img alt=\"presentation icon\" title=\"view a summary of the above presentation in pdf\" target src=\"../images/pdf-iconlarger.png\"></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessible IT Strategy?--></p>
+                    <div class=\"container\" align=\"center\"><br>
+                        <p><small>Bottom line:  The goal should always be to try to...</small></p>
+
+                        <img alt=\"CM Model\" onclick=\"myFunction()\" class=\"img-fluid\"  src=\"../images/cmltwoplus.png\" id=\"myBlock\" title=\"Click here to show and hide the concise Capability Maturity Model\" ></div><br>
+
+
+
+
+                    <p><small>Operating at CM L2+ is not easy.  <br>Dive in for a high level overview of CM L1 behaviour <br>(and sometimes poking fun (lampooning) it as Edwards W. Deming did)<br>to understand the problems you will need to overcome,<br>if your desire is to \"<a href=\"/gamestats\" target=\"_blank\">up our game stats</a>\".</small></p><br>
+
+
+
+                    <buttontoilet  class=\"wrap btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+                    \"collapse\" data-target=\"#collapsevixen\" aria-expanded=\"false\" aria-controls=
+                                   \"collapsevixen\" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wagile, Fragile, Aino&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(TPM & APM @ CML1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;etc.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</buttontoilet>
+
+                    <div class=\"collapse\" id=\"collapsevixen\">
+                        <div class=\"container\">
+                            <div class=\"card text-center\">
+                                <h5 class=\"card-header\" align=\"center\">
+
+
+                                    <a href=\"/pin\" target=\"_blank\" ><img alt=\"\" class=\"img-fluid\" title=\"If things are chaotic possibly it is time to follow the project processes for your method and use them to tighten up and improve your game stats. Click the image to see the problem and solution. Where would you pin down where your teams are at?\" src=\"../images/outofthefireone.png\" onmouseover=\"this.src='/images/outofthefiretwo.png'\" onmouseout=\"this.src='/images/outofthefireone.png'\"></a><br></h5>
+
+
+
+
+
+                                <div class=\"card-body text-center\">
+
+                                    <p>The classic \"monkey trap\" helps to illustrate the problems of TPM and APM (Wagile, Fragile, Aino and TPM and APM run at Capability Maturity Level 1) etc., run as a flawed project management system; without sufficient understanding of the (stepwise) process approach that is needed for success to be able to run at Capability Maturity Level 2+</h5>
+
+
+                                    <p>
+                                        <img alt=\"Monkey Trap\" class=\"img-fluid\" src=\"../images/Monkey-trap.png\"></p>
+
+
+
+
+                                    <br>
+                                    <p>The classic \"coffee shop\" demonstration also illustrates how to follow an agile mindset and process orientated approach.<br>
+                                        <a href=\"/coffee\" target=\"_blank\" title=\"Click the image if you want more information on what the do everything now trap is - exactly\"><img alt=\"Coffee Shop\" class=\"img-fluid\" src=\"../images/doeverythingsnipped.jpg\" height=200px width=400px></a></p>
+                                    <br>
+
+                                    <p>I.e. No <a href=\"../images/smart.jpg\" class=\"img-fluid\" target=\"_blank\"><u>SMART requirements</u></a> identified and no accurate planning and monitoring and control, rather
+                                        extolling and pushing (driving heroic \"just do it\" behavior) to get more out of (trying to force / \"bully\" results) from the system than is possible (for resources / time allocated / clarity about requirements in respect of complicated solutions required).  This lack of clear and agreed <b>REQUIREMENTS (REQM)</b> and insufficient / inaccurate <b>PROJECT PLANNING (PP)</b> and <b>PROJECT MONITORING AND CONTROL (PMC)</b> means the team are operating at Capability Maturity Level 1.</p>
+                                    <p><small>Without spoiling the fun you will have watching the (Deming) Red Bead video below, know that the above behavior is referred to by Project Managers, Software Engineers (and others in the know) as \"Management, using reward and punishment, to tamper with a stable system.  Typically these types of managers are not open to suggestions to improve and also do not faciliatate a Safety Culture so ultimately, project failures, will be the result\" </small></p>
+                                    <br>
+
+                                    <button class=\"btn btn-primary align-center \" type=\"button\" data-toggle=
+                                    \"collapse\" data-target=\"#collapsepmboksafety\" aria-expanded=\"false\" aria-controls=
+                                            \"collapsepmboksafety\">Safety Culture</button>
+
+                                    <div class=\"collapse\" id=\"collapsepmboksafety\">
+                                        <div class=\"container\">
+                                            <div class=\"card text-center\">
+                                                <h5 class=\"card-header\" align=\"center\">Westrum's Typology of Organization Culture</h5>
+                                                <div class=\"card-body text-center\">
+
+                                                    <p>The book Accelerate refers to the Westrum Typology of Organizational Culture.<br>Accelerate (and ITIL etc.) state that Generative behavior on the right of the model is required for success in Agile and DevOps.<br>ITIL 4 calls this a \"safety culture.\"  The \"safety culture\" is needed for teams to align for agility and find solutions which approach may not be understood or tolerated in the Bureucratic and Pathelogical Organizational Cultures of the model.</p>
+                                                    <br>
+                                                    <img alt=\"\" class=\"img-fluid\" src=\"../images/westrum.png\"></p>
+                                                    <p>I.e. With Westrum in mind, Where would you pin your Oranizational Culture to be at?  Pathalogical, Bureaucratic or Open Minded and Generative.</p>
+                                                    <p align=\"left\"><a href=\"/pin\"  title=\"Click the pin to pin down your Organizational Culture.  I.e. what Organizational Culture do you have where you work!\" ><img id=\"pinthree\" class=\"img-fluid\" style=\"z-index:100\"  src=\"../images/pinlarge.png\" alt=\"pin\" ></a></p>
+                                                </div>
+                                                <div class=\"card-footer\">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <br>
+
+                                    <h3>The Monkey Trap above.  Do you really want to get free?</h3>
+                                    <p align=\"center\">Along with <a href=\"../images/smart.jpg\" class=\"img-fluid\" target=\"_blank\"><u>SMART REQM's</u></a>: Find the CML2 processes <a href=\"/cmmidevdash\" target=_blank\"><u>Project Planning (PP) and Project Monitoring and Control (PMC)</u></a><br>Then<br><b><large>to set Scrum (Agile) free</large></b><br>it's simply<br><a href=\"../images/scrumsafelymin.pdf\" target=\"_blank\"><u><b>ONE</b></u></a>&nbsp;&nbsp;<a href=\"cv/images/projects/project-21.jpg\" target=\"_blank\"><u><b>TWO</b></u></a>&nbsp;&nbsp;<a href=\"/images/horserace.jpg\" target=\"_blank\"><u><b>THREE</b></u></a></p>
+
+
+                                    <br>
+
+                                    <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+                                    \"collapse\" data-target=\"#collapsepmbokdis\" aria-expanded=\"false\" aria-controls=
+                                            \"collapsepmbokdis\">The 7 Scrum Dysfunctions<br>and how to fix these</button>
+
+                                    <div class=\"collapse\" id=\"collapsepmbokdis\">
+                                        <div class=\"container\">
+                                            <div class=\"card text-center\">
+                                                <h5 class=\"card-header\" align=\"center\">The Seven Scrum Dysfunctions and Root Cause Analysis</h5>
+                                                <div class=\"card-body text-center\">
+                                                    <p><a href=\"/scrumrca\" target=\"_blank\"><u>Click here</u></a> for the 7 Scrum dysfunctions (and using Root Cause Analysis (picking out the red beads explained below) etc.) give an idea of how to improve quality in the scrum (agile) project management system<br><i>- from Mastering Professional Scrum (2019) by Stephanie Ockerman and Simon Reindl.<br>Note:  Some links in this download are dependant on pmway.hopto.org being up.  I.e. see i on menu above.</i></p>
+                                                    <p>Run optimally a scrum team should be able to release working software in a 2 week sprint.  Then (demo's approved by the Product Owner) <b>they (the willing workers) have succeeded</b> and the goals for the team are reset during next sprint planning ceremony.  Scrum Master's role is to ensure a safety culture, productive team, process improvement from CM L2 (and CML2+ where possible) and good governance!
+                                                </div>
+                                                <div class=\"card-footer\">
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+                                    \"collapse\" data-target=\"#collapsetpmapm\" aria-expanded=\"false\" aria-controls=
+                                            \"collapsetpmapm\">TPM vs APM<br>in 2 minutes</button>
+
+                                    <div class=\"collapse\" id=\"collapsetpmapm\">
+                                        <div class=\"container\">
+                                            <div class=\"card text-center\">
+                                                <h5 class=\"card-header\" align=\"center\">TPM vs APM essence in 2 minutes</h5>
+                                                <div class=\"card-body text-center\">
+                                                    <h5><b>Your \"Body of Knowledge\" Gateway</b></h5>
+
+                                                    <map id=\"ImgMap0\" name=\"ImgMap0\">
+                                                        <area coords=\"58, 53, 339, 351\" href=\"/pmboksix/fourone\" shape=\"rect\" title=\"Click here for the PMBOK Dashboard\">
+                                                    </map>
+                                                    <!--<img class=\"img-fluid\" alt=\"\" src=\"../images/dashheadsmaller.png\"  >-->
+                                                    <img alt=\"\" class=\"img-fluid\" style=\"z-index:1\" src=\"../images/dashheadflat.png\" onmouseover=\"this.src='/images/dashheadraised.png'\" onmouseout=\"this.src='/images/dashheadflat.png'\">
+                                                    <br>
+
+                                                    <a href=\"/pmboksix/fourone\" >    <img alt=\"\" class=\"img-fluid\" style=\"z-index:0\" src=\"../images/mainprocessdashraisednormalflat.png\" onmouseover=\"this.src='/images/mainprocessdashraisednormalbezelledone.png'\" onmouseout=\"this.src='/images/mainprocessdashraisednormalflat.png'\" title=\"Click the hand (process 4.1) to go the the PMBOK dashboard for PMBOK Process 4.1\"></a>
+
+                                                    <br>
+                                                    <br>
+
+                                                    <div class=\"card text-center\">
+                                                        <h5 class=\"card-header\" align=\"center\"></h5>
+                                                        <div class=\"card-body text-center\">
+                                                            <p>The Project Management Body of Knowledge Guide (released September 2017)
+                                                                <br>is the 'how to do it' checklist for Project Management Professionals.
+                                                                <br>Click the image directly below for the PMBOK game, in a nutshell.
+                                                                <br>
+                                                                <a href=\"/thegame\" target=\"_blank\" title=\"Click the tile for a larger (more detailed) image of how to play the game\">
+                                                                    <img alt=\"The game\" class=\"img-fluid\"  id=\"game\" src=\"../images/TheGame.png\" ></a>
+                                                                <br><i><b>If you understand the PMBOK you know this game is the same <br>for both Traditional and Agile Project Management!</b></i>
+
+                                                                <br><br>The dashboard assists understanding of the PMBOK processes (+ &quot;ittos&quot;)
+                                                                <br> to help you to pass the PMI exams and run projects better at <a href=\"/cmmi\"><strong>Capability
+                                                                        Maturity Level 2+</strong></a>.
+                                                                <br>The PMBOK processes (underpinned by the latest thinking found in the <i>
+                                                                    <br>PMI Agile Certified Practitioner
+                                                                    (PMI-ACP) qualification </i> and others)
+                                                                <br> incorporates <a href=\"/agile\"><strong>Lean and Agile</strong></a> thinking.</p>
+                                                            <p>Oh, also... do not forget that the PMBOK operates as a Standard!
+                                                                <br> Check out where it is situated in the greater scheme of things
+                                                                <br> as you <b>&quot;<a href=\"/?slide=2\" target=\"_blank\"><u>connect the dots</u></a>&quot;</b> below.</p>
+                                                            <p>A quick note to those \"Traditional\" is not \"Agile\" out there.
+                                                                <br>Find process 4.7 on the PMBOK dashboard above (Close Project or Phase).
+                                                                <br>Did you know that &quot;tailoring&quot; these processes means you can run a project phase
+                                                                <br>as... wait for it...
+                                                                <br><b>&quot;<a href=\"/agile?slide=10\"
+                                                                                target=\"_blank\"><u>a two week sprint!</u></a>&quot;</b>
+
+                                                                <br>
+                                                                <br> Operating thus, as a Professional who understands Project Management Process,
+                                                                <br>(supported by your Executive [Executive Action Team (to EAT &quot;<a href=\"/removetheredbeads\" target=\"_blank\">the
+                                                                    red beads,</a>&quot;)])
+                                                                <br>using
+                                                                <a href=\"/agile?slide=13\" target=\"_blank\">
+                                                                    best selected project methodology</a>,
+                                                                <br>there is less chance of dropping the ball.</p>
+
+                                                            <img alt=\"drop the ball\" class=\"img-fluid\" src=\"../images/droptheball.png\">
+                                                            <br>
+                                                            <br><h6><b>Bottom Line</b></h6>
+                                                            <p><b>While (when) BEST PRACTICE is understood,
+                                                                    <br>BEST PRACTICAL (from an agile and lean perspective) can be better!</b></p>
+                                                            <!--<a href=\"/removetheredbeads\" target=\"_blank\" title=\"Click the image to find out how and why to remove the Red Beads\"><img alt=\"\" class=\"img-fluid\" src=\"../images/redbeadremoved.png\"></a>-->
+                                                        </div>
+                                                        <div class=\"card-footer\">
+                                                            <a href=\"/freedoms\" target=\"_blank\" title=\"Find out about the concepts of Freedoms, Barriers and Goals and how they can be made to work together for success\">Freedoms, Barriers, Goals</a> and <a href=\"../images/anyroad.jpg\" target=\"_blank\" title=\"Find out that if you do not know what your destination is, any road will take you there.  I.e. anywhere, nowhere!\">Destinations</a>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class=\"card-footer\">
+                                                    <h5>Phew...  Ok, finally.  Here is the 2 minute answer you were looking for</h5>
+                                                    <p>Note that <a href=\"../images/pmbok5gate.png\" target=\"_blank\"><u><b>Traditional Project Management</b></u></a> (TPM)'s <a href=\"../images/pmbokepm.jpg\" target=\"_blank\"><u><b>24 planning processes</b></u></a> (just under half of the total processes for the PMBOK are planning processes!) are replaced in Agile Project Management (APM) / Scrum by User Stories!  These \"User Stories\" must be approved as delivered each sprint by the Product Owner or the team are operating at Capability Maturity Level 1.  And the minute a sprint is approved the team have finished that race successfully (they are operating at CM LEvel 2+)!</p>
+                                                    <p>If you look carefully you will see that both <a href=\"/pmboksix/pmbokprocessnutshell\" target=\"_blank\">Traditional Project Management</a> and <a href=\"/agile?slide=10\" target=\"_blank\" >Agile Project Management (typically Scrum - the recommended agile method from the Project Management Institute)</a>, have Project Planning (PP) and Project Monitoring and Control (PMC) processes.  While the Requirements process is Traditional Project Management is a complex document produced up front(Detailed Document Up Front or DDUF), Agile (Scrum) only uses User Stories and short sprints.  Why.  Because, typically DDUF don't work and the plans produced are seldome hit on time and within budget (with dubious quality?).</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <br>
+
+                                    <p><a href=\"/removetheredbeads\" target=\"_blank\">Deming's Red Bead Experiment</a> goes a long way to clearly illustrate the causes and solutions for the \"monkey trap\" problem above. <br>Find this experiment on YouTube (<i>or watch a PMWay selected video from YouTube below</i>).  Deming is the father of the Capability Maturity Model (CMMi) we are using <a href=\"/cmmidevdash\" target=_blank\"><u>here</u></a> which is the output of the <a href=\"https://www.sei.cmu.edu/\" target=\"_blank\"><u>Software Engineering Institute at Carnegie Mellon University</u></a>.</p>
+                                    <h3>Here is some more of Deming's wisdom:</h3>
+                                    <p align=\"center\"><img class=\"img-fluid\" src=\"../images/demingoneessence.jpg\" alt=\"Deming Quotes\" ><br><img class=\"img-fluid\" src=\"../images/demingtwoessence.jpg\" alt=\"Deming essence\" ><br><img class=\"img-fluid\" src=\"../images/demingthreeessence.jpg\" alt=\"Deming essence\" >
+                                </div>
+
+
+
+                                <div class=\"container\" align=\"center\">
+                                    <h5>Red Bead Experiment</h5>
+                                    <div class=\"flex-container\">
+                                        <div class=\"flex-item video-content\">
+
+                                            <video controls poster=\"/images/redbeadremoved.png\" width=\"400\" height=\"400\" >
+                                                <br><br>
+                                                <source src=\"";
+                // line 1221
+                yield $this->env->getFunction('asset')->getCallable()("movies/redbeadexperiment.mp4");
+                yield "\" type=\"video/mp4\">
+
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <h5>Solution:<br>If your Scrum Sprints are not producing approved value then Executives<br><b>YOU NEED TO PICK OUT / REMOVE / EAT THE RED BEADS!</b></h5>
+                                    <p align=\"center\"><img class=\"img-fluid\" src=\"../images/eat.png\" alt=\"Executive Action Team: EAT the Red Beads\" ></p>
+                                    <p>I.e. install scrum (or other TPM or APM) processes (DevOps etc., processes) that allow the method to operate correctly / <br>remove noise and obstacles (exhortations etc.) that is getting in the way.<br>
+                                        and EAT (Executive Action Team) the Red Beads!</p>
+                                    <p><a href=\"/scrumdashboards\">Click here for a 1000 foot overview of the Scrum Dashboards</a></p>
+                                    <br>
+                                    <br>
+
+                                    <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+                                    \"collapse\" data-target=\"#collapsepmbokcm\" aria-expanded=\"false\" aria-controls=
+                                            \"collapsepmbokcm\">FOR FUN:  CAPABILITY MATURITY LEVEL ONE</button>
+
+                                    <div class=\"collapse\" id=\"collapsepmbokcm\">
+                                        <div class=\"container\">
+                                            <div class=\"card text-center\">
+                                                <h5 class=\"card-header\" align=\"center\">The image below explains the problems typically found at Capability Maturity Level 1.</h5>
+                                                <div class=\"card-body text-center\">
+                                                    <p align=\"center\"><img class=\"img-fluid\" src=\"../images/cml1.png\" alt=\"For fun Capability Maturity Level 1\" ></p>
+
+                                                    <p>Or click here for some more fun:  <a href=\"/realstory\" target=\"_blank\">The Real Story at CM L1</a></p>
+                                                    <br><br>
+                                                    <br>
+                                                    <hr style=\"width:30%\">
+                                                    <p>Time to up your game stats?</p>
+                                                    <hr style=\"width:30%\">
+                                                    <br><br>
+                                                    <br>
+                                                    <p align=\"center\"><img class=\"img-fluid\" src=\"../images/cm.png\" alt=\"How do you want to be remembered\" ><br>The Capability Maturity model above is a simplified version <a href=\"/cmmidevdash\" target=_blank\"><u>of the one found here</u></a></p></div>
+                                                <br>
+                                                <br>
+                                                <p align=\"left\"><a href=\"/pin\"  title=\"Click the pin to pin down to your Capability Maturity level.  Is it CM L1, L2, L3 etc.  I.e. what processes do you have control over. Bottom line: Focus on the process and not the outcome of the process!  If you cannot describe what you are doing as a process you do not know what you are doing!\" ><img id=\"pintwo\" class=\"img-fluid\" style=\"z-index:100\"  src=\"../images/pinlarge.png\" alt=\"pin\" ></a></p>
+
+                                                <p align=\"left\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Finally (just for fun) click the red pin now if you want to do the Capability Maturity self assessment.</i></p>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---------------------------------------------------NB bottom of bsdropdown---------------------------------------->
+                            </div>
+                            <div class=\"card-footer\">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+
+
+
+                <div class=\"card-footer\">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    ";
+            }
+            // line 1288
+            yield "    <br>
+    <br>
+
+
+    <script>
+
+
+
+
+
+
+
+
+        <!--  <script src=\"/bootstrapfourthreeone/js/jquery.js\"></script>
+    <script src=\"/bootstrapfourthreeone/js/jquery-ui.js\"></script>
+    <link rel=\"stylesheet\" href=\"/bootstrapfourthreeone/css/jquery-ui.css\">-->
+    <script src=\"/bootstrapfourfivetwo/js/jquery.js\"></script>
+    <script src=\"/bootstrapfourfivetwo/js/jquery-ui.js\"></script>
+    <!-- testing <link rel=\"stylesheet\" href=\"/bootstrapfourfivetwo/css/jquery-ui.css\"></link>-->
+
+
+    <script>
+        \$(document).ready(function() {
+
+            function qs(key) {
+                key = key.replace(/[*+?^\$.\\[\\]{}()|\\\\\\/]/g, \"\\\\\$&\"); // escape RegEx meta chars
+                var match = location.search.match(new RegExp(\"[?&]\" + key + \"=([^&]+)(&|\$)\"));
+                var slide = match && decodeURIComponent(match[1].replace(/\\+/g, \" \"));
+
+                if (Math.floor(slide) == slide && \$.isNumeric(slide)) {
+
+                    \$('#collapseopencarousel').collapse('show');
+                    \$('html, body').animate({
+                        scrollTop: \$(\"#collapseopencarousel\").offset().top
+                    }, 1000);
+
+
+
+                    return parseInt(slide);
+                }
+                else
+                    return 0;
+            }
+
+
+            \$('#mycarousel').carousel((qs('slide')) - 1);
+            \$(\"#pin, #pintwo, #pinthree, #steps\").draggable({
+                revert: \"false\"
+            });
+            \$(\"#target, #targetforladder\").droppable({
+                greedy: true,
+                tolerance: 'touch',
+                drop: function(event, ui) {
+                    ui.draggable.draggable('option', 'revert', 'true');
+                    \$(this).css({
+                        'background-color': '#94be0f',
+                        'border': '3px solid navy',
+                        'display': 'inline-block'
+                    })
+                    alert(\"Awesome! Now move the pin out of the way and click the target underneath to see the processes your have mastered!   Remember Demings advice:  Work on the process, not the outcome of the process! \");
+
+                }
+            });
+
+        });
+
+
+        function myFunction() {
+            var x = document.getElementById(\"myBlock\");
+            if (x.style.display === \"none\") {
+                x.style.display = \"block\";
+            } else {
+                x.style.display = \"none\";
+            }
+        }
+
+
+    </script>
+
+    <script>
+
+        document.getElementById('myImg').onclick = function(e) {
+            document.getElementById('myDiv').style.display = 'block';
+        }
+
+    </script>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+    ";
+        }
+        yield from [];
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName(): string
+    {
+        return "C:\\xampp\\htdocs\\pmway\\resources\\views/Home/waterfallvsagile.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable(): bool
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo(): array
+    {
+        return array (  1402 => 1288,  1332 => 1221,  1068 => 959,  1066 => 958,  1048 => 942,  1044 => 940,  1041 => 939,  1036 => 936,  1034 => 935,  791 => 694,  788 => 693,  693 => 600,  623 => 533,  359 => 271,  357 => 270,  339 => 254,  335 => 252,  332 => 251,  327 => 248,  325 => 247,  81 => 5,  79 => 4,  72 => 3,  53 => 2,  41 => 1,);
+    }
+
+    public function getSourceContext(): Source
+    {
+        return new Source("{% extends 'base.twig' %}
+{% block title %} {% if not user %}PMWay{% endif %} {% if user %}Sprint Up Close{% endif %}  {% endblock %}
+{% block body %}
+{% if user %}
+
+<div class=\"container\" align=\"center\">
+        <style>
+                        /* Make the image fully responsive */
+
+                        body {
+                            /*     background-color: #c2e8fc !important; */
+                        }
+
+                        .customcolor {
+                            /*  background-color: #c2e8fc !important; */
+                            background-color: #fff !important;
+                        }
+
+                        .customcolorwhite {
+                            background-color: #fff !important;
+                        }
+
+
+
+
+                        .carousel {
+
+
+                            /* background-color: #c2e8fc !important; */
+                            background-color: #fff !important;
+                        }
+
+
+
+
+                        .card-body {
+                            /*      background-color: #c2e8fc !important; */
+                            background-color: #fff !important;
+
+                        }
+
+
+
+
+
+                        .carousel-indicators {
+                            position: absolute;
+                            bottom: -35px;
+                            /*              background-color: #c2e8fc !important; */
+                            background-color: #fff !important;
+                        }
+
+                        .carousel-indicators li {
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 100%;
+                            background-color: #040404;
+                        }
+
+                        }
+
+
+
+
+                        .navbar {
+                            position: relative;
+                            width: 100%;
+                            z-index: 10;
+                            max-width: 100%;
+                        }
+                        /* carousel */
+                        /*active slide indicator */
+
+                        .carousel-indicators .active {
+                            background: #fff none repeat scroll 0 0;
+                            border: 4px solid #040404;
+                        }
+
+                        .alignright {
+                            text-align: right;
+                            width: 30px;
+                        }
+
+                        .alignleft {
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        .aligncenter {
+                            text-align: center;
+                            width: 260px;
+                        }
+
+
+                        .pin {}
+
+                        .target {
+                            border: 2px solid black;
+                            display: inline-block;
+                        }
+
+                        .verticalalign {
+                            vertical-align: bottom;
+                        }
+
+
+
+video {
+
+  width: 100%    !important;
+
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+
+:root {
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, .4);
+  --btn-color: hsl(210, 80%, 42%);
+  --bg-color: #141218;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+buttontoilet {
+  position:relative;
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  font-family: \"Source Code Pro\";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: var(--text-color);
+
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  border-radius: 4px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+buttontoilet:focus {
+  outline-color: transparent;
+  box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after, buttontoilet::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+buttontoilet::after{
+  font-weight: 200;
+  top: -30px;
+  left: -20px;
+}
+
+.right, .left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.right {
+  left: 66%;
+}
+.left {
+  right: 66%;
+}
+.right::after {
+  top: -30px;
+  left: calc(-66% - 20px);
+
+  background-color: var(--bg-color);
+  color:transparent;
+  transition: transform .4s ease-out;
+  transform: translate(0, -90%) rotate(0deg)
+}
+
+buttontoilet:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg)
+}
+
+buttontoilet .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg)
+}
+
+buttontoilet .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg)
+}
+
+/* bubbles */
+buttontoilet::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
+
+
+
+.wrap {
+  height:100px;
+width:200px\";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+</style>
+
+
+        <h5>Project Type Selection (Traditional (Waterfall), Agile, Hybrid, Extreme)</h5>
+    {% if user %}
+
+<p>Signed in with PMWay you can use the image directly below (click the approach) to go to the processes that are required for Traditional Project Management (PMBOK 6) or Agile Project Management (the Scrum Body of Knowledge V.4 (SBOK 4)).</p>
+    {% endif %}
+    {% if not user %}
+\t<p><a href=\"/register\" target=_blank\" title=\"Registered\"><u>With</u></a> PMWay you can use the image directly below to drill down into the processes (inputs, tools and techniques, and outputs) that are required for Traditional Project Management (PMBOK 6) or Agile Project Management (the Scrum Body of Knowledge (SBOK 4)).  <br>For a high level overview of the Agile methods <a href=\"/agile\" target=_blank\" ><u>click here</u></a>.  <br>Remember that Agile (any project method) operated at <a href=\"/cmmi\" target=_blank\" ><u>CM Level 1</u></a> will have a dubious outcome.</p>
+    {% endif %}
+   <img alt=\"TPM Processes\" class=\"img-fluid\" src=\"/images/waterfallvsagile.png\" usemap=\"#ImgMap1\">
+
+
+      <map id=\"ImgMap1\" name=\"ImgMap1\">
+\t\t  <area alt=\"\" coords=\"13,79,369,485\" href=\"/pmboksix/pmbokprocessnutshell\" shape=\"rect\" title=\"For the TPM Processes - click here\" target=\"_blank\">
+\t\t  <area alt=\"\" coords=\"369,78,862,486\" href=\"/scrumdashboards\" shape=\"rect\" title=\"For the APM (Scrum) processes click here\"  target=\"_blank\">
+
+\t  </map>
+
+
+
+
+
+
+
+
+<br><br>{% if user %}
+<p><small><i><a href=\"/images/howdoyouwanttowork.png\" target=\"_blank\">How do you want to work</a>?  <br>Following the project processes (steps), like following the steps in a cooking recipe, is a sure way to move <a href=\"gamestats\" target=\"_target\">production stats</a> up from <a href=\"/cmmi\" target=\"_blank\">Capability Maturity Level 1 to Capability Level 2+.</a></i><br>
+I.e. start to eliminate waste, rework and risk and improve on productivity and quality.</small></p>
+<!------------------------------------------------------------------------top of bsdropdown------------------------------------->
+<button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsemoredepth\" aria-expanded=\"false\" aria-controls=
+        \"collapsemoredepth\">Find out more</button>
+
+<div class=\"collapse\" id=\"collapsemoredepth\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">Find out more</h5>
+            <div class=\"card-body text-center\">
+
+
+
+        <p style=\"text-align:justify\">The project type selection matrix from Dr. Robert. K. Wysocki's awesome book 'Effective Project Management - Traditional, Agile, Hybrid, Extreme page 66' (below) shows one how to
+          quickly decide
+          what project method (project type) best suites the type of project based on the criteria of clarity or lack of clarity of the
+          project goal or solution clarity being considered.<br></p>
+        <p align=\"center\"><img alt=\"project selection matrix\" class=\"img-fluid\" src=\"/images/projectselectionlandscape.png\">
+<br>        <img alt=\"project selection matrix\" class=\"img-fluid\" src=\"/images/projselectmatrixnoshading.png\"><p><small>Project types slotted into the matrix</small></p>
+<button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsehybrid\" aria-expanded=\"false\" aria-controls=
+        \"collapsehybrid\">Hybrid Solutions - PMWay's reservations</button>
+
+<div class=\"collapse\" id=\"collapsehybrid\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">Why Hybrids are like Snowflakes</h5>
+            <div class=\"card-body text-center\">
+
+
+<p>Note:  PMWay is skeptical of hybrid solutions.  In our opinion it is far better to tailor the popular methods (PMBOK, PRINCE2 [or PRINCE2 Agile], or DSDM or SCRUMBOK) as these project methods and their processes are learned, well known and understood by millions of qualified experts.  If you need to run these lean, then tailor the processes, but in a way that maintains quality and method integrity.  I.e. why re-invent the wheel?  To illustrate the problem from a Scrum perspective <a href=\"/scrumrca\">snowflake scrum</a> is understood as being one of the <a href=\"scrumrca\" target=_blank\">7 dysfunctions</a>. This situation happens when a team or organization thinks it is \"unique,\" so it has to adapt Scrum to fit its needs. <em>You either do Scrum </em><em>or you don&rsquo;t do Scrum. Modifying Scrum does not fix the problems. Modifying Scrum will likely hide your problems &hellip; for a little while. When the problems are hidden, it may feel better, but those problems are still there. Ultimately, they will manifest as a lack of business agility and dysfunction.</em>'</p>
+
+<p>The above said... with an experienced team, operating above Capability Maturity Level 1, off a PMIS (Project Management Information System / Scrum board etc.), and using <a href=\"/measurement\" target=\"_blank\">Lead Time and Cycle Time</a> statistics, it will be possible to operate extremely and off hybrids.</p>
+   <p align=\"center\"><img alt=\"Lead Time Cycle Time\" class=\"img-fluid\" src=\"/images/leadtimescycletime.png\"><br>
+   <img alt=\"Lead Time Cycle Time from ideation\" class=\"img-fluid\" src=\"/images/idealeadtimecycletime.png\"><br>
+     <img alt=\"Lead Time Cycle Time pushing products through\" class=\"img-fluid\" src=\"/images/productsleadtimecycletime.jpeg\"></p>
+            </div>
+            <div class=\"card-footer\">
+
+            </div>
+        </div>
+    </div>
+</div><br><br>
+<p><small>Click the image and presentation icon below if you want to dig a little deeper into this broad subject.</small></p>
+   <p align=\"center\"><a href=\"/?slide=1\" target=\"_blank\"><img class=\"img-fluid\" src=\"/images/digdeeper.jpg\" title=\"\"></a></p>
+
+
+
+
+<!--<img alt=\"Dive In\" title=\"Click the button below\" class=\"img-fluid\" src=\"../images/divein.png\"><br>-->
+
+<br><div id=\"myBlock\" style=\"display: none;\">
+<p align=\"center\"><a href=\"/cmmi\" target=_blank\">  <img class=\"img-fluid\" src=\"/images/cmmproject2plus.png\" onmouseover=\"this.src='/images/cmmproject2plusshadedbezelled.png'\" onmouseout=\"this.src='/images/cmmproject2plus.png'\" title=\"Click the image to pin down where you think you are at.  How do you want to be remembered?  Time to up your 'game stats'?\" > </a>
+</p>
+</div>
+<p align=\"center\"><small>Or you can also click the presentation icon below<br>get a high level (jam packed) summary in presentation format.</small></p><br>
+  <p>               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"/itilfouroverview/index.html\" target=\"_blank\" title=\"need some ideas on how to do this?\"><img alt=\"presentation icon\" title=\"Do you need a high level presentation of ideas on how to do the above?\" class=\"img-fluid\" src=\"../images/presentationicon.png\"></a><br><!---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"/homeviewpdf/resources/itilfouroverview.pdf\" target=\"_blank\" title=\"view presentation in pdf\"><img alt=\"presentation icon\" title=\"view a summary of the above presentation in pdf\" target src=\"../images/pdf-iconlarger.png\"></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessible IT Strategy?--></p>
+<div class=\"container\" align=\"center\"><br>
+<p><small>Bottom line:  The goal should always be to try to...</small></p>
+
+<img alt=\"CM Model\" onclick=\"myFunction()\" class=\"img-fluid\"  src=\"../images/cmltwoplus.png\" id=\"myBlock\" title=\"Click here to show and hide the concise Capability Maturity Model\" ></div><br>
+
+
+
+
+<p><small>Operating at CM L2+ is not easy.  <br>Dive in for a high level overview of CM L1 behaviour <br>(and sometimes poking fun (lampooning) it as Edwards W. Deming did)<br>to understand the problems you will need to overcome,<br>if your desire is to \"<a href=\"/gamestats\" target=\"_blank\">up our game stats</a>\".</small></p><br>
+
+
+
+<buttontoilet  class=\"wrap btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsevixen\" aria-expanded=\"false\" aria-controls=
+        \"collapsevixen\" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wagile, Fragile, Aino&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(TPM & APM @ CML1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;etc.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</buttontoilet>
+
+<div class=\"collapse\" id=\"collapsevixen\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">
+
+
+<a href=\"/pin\" target=\"_blank\" ><img alt=\"\" class=\"img-fluid\" title=\"If things are chaotic possibly it is time to follow the project processes for your method and use them to tighten up and improve your game stats. Click the image to see the problem and solution. Where would you pin down where your teams are at?\" src=\"../images/outofthefireone.png\" onmouseover=\"this.src='/images/outofthefiretwo.png'\" onmouseout=\"this.src='/images/outofthefireone.png'\"></a><br></h5>
+
+
+
+
+
+            <div class=\"card-body text-center\">
+
+<p>The classic \"monkey trap\" helps to illustrate the problems of TPM and APM (Wagile, Fragile, Aino and TPM and APM run at Capability Maturity Level 1) etc., run as a flawed project management system; without sufficient understanding of the (stepwise) process approach that is needed for success to be able to run at Capability Maturity Level 2+</h5>
+
+
+<p>
+<img alt=\"Monkey Trap\" class=\"img-fluid\" src=\"../images/Monkey-trap.png\"></p>
+
+
+
+
+<br>
+<p>The classic \"coffee shop\" demonstration also illustrates how to follow an agile mindset and process orientated approach.<br>
+<a href=\"/coffee\" target=\"_blank\" title=\"Click the image if you want more information on what the do everything now trap is - exactly\"><img alt=\"Coffee Shop\" class=\"img-fluid\" src=\"../images/doeverythingsnipped.jpg\" height=200px width=400px></a></p>
+<br>
+
+<p>I.e. No <a href=\"../images/smart.jpg\" class=\"img-fluid\" target=\"_blank\"><u>SMART requirements</u></a> identified and no accurate planning and monitoring and control, rather
+extolling and pushing (driving heroic \"just do it\" behavior) to get more out of (trying to force / \"bully\" results) from the system than is possible (for resources / time allocated / clarity about requirements in respect of complicated solutions required).  This lack of clear and agreed <b>REQUIREMENTS (REQM)</b> and insufficient / inaccurate <b>PROJECT PLANNING (PP)</b> and <b>PROJECT MONITORING AND CONTROL (PMC)</b> means the team are operating at Capability Maturity Level 1.</p>
+<p><small>Without spoiling the fun you will have watching the (Deming) Red Bead video below, know that the above behavior is referred to by Project Managers, Software Engineers (and others in the know) as \"Management, using reward and punishment, to tamper with a stable system.  Typically these types of managers are not open to suggestions to improve and also do not faciliatate a Safety Culture so ultimately, project failures, will be the result\" </small></p>
+<br>
+
+<button class=\"btn btn-primary align-center \" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsepmboksafety\" aria-expanded=\"false\" aria-controls=
+        \"collapsepmboksafety\">Safety Culture</button>
+
+<div class=\"collapse\" id=\"collapsepmboksafety\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">Westrum's Typology of Organization Culture</h5>
+            <div class=\"card-body text-center\">
+
+<p>The book Accelerate refers to the Westrum Typology of Organizational Culture.<br>Accelerate (and ITIL etc.) state that Generative behavior on the right of the model is required for success in Agile and DevOps.<br>ITIL 4 calls this a \"safety culture.\"  The \"safety culture\" is needed for teams to align for agility and find solutions which approach may not be understood or tolerated in the Bureucratic and Pathelogical Organizational Cultures of the model.</p>
+<br>
+<img alt=\"\" class=\"img-fluid\" src=\"../images/westrum.png\"></p>
+<p>I.e. With Westrum in mind, Where would you pin your Oranizational Culture to be at?  Pathalogical, Bureaucratic or Open Minded and Generative.</p>
+<p align=\"left\"><a href=\"/pin\"  title=\"Click the pin to pin down your Organizational Culture.  I.e. what Organizational Culture do you have where you work!\" ><img id=\"pinthree\" class=\"img-fluid\" style=\"z-index:100\"  src=\"../images/pinlarge.png\" alt=\"pin\" ></a></p>
+            </div>
+            <div class=\"card-footer\">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<h3>The Monkey Trap above.  Do you really want to get free?</h3>
+<p align=\"center\">Along with <a href=\"../images/smart.jpg\" class=\"img-fluid\" target=\"_blank\"><u>SMART REQM's</u></a>: Find the CML2 processes <a href=\"/cmmidevdash\" target=_blank\"><u>Project Planning (PP) and Project Monitoring and Control (PMC)</u></a><br>Then<br><b><large>to set Scrum (Agile) free</large></b><br>it's simply<br><a href=\"../images/scrumsafelymin.pdf\" target=\"_blank\"><u><b>ONE</b></u></a>&nbsp;&nbsp;<a href=\"cv/images/projects/project-21.jpg\" target=\"_blank\"><u><b>TWO</b></u></a>&nbsp;&nbsp;<a href=\"/images/horserace.jpg\" target=\"_blank\"><u><b>THREE</b></u></a></p>
+
+
+<br>
+
+<button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsepmbokdis\" aria-expanded=\"false\" aria-controls=
+        \"collapsepmbokdis\">The 7 Scrum Dysfunctions<br>and how to fix these</button>
+
+<div class=\"collapse\" id=\"collapsepmbokdis\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">The Seven Scrum Dysfunctions and Root Cause Analysis</h5>
+            <div class=\"card-body text-center\">
+<p><a href=\"/scrumrca\" target=\"_blank\"><u>Click here</u></a> for the 7 Scrum dysfunctions (and using Root Cause Analysis (picking out the red beads explained below) etc.) give an idea of how to improve quality in the scrum (agile) project management system<br><i>- from Mastering Professional Scrum (2019) by Stephanie Ockerman and Simon Reindl.<br>Note:  Some links in this download are dependant on pmway.hopto.org being up.  I.e. see i on menu above.</i></p>
+<p>Run optimally a scrum team should be able to release working software in a 2 week sprint.  Then (demo's approved by the Product Owner) <b>they (the willing workers) have succeeded</b> and the goals for the team are reset during next sprint planning ceremony.  Scrum Master's role is to ensure a safety culture, productive team, process improvement from CM L2 (and CML2+ where possible) and good governance!
+            </div>
+            <div class=\"card-footer\">
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsetpmapm\" aria-expanded=\"false\" aria-controls=
+        \"collapsetpmapm\">TPM vs APM<br>in 2 minutes</button>
+
+<div class=\"collapse\" id=\"collapsetpmapm\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">TPM vs APM essence in 2 minutes</h5>
+            <div class=\"card-body text-center\">
+  <h5><b>Your \"Body of Knowledge\" Gateway</b></h5>
+
+                    <map id=\"ImgMap0\" name=\"ImgMap0\">
+                        <area coords=\"58, 53, 339, 351\" href=\"/pmboksix/fourone\" shape=\"rect\" title=\"Click here for the PMBOK Dashboard\">
+                    </map>
+                    <!--<img class=\"img-fluid\" alt=\"\" src=\"../images/dashheadsmaller.png\"  >-->
+              <img alt=\"\" class=\"img-fluid\" style=\"z-index:1\" src=\"../images/dashheadflat.png\" onmouseover=\"this.src='/images/dashheadraised.png'\" onmouseout=\"this.src='/images/dashheadflat.png'\">
+                    <br>
+
+    <a href=\"/pmboksix/fourone\" >    <img alt=\"\" class=\"img-fluid\" style=\"z-index:0\" src=\"../images/mainprocessdashraisednormalflat.png\" onmouseover=\"this.src='/images/mainprocessdashraisednormalbezelledone.png'\" onmouseout=\"this.src='/images/mainprocessdashraisednormalflat.png'\" title=\"Click the hand (process 4.1) to go the the PMBOK dashboard for PMBOK Process 4.1\"></a>
+
+                    <br>
+                    <br>
+
+                            <div class=\"card text-center\">
+                                <h5 class=\"card-header\" align=\"center\"></h5>
+                                <div class=\"card-body text-center\">
+                                    <p>The Project Management Body of Knowledge Guide (released September 2017)
+                                        <br>is the 'how to do it' checklist for Project Management Professionals.
+                                        <br>Click the image directly below for the PMBOK game, in a nutshell.
+                                        <br>
+                                        <a href=\"/thegame\" target=\"_blank\" title=\"Click the tile for a larger (more detailed) image of how to play the game\">
+                                            <img alt=\"The game\" class=\"img-fluid\"  id=\"game\" src=\"../images/TheGame.png\" ></a>
+                                            <br><i><b>If you understand the PMBOK you know this game is the same <br>for both Traditional and Agile Project Management!</b></i>
+
+                                        <br><br>The dashboard assists understanding of the PMBOK processes (+ &quot;ittos&quot;)
+                                        <br> to help you to pass the PMI exams and run projects better at <a href=\"/cmmi\"><strong>Capability
+                        Maturity Level 2+</strong></a>.
+                                        <br>The PMBOK processes (underpinned by the latest thinking found in the <i>
+                      <br>PMI Agile Certified Practitioner
+                      (PMI-ACP) qualification </i> and others)
+                                        <br> incorporates <a href=\"/agile\"><strong>Lean and Agile</strong></a> thinking.</p>
+                                    <p>Oh, also... do not forget that the PMBOK operates as a Standard!
+                                        <br> Check out where it is situated in the greater scheme of things
+                                        <br> as you <b>&quot;<a href=\"/?slide=2\" target=\"_blank\"><u>connect the dots</u></a>&quot;</b> below.</p>
+                                    <p>A quick note to those \"Traditional\" is not \"Agile\" out there.
+                                        <br>Find process 4.7 on the PMBOK dashboard above (Close Project or Phase).
+                                        <br>Did you know that &quot;tailoring&quot; these processes means you can run a project phase
+                                        <br>as... wait for it...
+                                        <br><b>&quot;<a href=\"/agile?slide=10\"
+                        target=\"_blank\"><u>a two week sprint!</u></a>&quot;</b>
+
+                                        <br>
+                                        <br> Operating thus, as a Professional who understands Project Management Process,
+                                        <br>(supported by your Executive [Executive Action Team (to EAT &quot;<a href=\"/removetheredbeads\" target=\"_blank\">the
+                      red beads,</a>&quot;)])
+                                        <br>using
+                                        <a href=\"/agile?slide=13\" target=\"_blank\">
+                      best selected project methodology</a>,
+                                        <br>there is less chance of dropping the ball.</p>
+
+                                    <img alt=\"drop the ball\" class=\"img-fluid\" src=\"../images/droptheball.png\">
+                                    <br>
+                                    <br><h6><b>Bottom Line</b></h6>
+                                    <p><b>While (when) BEST PRACTICE is understood,
+\t\t\t\t\t\t\t\t\t<br>BEST PRACTICAL (from an agile and lean perspective) can be better!</b></p>
+                                    <!--<a href=\"/removetheredbeads\" target=\"_blank\" title=\"Click the image to find out how and why to remove the Red Beads\"><img alt=\"\" class=\"img-fluid\" src=\"../images/redbeadremoved.png\"></a>-->
+                                </div>
+                                <div class=\"card-footer\">
+   <a href=\"/freedoms\" target=\"_blank\" title=\"Find out about the concepts of Freedoms, Barriers and Goals and how they can be made to work together for success\">Freedoms, Barriers, Goals</a> and <a href=\"../images/anyroad.jpg\" target=\"_blank\" title=\"Find out that if you do not know what your destination is, any road will take you there.  I.e. anywhere, nowhere!\">Destinations</a>
+
+                        </div>
+                    </div>
+
+            </div>
+            <div class=\"card-footer\">
+\t<h5>Phew...  Ok, finally.  Here is the 2 minute answer you were looking for</h5>
+<p>Note that <a href=\"../images/pmbok5gate.png\" target=\"_blank\"><u><b>Traditional Project Management</b></u></a> (TPM)'s <a href=\"../images/pmbokepm.jpg\" target=\"_blank\"><u><b>24 planning processes</b></u></a> (just under half of the total processes for the PMBOK are planning processes!) are replaced in Agile Project Management (APM) / Scrum by User Stories!  These \"User Stories\" must be approved as delivered each sprint by the Product Owner or the team are operating at Capability Maturity Level 1.  And the minute a sprint is approved the team have finished that race successfully (they are operating at CM LEvel 2+)!</p>
+<p>If you look carefully you will see that both <a href=\"/pmboksix/pmbokprocessnutshell\" target=\"_blank\">Traditional Project Management</a> and <a href=\"/agile?slide=10\" target=\"_blank\" >Agile Project Management (typically Scrum - the recommended agile method from the Project Management Institute)</a>, have Project Planning (PP) and Project Monitoring and Control (PMC) processes.  While the Requirements process is Traditional Project Management is a complex document produced up front(Detailed Document Up Front or DDUF), Agile (Scrum) only uses User Stories and short sprints.  Why.  Because, typically DDUF don't work and the plans produced are seldome hit on time and within budget (with dubious quality?).</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<p><a href=\"/removetheredbeads\" target=\"_blank\">Deming's Red Bead Experiment</a> goes a long way to clearly illustrate the causes and solutions for the \"monkey trap\" problem above. <br>Find this experiment on YouTube (<i>or watch a PMWay selected video from YouTube below</i>).  Deming is the father of the Capability Maturity Model (CMMi) we are using <a href=\"/cmmidevdash\" target=_blank\"><u>here</u></a> which is the output of the <a href=\"https://www.sei.cmu.edu/\" target=\"_blank\"><u>Software Engineering Institute at Carnegie Mellon University</u></a>.</p>
+<h3>Here is some more of Deming's wisdom:</h3>
+<p align=\"center\"><img class=\"img-fluid\" src=\"../images/demingoneessence.jpg\" alt=\"Deming Quotes\" ><br><img class=\"img-fluid\" src=\"../images/demingtwoessence.jpg\" alt=\"Deming essence\" ><br><img class=\"img-fluid\" src=\"../images/demingthreeessence.jpg\" alt=\"Deming essence\" >
+            </div>
+
+
+
+<div class=\"container\" align=\"center\">
+<h5>Red Bead Experiment</h5>
+<div class=\"flex-container\">
+  <div class=\"flex-item video-content\">
+
+<video controls poster=\"/images/redbeadremoved.png\" width=\"400\" height=\"400\" >
+<br><br>
+ <source src=\"{{ asset(\"movies/redbeadexperiment.mp4\")}}\" type=\"video/mp4\">
+
+    Your browser does not support the video tag.
+</video>
+</div>
+</div>
+<br>
+
+<h5>Solution:<br>If your Scrum Sprints are not producing approved value then Executives<br><b>YOU NEED TO PICK OUT / REMOVE / EAT THE RED BEADS!</b></h5>
+<p align=\"center\"><img class=\"img-fluid\" src=\"../images/eat.png\" alt=\"Executive Action Team: EAT the Red Beads\" ></p>
+<p>I.e. install scrum (or other TPM or APM) processes (DevOps etc., processes) that allow the method to operate correctly / <br>remove noise and obstacles (exhortations etc.) that is getting in the way.<br>
+and EAT (Executive Action Team) the Red Beads!</p>
+<p><a href=\"/scrumdashboards\">Click here for a 1000 foot overview of the Scrum Dashboards</a></p>
+<br>
+<br>
+
+<button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsepmbokcm\" aria-expanded=\"false\" aria-controls=
+        \"collapsepmbokcm\">FOR FUN:  CAPABILITY MATURITY LEVEL ONE</button>
+
+<div class=\"collapse\" id=\"collapsepmbokcm\">
+    <div class=\"container\">
+        <div class=\"card text-center\">
+<h5 class=\"card-header\" align=\"center\">The image below explains the problems typically found at Capability Maturity Level 1.</h5>
+            <div class=\"card-body text-center\">
+<p align=\"center\"><img class=\"img-fluid\" src=\"../images/cml1.png\" alt=\"For fun Capability Maturity Level 1\" ></p>
+
+<p>Or click here for some more fun:  <a href=\"/realstory\" target=\"_blank\">The Real Story at CM L1</a></p>
+<br><br>
+<br>
+<hr style=\"width:30%\">
+<p>Time to up your game stats?</p>
+<hr style=\"width:30%\">
+<br><br>
+<br>
+<p align=\"center\"><img class=\"img-fluid\" src=\"../images/cm.png\" alt=\"How do you want to be remembered\" ><br>The Capability Maturity model above is a simplified version <a href=\"/cmmidevdash\" target=_blank\"><u>of the one found here</u></a></p></div>
+    <br>
+  <br>
+<p align=\"left\"><a href=\"/pin\"  title=\"Click the pin to pin down to your Capability Maturity level.  Is it CM L1, L2, L3 etc.  I.e. what processes do you have control over. Bottom line: Focus on the process and not the outcome of the process!  If you cannot describe what you are doing as a process you do not know what you are doing!\" ><img id=\"pintwo\" class=\"img-fluid\" style=\"z-index:100\"  src=\"../images/pinlarge.png\" alt=\"pin\" ></a></p>
+
+<p align=\"left\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Finally (just for fun) click the red pin now if you want to do the Capability Maturity self assessment.</i></p>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!---------------------------------------------------NB bottom of bsdropdown---------------------------------------->
+            </div>
+            <div class=\"card-footer\">
+
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+
+
+
+            <div class=\"card-footer\">
+
+            </div>
+        </div>
+    </div>
+</div>
+    {% endif %}
+<br>
+<br>
+
+
+<script>
+
+
+
+
+
+
+
+
+    <!--  <script src=\"/bootstrapfourthreeone/js/jquery.js\"></script>
+    <script src=\"/bootstrapfourthreeone/js/jquery-ui.js\"></script>
+    <link rel=\"stylesheet\" href=\"/bootstrapfourthreeone/css/jquery-ui.css\">-->
+<script src=\"/bootstrapfourfivetwo/js/jquery.js\"></script>
+    <script src=\"/bootstrapfourfivetwo/js/jquery-ui.js\"></script>
+   <!-- testing <link rel=\"stylesheet\" href=\"/bootstrapfourfivetwo/css/jquery-ui.css\"></link>-->
+
+
+    <script>
+     \t  \$(document).ready(function() {
+
+            function qs(key) {
+                key = key.replace(/[*+?^\$.\\[\\]{}()|\\\\\\/]/g, \"\\\\\$&\"); // escape RegEx meta chars
+                var match = location.search.match(new RegExp(\"[?&]\" + key + \"=([^&]+)(&|\$)\"));
+                var slide = match && decodeURIComponent(match[1].replace(/\\+/g, \" \"));
+
+                if (Math.floor(slide) == slide && \$.isNumeric(slide)) {
+
+                \t\$('#collapseopencarousel').collapse('show');
+                \t\$('html, body').animate({
+    scrollTop: \$(\"#collapseopencarousel\").offset().top
+}, 1000);
+
+
+
+                    return parseInt(slide);
+   \t\t\t\t}
+                else
+                    return 0;
+}
+
+
+            \$('#mycarousel').carousel((qs('slide')) - 1);
+            \$(\"#pin, #pintwo, #pinthree, #steps\").draggable({
+                revert: \"false\"
+            });
+            \$(\"#target, #targetforladder\").droppable({
+                greedy: true,
+                tolerance: 'touch',
+                drop: function(event, ui) {
+                    ui.draggable.draggable('option', 'revert', 'true');
+                    \$(this).css({
+                        'background-color': '#94be0f',
+                        'border': '3px solid navy',
+                        'display': 'inline-block'
+                    })
+                    alert(\"Awesome! Now move the pin out of the way and click the target underneath to see the processes your have mastered!   Remember Demings advice:  Work on the process, not the outcome of the process! \");
+
+                }
+            });
+
+        });
+
+
+function myFunction() {
+  var x = document.getElementById(\"myBlock\");
+  if (x.style.display === \"none\") {
+    x.style.display = \"block\";
+  } else {
+    x.style.display = \"none\";
+  }
+}
+
+
+    </script>
+
+<script>
+
+document.getElementById('myImg').onclick = function(e) {
+    document.getElementById('myDiv').style.display = 'block';
+}
+
+</script>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+{% endif %}
+    {% if not user %}
+<div class=\"container\" align=\"center\">
+    <style>
+        /* Make the image fully responsive */
+
+        body {
+            /*     background-color: #c2e8fc !important; */
+        }
+
+        .customcolor {
+            /*  background-color: #c2e8fc !important; */
+            background-color: #fff !important;
+        }
+
+        .customcolorwhite {
+            background-color: #fff !important;
+        }
+
+
+
+
+        .carousel {
+
+
+            /* background-color: #c2e8fc !important; */
+            background-color: #fff !important;
+        }
+
+
+
+
+        .card-body {
+            /*      background-color: #c2e8fc !important; */
+            background-color: #fff !important;
+
+        }
+
+
+
+
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: -35px;
+            /*              background-color: #c2e8fc !important; */
+            background-color: #fff !important;
+        }
+
+        .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #040404;
+        }
+
+        }
+
+
+
+
+        .navbar {
+            position: relative;
+            width: 100%;
+            z-index: 10;
+            max-width: 100%;
+        }
+        /* carousel */
+        /*active slide indicator */
+
+        .carousel-indicators .active {
+            background: #fff none repeat scroll 0 0;
+            border: 4px solid #040404;
+        }
+
+        .alignright {
+            text-align: right;
+            width: 30px;
+        }
+
+        .alignleft {
+            width: 30px;
+            height: 30px;
+        }
+
+        .aligncenter {
+            text-align: center;
+            width: 260px;
+        }
+
+
+        .pin {}
+
+        .target {
+            border: 2px solid black;
+            display: inline-block;
+        }
+
+        .verticalalign {
+            vertical-align: bottom;
+        }
+
+
+
+        video {
+
+            width: 100%    !important;
+
+
+        }
+
+
+        @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+
+        :root {
+            --text-color: hsla(210, 50%, 85%, 1);
+            --shadow-color: hsla(210, 40%, 52%, .4);
+            --btn-color: hsl(210, 80%, 42%);
+            --bg-color: #141218;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+
+        buttontoilet {
+            position:relative;
+            padding: 10px 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+
+            font-family: \"Source Code Pro\";
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: var(--text-color);
+
+            background-color: var(--btn-color);
+            box-shadow: var(--shadow-color) 2px 2px 22px;
+            border-radius: 4px;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        buttontoilet:focus {
+            outline-color: transparent;
+            box-shadow: var(--btn-color) 2px 2px 22px;
+        }
+
+        .right::after, buttontoilet::after {
+            content: var(--content);
+            display: block;
+            position: absolute;
+            white-space: nowrap;
+            padding: 40px 40px;
+            pointer-events:none;
+        }
+
+        buttontoilet::after{
+            font-weight: 200;
+            top: -30px;
+            left: -20px;
+        }
+
+        .right, .left {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }
+        .right {
+            left: 66%;
+        }
+        .left {
+            right: 66%;
+        }
+        .right::after {
+            top: -30px;
+            left: calc(-66% - 20px);
+
+            background-color: var(--bg-color);
+            color:transparent;
+            transition: transform .4s ease-out;
+            transform: translate(0, -90%) rotate(0deg)
+        }
+
+        buttontoilet:hover .right::after {
+            transform: translate(0, -47%) rotate(0deg)
+        }
+
+        buttontoilet .right:hover::after {
+            transform: translate(0, -50%) rotate(-7deg)
+        }
+
+        buttontoilet .left:hover ~ .right::after {
+            transform: translate(0, -50%) rotate(7deg)
+        }
+
+        /* bubbles */
+        buttontoilet::before {
+            content: '';
+            pointer-events: none;
+            opacity: .6;
+            background:
+                radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+                radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+                radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+            width: 100%;
+            height: 300%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            animation: bubbles 5s linear infinite both;
+        }
+
+        @keyframes bubbles {
+            from {
+                transform: translate();
+            }
+            to {
+                transform: translate(0, -66.666%);
+            }
+        }
+
+
+
+        .wrap {
+            height:100px;
+            width:200px\";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+
+
+    <h5>Project Type Selection (Traditional (Waterfall), Agile, Hybrid, Extreme)</h5>
+    {% if user %}
+
+    <p>Signed in with PMWay you can use the image directly below (click the approach) to go to the processes that are required for Traditional Project Management (PMBOK 6) or Agile Project Management (the Scrum Body of Knowledge V.4 (SBOK 4)).</p>
+    {% endif %}
+    {% if not user %}
+    <p><a href=\"/register\" target=_blank\" title=\"Registered\"><u>With</u></a> PMWay you can use the image directly below to drill down into the processes (inputs, tools and techniques, and outputs) that are required for Traditional Project Management (PMBOK 6) or Agile Project Management (the Scrum Body of Knowledge (SBOK 4)).  <br>For a high level overview of the Agile methods <a href=\"/agile\" target=_blank\" ><u>click here</u></a>.  <br>Remember that Agile (any project method) operated at <a href=\"/cmmi\" target=_blank\" ><u>CM Level 1</u></a> will have a dubious outcome.</p>
+    {% endif %}
+    <img alt=\"TPM Processes\" class=\"img-fluid\" src=\"/images/waterfallvsagile.png\" usemap=\"#ImgMap1\">
+
+
+    <map id=\"ImgMap1\" name=\"ImgMap1\">
+        <area alt=\"\" coords=\"13,79,369,485\" href=\"/pmboksix/pmbokprocessnutshell\" shape=\"rect\" title=\"For the TPM Processes - click here\" target=\"_blank\">
+        <area alt=\"\" coords=\"369,78,862,486\" href=\"/scrumdashboards\" shape=\"rect\" title=\"For the APM (Scrum) processes click here\"  target=\"_blank\">
+
+    </map>
+
+
+
+
+
+
+
+
+    <br><br>{% if user %}
+    <p><small><i><a href=\"/images/howdoyouwanttowork.png\" target=\"_blank\">How do you want to work</a>?  <br>Following the project processes (steps), like following the steps in a cooking recipe, is a sure way to move <a href=\"gamestats\" target=\"_target\">production stats</a> up from <a href=\"/cmmi\" target=\"_blank\">Capability Maturity Level 1 to Capability Level 2+.</a></i><br>
+            I.e. start to eliminate waste, rework and risk and improve on productivity and quality.</small></p>
+    <!------------------------------------------------------------------------top of bsdropdown------------------------------------->
+    <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+    \"collapse\" data-target=\"#collapsemoredepth\" aria-expanded=\"false\" aria-controls=
+            \"collapsemoredepth\">Find out more</button>
+
+    <div class=\"collapse\" id=\"collapsemoredepth\">
+        <div class=\"container\">
+            <div class=\"card text-center\">
+                <h5 class=\"card-header\" align=\"center\">Find out more</h5>
+                <div class=\"card-body text-center\">
+
+
+
+                    <p style=\"text-align:justify\">The project type selection matrix from Dr. Robert. K. Wysocki's awesome book 'Effective Project Management - Traditional, Agile, Hybrid, Extreme page 66' (below) shows one how to
+                        quickly decide
+                        what project method (project type) best suites the type of project based on the criteria of clarity or lack of clarity of the
+                        project goal or solution clarity being considered.<br></p>
+                    <p align=\"center\"><img alt=\"project selection matrix\" class=\"img-fluid\" src=\"/images/projectselectionlandscape.png\">
+                        <br>        <img alt=\"project selection matrix\" class=\"img-fluid\" src=\"/images/projselectmatrixnoshading.png\"><p><small>Project types slotted into the matrix</small></p>
+                    <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+                    \"collapse\" data-target=\"#collapsehybrid\" aria-expanded=\"false\" aria-controls=
+                            \"collapsehybrid\">Hybrid Solutions - PMWay's reservations</button>
+
+                    <div class=\"collapse\" id=\"collapsehybrid\">
+                        <div class=\"container\">
+                            <div class=\"card text-center\">
+                                <h5 class=\"card-header\" align=\"center\">Why Hybrids are like Snowflakes</h5>
+                                <div class=\"card-body text-center\">
+
+
+                                    <p>Note:  PMWay is skeptical of hybrid solutions.  In our opinion it is far better to tailor the popular methods (PMBOK, PRINCE2 [or PRINCE2 Agile], or DSDM or SCRUMBOK) as these project methods and their processes are learned, well known and understood by millions of qualified experts.  If you need to run these lean, then tailor the processes, but in a way that maintains quality and method integrity.  I.e. why re-invent the wheel?  To illustrate the problem from a Scrum perspective <a href=\"/scrumrca\">snowflake scrum</a> is understood as being one of the <a href=\"scrumrca\" target=_blank\">7 dysfunctions</a>. This situation happens when a team or organization thinks it is \"unique,\" so it has to adapt Scrum to fit its needs. <em>You either do Scrum </em><em>or you don&rsquo;t do Scrum. Modifying Scrum does not fix the problems. Modifying Scrum will likely hide your problems &hellip; for a little while. When the problems are hidden, it may feel better, but those problems are still there. Ultimately, they will manifest as a lack of business agility and dysfunction.</em>'</p>
+
+                                    <p>The above said... with an experienced team, operating above Capability Maturity Level 1, off a PMIS (Project Management Information System / Scrum board etc.), and using <a href=\"/measurement\" target=\"_blank\">Lead Time and Cycle Time</a> statistics, it will be possible to operate extremely and off hybrids.</p>
+                                    <p align=\"center\"><img alt=\"Lead Time Cycle Time\" class=\"img-fluid\" src=\"/images/leadtimescycletime.png\"><br>
+                                        <img alt=\"Lead Time Cycle Time from ideation\" class=\"img-fluid\" src=\"/images/idealeadtimecycletime.png\"><br>
+                                        <img alt=\"Lead Time Cycle Time pushing products through\" class=\"img-fluid\" src=\"/images/productsleadtimecycletime.jpeg\"></p>
+                                </div>
+                                <div class=\"card-footer\">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <p><small>Click the image and presentation icon below if you want to dig a little deeper into this broad subject.</small></p>
+                    <p align=\"center\"><a href=\"/?slide=1\" target=\"_blank\"><img class=\"img-fluid\" src=\"/images/digdeeper.jpg\" title=\"\"></a></p>
+
+
+
+
+                    <!--<img alt=\"Dive In\" title=\"Click the button below\" class=\"img-fluid\" src=\"../images/divein.png\"><br>-->
+
+                    <br><div id=\"myBlock\" style=\"display: none;\">
+                        <p align=\"center\"><a href=\"/cmmi\" target=_blank\">  <img class=\"img-fluid\" src=\"/images/cmmproject2plus.png\" onmouseover=\"this.src='/images/cmmproject2plusshadedbezelled.png'\" onmouseout=\"this.src='/images/cmmproject2plus.png'\" title=\"Click the image to pin down where you think you are at.  How do you want to be remembered?  Time to up your 'game stats'?\" > </a>
+                        </p>
+                    </div>
+                    <p align=\"center\"><small>Or you can also click the presentation icon below<br>get a high level (jam packed) summary in presentation format.</small></p><br>
+                    <p>               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"/itilfouroverview/index.html\" target=\"_blank\" title=\"need some ideas on how to do this?\"><img alt=\"presentation icon\" title=\"Do you need a high level presentation of ideas on how to do the above?\" class=\"img-fluid\" src=\"../images/presentationicon.png\"></a><br><!---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"/homeviewpdf/resources/itilfouroverview.pdf\" target=\"_blank\" title=\"view presentation in pdf\"><img alt=\"presentation icon\" title=\"view a summary of the above presentation in pdf\" target src=\"../images/pdf-iconlarger.png\"></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessible IT Strategy?--></p>
+                    <div class=\"container\" align=\"center\"><br>
+                        <p><small>Bottom line:  The goal should always be to try to...</small></p>
+
+                        <img alt=\"CM Model\" onclick=\"myFunction()\" class=\"img-fluid\"  src=\"../images/cmltwoplus.png\" id=\"myBlock\" title=\"Click here to show and hide the concise Capability Maturity Model\" ></div><br>
+
+
+
+
+                    <p><small>Operating at CM L2+ is not easy.  <br>Dive in for a high level overview of CM L1 behaviour <br>(and sometimes poking fun (lampooning) it as Edwards W. Deming did)<br>to understand the problems you will need to overcome,<br>if your desire is to \"<a href=\"/gamestats\" target=\"_blank\">up our game stats</a>\".</small></p><br>
+
+
+
+                    <buttontoilet  class=\"wrap btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+                    \"collapse\" data-target=\"#collapsevixen\" aria-expanded=\"false\" aria-controls=
+                                   \"collapsevixen\" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wagile, Fragile, Aino&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(TPM & APM @ CML1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;etc.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</buttontoilet>
+
+                    <div class=\"collapse\" id=\"collapsevixen\">
+                        <div class=\"container\">
+                            <div class=\"card text-center\">
+                                <h5 class=\"card-header\" align=\"center\">
+
+
+                                    <a href=\"/pin\" target=\"_blank\" ><img alt=\"\" class=\"img-fluid\" title=\"If things are chaotic possibly it is time to follow the project processes for your method and use them to tighten up and improve your game stats. Click the image to see the problem and solution. Where would you pin down where your teams are at?\" src=\"../images/outofthefireone.png\" onmouseover=\"this.src='/images/outofthefiretwo.png'\" onmouseout=\"this.src='/images/outofthefireone.png'\"></a><br></h5>
+
+
+
+
+
+                                <div class=\"card-body text-center\">
+
+                                    <p>The classic \"monkey trap\" helps to illustrate the problems of TPM and APM (Wagile, Fragile, Aino and TPM and APM run at Capability Maturity Level 1) etc., run as a flawed project management system; without sufficient understanding of the (stepwise) process approach that is needed for success to be able to run at Capability Maturity Level 2+</h5>
+
+
+                                    <p>
+                                        <img alt=\"Monkey Trap\" class=\"img-fluid\" src=\"../images/Monkey-trap.png\"></p>
+
+
+
+
+                                    <br>
+                                    <p>The classic \"coffee shop\" demonstration also illustrates how to follow an agile mindset and process orientated approach.<br>
+                                        <a href=\"/coffee\" target=\"_blank\" title=\"Click the image if you want more information on what the do everything now trap is - exactly\"><img alt=\"Coffee Shop\" class=\"img-fluid\" src=\"../images/doeverythingsnipped.jpg\" height=200px width=400px></a></p>
+                                    <br>
+
+                                    <p>I.e. No <a href=\"../images/smart.jpg\" class=\"img-fluid\" target=\"_blank\"><u>SMART requirements</u></a> identified and no accurate planning and monitoring and control, rather
+                                        extolling and pushing (driving heroic \"just do it\" behavior) to get more out of (trying to force / \"bully\" results) from the system than is possible (for resources / time allocated / clarity about requirements in respect of complicated solutions required).  This lack of clear and agreed <b>REQUIREMENTS (REQM)</b> and insufficient / inaccurate <b>PROJECT PLANNING (PP)</b> and <b>PROJECT MONITORING AND CONTROL (PMC)</b> means the team are operating at Capability Maturity Level 1.</p>
+                                    <p><small>Without spoiling the fun you will have watching the (Deming) Red Bead video below, know that the above behavior is referred to by Project Managers, Software Engineers (and others in the know) as \"Management, using reward and punishment, to tamper with a stable system.  Typically these types of managers are not open to suggestions to improve and also do not faciliatate a Safety Culture so ultimately, project failures, will be the result\" </small></p>
+                                    <br>
+
+                                    <button class=\"btn btn-primary align-center \" type=\"button\" data-toggle=
+                                    \"collapse\" data-target=\"#collapsepmboksafety\" aria-expanded=\"false\" aria-controls=
+                                            \"collapsepmboksafety\">Safety Culture</button>
+
+                                    <div class=\"collapse\" id=\"collapsepmboksafety\">
+                                        <div class=\"container\">
+                                            <div class=\"card text-center\">
+                                                <h5 class=\"card-header\" align=\"center\">Westrum's Typology of Organization Culture</h5>
+                                                <div class=\"card-body text-center\">
+
+                                                    <p>The book Accelerate refers to the Westrum Typology of Organizational Culture.<br>Accelerate (and ITIL etc.) state that Generative behavior on the right of the model is required for success in Agile and DevOps.<br>ITIL 4 calls this a \"safety culture.\"  The \"safety culture\" is needed for teams to align for agility and find solutions which approach may not be understood or tolerated in the Bureucratic and Pathelogical Organizational Cultures of the model.</p>
+                                                    <br>
+                                                    <img alt=\"\" class=\"img-fluid\" src=\"../images/westrum.png\"></p>
+                                                    <p>I.e. With Westrum in mind, Where would you pin your Oranizational Culture to be at?  Pathalogical, Bureaucratic or Open Minded and Generative.</p>
+                                                    <p align=\"left\"><a href=\"/pin\"  title=\"Click the pin to pin down your Organizational Culture.  I.e. what Organizational Culture do you have where you work!\" ><img id=\"pinthree\" class=\"img-fluid\" style=\"z-index:100\"  src=\"../images/pinlarge.png\" alt=\"pin\" ></a></p>
+                                                </div>
+                                                <div class=\"card-footer\">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <br>
+
+                                    <h3>The Monkey Trap above.  Do you really want to get free?</h3>
+                                    <p align=\"center\">Along with <a href=\"../images/smart.jpg\" class=\"img-fluid\" target=\"_blank\"><u>SMART REQM's</u></a>: Find the CML2 processes <a href=\"/cmmidevdash\" target=_blank\"><u>Project Planning (PP) and Project Monitoring and Control (PMC)</u></a><br>Then<br><b><large>to set Scrum (Agile) free</large></b><br>it's simply<br><a href=\"../images/scrumsafelymin.pdf\" target=\"_blank\"><u><b>ONE</b></u></a>&nbsp;&nbsp;<a href=\"cv/images/projects/project-21.jpg\" target=\"_blank\"><u><b>TWO</b></u></a>&nbsp;&nbsp;<a href=\"/images/horserace.jpg\" target=\"_blank\"><u><b>THREE</b></u></a></p>
+
+
+                                    <br>
+
+                                    <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+                                    \"collapse\" data-target=\"#collapsepmbokdis\" aria-expanded=\"false\" aria-controls=
+                                            \"collapsepmbokdis\">The 7 Scrum Dysfunctions<br>and how to fix these</button>
+
+                                    <div class=\"collapse\" id=\"collapsepmbokdis\">
+                                        <div class=\"container\">
+                                            <div class=\"card text-center\">
+                                                <h5 class=\"card-header\" align=\"center\">The Seven Scrum Dysfunctions and Root Cause Analysis</h5>
+                                                <div class=\"card-body text-center\">
+                                                    <p><a href=\"/scrumrca\" target=\"_blank\"><u>Click here</u></a> for the 7 Scrum dysfunctions (and using Root Cause Analysis (picking out the red beads explained below) etc.) give an idea of how to improve quality in the scrum (agile) project management system<br><i>- from Mastering Professional Scrum (2019) by Stephanie Ockerman and Simon Reindl.<br>Note:  Some links in this download are dependant on pmway.hopto.org being up.  I.e. see i on menu above.</i></p>
+                                                    <p>Run optimally a scrum team should be able to release working software in a 2 week sprint.  Then (demo's approved by the Product Owner) <b>they (the willing workers) have succeeded</b> and the goals for the team are reset during next sprint planning ceremony.  Scrum Master's role is to ensure a safety culture, productive team, process improvement from CM L2 (and CML2+ where possible) and good governance!
+                                                </div>
+                                                <div class=\"card-footer\">
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+                                    \"collapse\" data-target=\"#collapsetpmapm\" aria-expanded=\"false\" aria-controls=
+                                            \"collapsetpmapm\">TPM vs APM<br>in 2 minutes</button>
+
+                                    <div class=\"collapse\" id=\"collapsetpmapm\">
+                                        <div class=\"container\">
+                                            <div class=\"card text-center\">
+                                                <h5 class=\"card-header\" align=\"center\">TPM vs APM essence in 2 minutes</h5>
+                                                <div class=\"card-body text-center\">
+                                                    <h5><b>Your \"Body of Knowledge\" Gateway</b></h5>
+
+                                                    <map id=\"ImgMap0\" name=\"ImgMap0\">
+                                                        <area coords=\"58, 53, 339, 351\" href=\"/pmboksix/fourone\" shape=\"rect\" title=\"Click here for the PMBOK Dashboard\">
+                                                    </map>
+                                                    <!--<img class=\"img-fluid\" alt=\"\" src=\"../images/dashheadsmaller.png\"  >-->
+                                                    <img alt=\"\" class=\"img-fluid\" style=\"z-index:1\" src=\"../images/dashheadflat.png\" onmouseover=\"this.src='/images/dashheadraised.png'\" onmouseout=\"this.src='/images/dashheadflat.png'\">
+                                                    <br>
+
+                                                    <a href=\"/pmboksix/fourone\" >    <img alt=\"\" class=\"img-fluid\" style=\"z-index:0\" src=\"../images/mainprocessdashraisednormalflat.png\" onmouseover=\"this.src='/images/mainprocessdashraisednormalbezelledone.png'\" onmouseout=\"this.src='/images/mainprocessdashraisednormalflat.png'\" title=\"Click the hand (process 4.1) to go the the PMBOK dashboard for PMBOK Process 4.1\"></a>
+
+                                                    <br>
+                                                    <br>
+
+                                                    <div class=\"card text-center\">
+                                                        <h5 class=\"card-header\" align=\"center\"></h5>
+                                                        <div class=\"card-body text-center\">
+                                                            <p>The Project Management Body of Knowledge Guide (released September 2017)
+                                                                <br>is the 'how to do it' checklist for Project Management Professionals.
+                                                                <br>Click the image directly below for the PMBOK game, in a nutshell.
+                                                                <br>
+                                                                <a href=\"/thegame\" target=\"_blank\" title=\"Click the tile for a larger (more detailed) image of how to play the game\">
+                                                                    <img alt=\"The game\" class=\"img-fluid\"  id=\"game\" src=\"../images/TheGame.png\" ></a>
+                                                                <br><i><b>If you understand the PMBOK you know this game is the same <br>for both Traditional and Agile Project Management!</b></i>
+
+                                                                <br><br>The dashboard assists understanding of the PMBOK processes (+ &quot;ittos&quot;)
+                                                                <br> to help you to pass the PMI exams and run projects better at <a href=\"/cmmi\"><strong>Capability
+                                                                        Maturity Level 2+</strong></a>.
+                                                                <br>The PMBOK processes (underpinned by the latest thinking found in the <i>
+                                                                    <br>PMI Agile Certified Practitioner
+                                                                    (PMI-ACP) qualification </i> and others)
+                                                                <br> incorporates <a href=\"/agile\"><strong>Lean and Agile</strong></a> thinking.</p>
+                                                            <p>Oh, also... do not forget that the PMBOK operates as a Standard!
+                                                                <br> Check out where it is situated in the greater scheme of things
+                                                                <br> as you <b>&quot;<a href=\"/?slide=2\" target=\"_blank\"><u>connect the dots</u></a>&quot;</b> below.</p>
+                                                            <p>A quick note to those \"Traditional\" is not \"Agile\" out there.
+                                                                <br>Find process 4.7 on the PMBOK dashboard above (Close Project or Phase).
+                                                                <br>Did you know that &quot;tailoring&quot; these processes means you can run a project phase
+                                                                <br>as... wait for it...
+                                                                <br><b>&quot;<a href=\"/agile?slide=10\"
+                                                                                target=\"_blank\"><u>a two week sprint!</u></a>&quot;</b>
+
+                                                                <br>
+                                                                <br> Operating thus, as a Professional who understands Project Management Process,
+                                                                <br>(supported by your Executive [Executive Action Team (to EAT &quot;<a href=\"/removetheredbeads\" target=\"_blank\">the
+                                                                    red beads,</a>&quot;)])
+                                                                <br>using
+                                                                <a href=\"/agile?slide=13\" target=\"_blank\">
+                                                                    best selected project methodology</a>,
+                                                                <br>there is less chance of dropping the ball.</p>
+
+                                                            <img alt=\"drop the ball\" class=\"img-fluid\" src=\"../images/droptheball.png\">
+                                                            <br>
+                                                            <br><h6><b>Bottom Line</b></h6>
+                                                            <p><b>While (when) BEST PRACTICE is understood,
+                                                                    <br>BEST PRACTICAL (from an agile and lean perspective) can be better!</b></p>
+                                                            <!--<a href=\"/removetheredbeads\" target=\"_blank\" title=\"Click the image to find out how and why to remove the Red Beads\"><img alt=\"\" class=\"img-fluid\" src=\"../images/redbeadremoved.png\"></a>-->
+                                                        </div>
+                                                        <div class=\"card-footer\">
+                                                            <a href=\"/freedoms\" target=\"_blank\" title=\"Find out about the concepts of Freedoms, Barriers and Goals and how they can be made to work together for success\">Freedoms, Barriers, Goals</a> and <a href=\"../images/anyroad.jpg\" target=\"_blank\" title=\"Find out that if you do not know what your destination is, any road will take you there.  I.e. anywhere, nowhere!\">Destinations</a>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class=\"card-footer\">
+                                                    <h5>Phew...  Ok, finally.  Here is the 2 minute answer you were looking for</h5>
+                                                    <p>Note that <a href=\"../images/pmbok5gate.png\" target=\"_blank\"><u><b>Traditional Project Management</b></u></a> (TPM)'s <a href=\"../images/pmbokepm.jpg\" target=\"_blank\"><u><b>24 planning processes</b></u></a> (just under half of the total processes for the PMBOK are planning processes!) are replaced in Agile Project Management (APM) / Scrum by User Stories!  These \"User Stories\" must be approved as delivered each sprint by the Product Owner or the team are operating at Capability Maturity Level 1.  And the minute a sprint is approved the team have finished that race successfully (they are operating at CM LEvel 2+)!</p>
+                                                    <p>If you look carefully you will see that both <a href=\"/pmboksix/pmbokprocessnutshell\" target=\"_blank\">Traditional Project Management</a> and <a href=\"/agile?slide=10\" target=\"_blank\" >Agile Project Management (typically Scrum - the recommended agile method from the Project Management Institute)</a>, have Project Planning (PP) and Project Monitoring and Control (PMC) processes.  While the Requirements process is Traditional Project Management is a complex document produced up front(Detailed Document Up Front or DDUF), Agile (Scrum) only uses User Stories and short sprints.  Why.  Because, typically DDUF don't work and the plans produced are seldome hit on time and within budget (with dubious quality?).</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <br>
+
+                                    <p><a href=\"/removetheredbeads\" target=\"_blank\">Deming's Red Bead Experiment</a> goes a long way to clearly illustrate the causes and solutions for the \"monkey trap\" problem above. <br>Find this experiment on YouTube (<i>or watch a PMWay selected video from YouTube below</i>).  Deming is the father of the Capability Maturity Model (CMMi) we are using <a href=\"/cmmidevdash\" target=_blank\"><u>here</u></a> which is the output of the <a href=\"https://www.sei.cmu.edu/\" target=\"_blank\"><u>Software Engineering Institute at Carnegie Mellon University</u></a>.</p>
+                                    <h3>Here is some more of Deming's wisdom:</h3>
+                                    <p align=\"center\"><img class=\"img-fluid\" src=\"../images/demingoneessence.jpg\" alt=\"Deming Quotes\" ><br><img class=\"img-fluid\" src=\"../images/demingtwoessence.jpg\" alt=\"Deming essence\" ><br><img class=\"img-fluid\" src=\"../images/demingthreeessence.jpg\" alt=\"Deming essence\" >
+                                </div>
+
+
+
+                                <div class=\"container\" align=\"center\">
+                                    <h5>Red Bead Experiment</h5>
+                                    <div class=\"flex-container\">
+                                        <div class=\"flex-item video-content\">
+
+                                            <video controls poster=\"/images/redbeadremoved.png\" width=\"400\" height=\"400\" >
+                                                <br><br>
+                                                <source src=\"{{ asset(\"movies/redbeadexperiment.mp4\")}}\" type=\"video/mp4\">
+
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <h5>Solution:<br>If your Scrum Sprints are not producing approved value then Executives<br><b>YOU NEED TO PICK OUT / REMOVE / EAT THE RED BEADS!</b></h5>
+                                    <p align=\"center\"><img class=\"img-fluid\" src=\"../images/eat.png\" alt=\"Executive Action Team: EAT the Red Beads\" ></p>
+                                    <p>I.e. install scrum (or other TPM or APM) processes (DevOps etc., processes) that allow the method to operate correctly / <br>remove noise and obstacles (exhortations etc.) that is getting in the way.<br>
+                                        and EAT (Executive Action Team) the Red Beads!</p>
+                                    <p><a href=\"/scrumdashboards\">Click here for a 1000 foot overview of the Scrum Dashboards</a></p>
+                                    <br>
+                                    <br>
+
+                                    <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+                                    \"collapse\" data-target=\"#collapsepmbokcm\" aria-expanded=\"false\" aria-controls=
+                                            \"collapsepmbokcm\">FOR FUN:  CAPABILITY MATURITY LEVEL ONE</button>
+
+                                    <div class=\"collapse\" id=\"collapsepmbokcm\">
+                                        <div class=\"container\">
+                                            <div class=\"card text-center\">
+                                                <h5 class=\"card-header\" align=\"center\">The image below explains the problems typically found at Capability Maturity Level 1.</h5>
+                                                <div class=\"card-body text-center\">
+                                                    <p align=\"center\"><img class=\"img-fluid\" src=\"../images/cml1.png\" alt=\"For fun Capability Maturity Level 1\" ></p>
+
+                                                    <p>Or click here for some more fun:  <a href=\"/realstory\" target=\"_blank\">The Real Story at CM L1</a></p>
+                                                    <br><br>
+                                                    <br>
+                                                    <hr style=\"width:30%\">
+                                                    <p>Time to up your game stats?</p>
+                                                    <hr style=\"width:30%\">
+                                                    <br><br>
+                                                    <br>
+                                                    <p align=\"center\"><img class=\"img-fluid\" src=\"../images/cm.png\" alt=\"How do you want to be remembered\" ><br>The Capability Maturity model above is a simplified version <a href=\"/cmmidevdash\" target=_blank\"><u>of the one found here</u></a></p></div>
+                                                <br>
+                                                <br>
+                                                <p align=\"left\"><a href=\"/pin\"  title=\"Click the pin to pin down to your Capability Maturity level.  Is it CM L1, L2, L3 etc.  I.e. what processes do you have control over. Bottom line: Focus on the process and not the outcome of the process!  If you cannot describe what you are doing as a process you do not know what you are doing!\" ><img id=\"pintwo\" class=\"img-fluid\" style=\"z-index:100\"  src=\"../images/pinlarge.png\" alt=\"pin\" ></a></p>
+
+                                                <p align=\"left\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Finally (just for fun) click the red pin now if you want to do the Capability Maturity self assessment.</i></p>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---------------------------------------------------NB bottom of bsdropdown---------------------------------------->
+                            </div>
+                            <div class=\"card-footer\">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+
+
+
+                <div class=\"card-footer\">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <br>
+    <br>
+
+
+    <script>
+
+
+
+
+
+
+
+
+        <!--  <script src=\"/bootstrapfourthreeone/js/jquery.js\"></script>
+    <script src=\"/bootstrapfourthreeone/js/jquery-ui.js\"></script>
+    <link rel=\"stylesheet\" href=\"/bootstrapfourthreeone/css/jquery-ui.css\">-->
+    <script src=\"/bootstrapfourfivetwo/js/jquery.js\"></script>
+    <script src=\"/bootstrapfourfivetwo/js/jquery-ui.js\"></script>
+    <!-- testing <link rel=\"stylesheet\" href=\"/bootstrapfourfivetwo/css/jquery-ui.css\"></link>-->
+
+
+    <script>
+        \$(document).ready(function() {
+
+            function qs(key) {
+                key = key.replace(/[*+?^\$.\\[\\]{}()|\\\\\\/]/g, \"\\\\\$&\"); // escape RegEx meta chars
+                var match = location.search.match(new RegExp(\"[?&]\" + key + \"=([^&]+)(&|\$)\"));
+                var slide = match && decodeURIComponent(match[1].replace(/\\+/g, \" \"));
+
+                if (Math.floor(slide) == slide && \$.isNumeric(slide)) {
+
+                    \$('#collapseopencarousel').collapse('show');
+                    \$('html, body').animate({
+                        scrollTop: \$(\"#collapseopencarousel\").offset().top
+                    }, 1000);
+
+
+
+                    return parseInt(slide);
+                }
+                else
+                    return 0;
+            }
+
+
+            \$('#mycarousel').carousel((qs('slide')) - 1);
+            \$(\"#pin, #pintwo, #pinthree, #steps\").draggable({
+                revert: \"false\"
+            });
+            \$(\"#target, #targetforladder\").droppable({
+                greedy: true,
+                tolerance: 'touch',
+                drop: function(event, ui) {
+                    ui.draggable.draggable('option', 'revert', 'true');
+                    \$(this).css({
+                        'background-color': '#94be0f',
+                        'border': '3px solid navy',
+                        'display': 'inline-block'
+                    })
+                    alert(\"Awesome! Now move the pin out of the way and click the target underneath to see the processes your have mastered!   Remember Demings advice:  Work on the process, not the outcome of the process! \");
+
+                }
+            });
+
+        });
+
+
+        function myFunction() {
+            var x = document.getElementById(\"myBlock\");
+            if (x.style.display === \"none\") {
+                x.style.display = \"block\";
+            } else {
+                x.style.display = \"none\";
+            }
+        }
+
+
+    </script>
+
+    <script>
+
+        document.getElementById('myImg').onclick = function(e) {
+            document.getElementById('myDiv').style.display = 'block';
+        }
+
+    </script>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+    {% endif %}
+{% endblock %}
+", "C:\\xampp\\htdocs\\pmway\\resources\\views/Home/waterfallvsagile.twig", "C:\\xampp\\htdocs\\pmway\\resources\\views/Home/waterfallvsagile.twig");
+    }
+}

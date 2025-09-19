@@ -1,0 +1,32 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite --no-open",
+        "build": "vite build"
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.1.11",
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.8.2",
+        "bootstrap": "^5.3.7",
+        "dompurify": "^3.2.6",
+        "jquery-ui": "^1.14.1",
+        "laravel-vite-plugin": "^1.0",
+        "path": "^0.12.7",
+        "process": "^0.11.10",
+        "tailwindcss": "^4.1.11",
+        "turndown": "^7.2.1",
+        "vite": "^6.3"
+    },
+    "optionalDependencies": {
+        "@rollup/rollup-linux-x64-gnu": "4.9.5",
+        "@tailwindcss/oxide-linux-x64-gnu": "^4.0.1",
+        "lightningcss-linux-x64-gnu": "^1.29.1"
+    },
+    "devDependencies": {
+        "concurrently": "^9.2.0",
+        "laravel-echo": "^2.2.0",
+        "pusher-js": "^8.4.0"
+    }
+}

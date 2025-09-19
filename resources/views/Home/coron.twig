@@ -1,0 +1,468 @@
+{% extends 'simplemedia.twig' %}
+{% block title %} {% if not user %}PMWay{% endif %} {% if user %}Covid-19{% endif %}{% endblock %}
+{% block body %}
+{% if user %}
+<div class="container">
+<h3>The Coronavirus (Covid - 19) Pandemic.</h3>
+<hr>
+<p><a href="/home/coronaudio" target="_blank">Click here for a short 8 minute interview with someone (back from China) who has the virus.</a></p>
+<p><a href="/homeviewpdf/resources/smartlockdown.pdf" target="_blank">Click here for the Smart Lockdown Strategy of the DA.</a></p>
+<p><a href="/homesave/resources/coronbook.pdf" target="_blank">Click here for short book about the Coronovirus.</a></p>
+<p><a href="https://ourworldindata.org/coronavirus" target="_blank">Click here for a balanced and informed report from Oxford University (by Max Roser and Hannah Ritchie).</a></p>
+<p><a href="https://www.worldometers.info/coronavirus/" target="_blank">Click here for the Coronavirus World Meter.</a></p>
+<p><a href ="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank">Click here for the Gisandata world map.</a></p>
+<p><a href="#playlist">PLAYLIST</a></p>
+<div id="player" align="center">
+  <!-- video source and track elements will be populated from playlist -->
+  <video id="video1" preload="false" data-able-player playsinline ></video>
+</div>
+<div id="playlist">
+  <h2><a name="playlist"></a>Playlist</h2>
+  <!-- an AblePlayer playlist is any <ul> with class="able-playlist" -->
+  <!-- The value of data-player must match the id of the media element -->
+  <!-- see documentation for additional details -->
+  <ul class="able-playlist" data-player="video1">
+    <li  data-poster="/images/coronovirus.jpg" data-width="480" data-height="360"> <span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/coron.mp4"> </span>
+      <button type="button"> <img src="/images/coronovirus.jpg" alt="">The Coronavirus (Covid - 19) Pandemic. </button>
+    </li>
+    <li  data-poster="/images/itsnotflu.jpg" data-width="480" data-height="360"> <span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/itsnotflu.mp4"> </span>
+      <button type="button"> <img src="/images/itsnotflu.jpg" alt="">Covid - 19 - It's NOT LIKE FLU! </button>
+    </li>
+    <li  data-poster="/images/covidspecial.jpg" data-width="480" data-height="360"> <span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/covidspecial.mp4"> </span>
+      <button type="button"> <img src="/images/covidspecial.jpg" alt="">Covid - 19 - BBC Special (1 hour documentary) </button>
+    </li>
+    <li  data-poster="/images/sevensteps.jpg" data-width="480" data-height="360"> <span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/sevensteps.mp4"> </span>
+      <button type="button"> <img src="/images/sevensteps.jpg" alt="">Seven Steps to Stop the Spread of the Coronavirus (Covid - 19) Pandemic. </button>
+    <li  data-poster="/images/twominutefacemask.jpg" data-width="480" data-height="360"> <span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/twominutefacemask.mp4"> </span>
+      <button type="button"> <img src="/images/twominutefacemask.jpg" alt="">2 minute face mask from paper towel Pandemic. </button>
+    <li  data-poster="/images/unicefmessageofhope.jpg" data-width="480" data-height="360"> <span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/unicefmessageofhope.mp4"> </span>
+      <button type="button"> <img src="/images/unicefmessageofhope.jpg" alt="">Into the Lockdown - day 4.  UNICEF message of hope. </button>
+
+      <!--</li>
+						<li  data-poster="/images/hotair.jpg" data-width="480" data-height="360">
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/hotairtherapy.mp4">
+
+		</span>
+
+				<button type="button">
+					<img src="/images/hotair.jpg" alt="">HOT AIR THERAPY - Kill the Covid-19 virus <br>where it is cool and calculating...
+				</button>
+			</li>-->
+
+  </ul>
+  <br>
+  <br>
+
+  <!--<p><b>Could HOT AIR THERAPY simply be "hot air" or could it be the miracle cure?</b>  <br>
+Watch the video above and make up your own mind.<br>
+I have always loved sauna's, and felt good after taking them, so, possibly, this
+(hot'ish air breathed in) has some truth?&nbsp;<br>
+Only if interested follow my empirical experiment on myself, using this purported cure. </p>
+
+
+<div align="center">
+
+<button class="btn btn-primary align-center clearfix" type="button" data-toggle=
+"collapse" data-target="#collapsecoron" aria-expanded="false" aria-controls=
+        "collapsecoron">Virus Wars<br>
+        "Hot Air Treatments"<br>How To <br>
+        kill the viruses stone dead<br>with your BFG
+;~)
+</button>
+
+<div class="collapse" id="collapsecoron">
+    <div class="container">
+        <div class="card text-center">
+<h5 class="card-header" align="center">Below are "my ideas" about the "Hot Air Treatments"<br>&nbsp;I will &quot;Experiment&quot; and &quot;Inspect&quot; and &quot;Adapt&quot; my use of the treatment
+updating my feedback below.</h5>
+<p align="center"><img class="img-fluid"src="/images/inspectadaptsmall.png"></p>
+            <div class="card-body text-center">
+
+
+
+<h3 align="center">Virus Wars - taking the battle to the Coronavirus</h3>
+<hr>
+
+<p align="left"><i>Note while the subject is serious I have written this section below in
+a light hearted and fun way comparing the Hair Dryer with a Big F*cking Gun
+(BFG) from the viewpoint of our enemy, the viruses.  </i></p>
+<p align="left">OK. So I have been experimenting with the &quot;Hot Air Treatments&quot;
+and the points below are my findings, opinions and &quot;how to&quot; instructions.&nbsp;
+Understanding that I am not a medical practitioner you are welcome to follow my lead and use these instructions or implement your own (or decide not to bother,
+which I suspect will be the case with most people).<br>
+				</p>
+
+<ul align="left">
+<li align="left"><p align="left">Note the picture below.  This is your BFG (Big F*cking Gun) that you will need to win the VIRUS WARS!<br>
+With the Hot Air Treatment the goal is to use the BFG to <b>gently</b> raise the temperature in your nose, throat and lungs to "pop" or "burst" the
+coronavirus and, as they are fragile and are sensitive to heat, to systematically kill them off. <br>
+Instead of them having you up against the ropes, now it is time for you (with your BFG) to get them against the ropes and
+exterminate the little critters!
+<br>Note the nozzle at the end of the BFG in the image below.<br>
+This needs to be positioned so that when you hold the BFG, and point it towards your face (at your nose), the nozzle is horizontal with the ground (both sides aligned under your eyes).<br>
+You need to keep it far away from your face that you do not burn your skin, but close enough to blow hot "dry" air into your nostrils as you breath the air in.<br>
+When you turn on your BFG at position 1 or lowest "on" setting you need to find a sweet spot so that, moving the nozzle around under your nose, you feel air hitting both your ears equally.<br>
+If you get this right then hot air will flow equally via the "sweet spot" up into your nostrils, delivering the BFG's heated payload directly into your nostril cavity, where they live and breed.<br></li>
+<li align="left"><p align="left">While the Hot Air Treatment video below asks for a water spraying bottle I must admit that I could not find any.  <br>This was probably due to the high demand for spray bottles to use for cleaning purposes to kill the
+coronavirus.<br>
+What I have found works is to use 2 dry facecloths which I put one over my forehead and down to and covering my eyes and the second facecloth covering my cheeks up to my eyes, leaving my nostrils peepoing out and open to receive the hot air from the BFG.<br>
+To get this to work I need to lie on my back on a bed with head on a pillow and then get the facecloths ready.
+</p></li>
+<li align="left"><p align="left">Now lets get started.  To do this grab you can use a cell phone and find the countdown timer.  <br>
+Set it to 5 minutes and click start countdown. <br>
+Or peeping out through the cloths you can keep an eye on a clock if you have one near. </p></li>
+<li align="left"><p align="left">Now with facecloths in place and timer started I switch on the BFG to its lowest setting (typically #1).     </p></li>
+<li align="left"><p align="left">With the sweet spot found, I close my mouth and slowly breath in the hot air through your nose.<br>
+With my other hand holding the facecloths in place if needed these protect my cheeks (skin around eyes etc.) from being burned by hot air.<br>
+The idea is to "heat up" the air being breathed into your nostril cavity in order to raise the temperature there to "kill the nasty little critters!"<br>
+But do this <b>without hurting yourself!</b><br>
+If you have ever been in a sauna you know that dry hot air must be breathed in gently and carefully.  Wet air (water put onto the hot stones) can burn your lungs if you breath it in.</p></li>
+<li align="left"><p align="left">At the top of your breath, breathing in through your nose point the BFG away (up towards the ceiling) and breath out through your mouth.</p></li>
+<li align="left"><p align="left">Now try to relax and breath in and breath out slowly and be able to do this calmly for 5 minutes until the countdown timer tells you your treatment time is up.<br>
+</p></li>
+<li align="left"><p align="left">Note:  While I only apply heat through the nose during the 5 minutes, afterwards I also open my mouth and apply hot air at the back of my throat as well while breathing in through my mouth into my lungs.<br>
+I do this for a short while (a minute) until I feel I have gently "nuked them there as well!"</p></li>
+<li align="left"><p align="left">Note:  I have found that you need to do this slowly and calmly.  I.e. breath in slowly and calmly.  Remember you want to "keep coming back" so make it an enjoyable experience.<br>
+Think of this as meditative breathing.   And the end of the session you should actually feel energised and calmer.  <br>
+</p></li>
+<li align="left"><p align="left">Note:  It is a good idea to drink a big glass of water before you start (each session).  I have noticed that the treatment can dehydrate you so topping up your water supply will counter dehydration while giving you a milestone (each time you do the treatment) to get much needed water into your body. <br>I understand, your brain, to function well, must (this is an image to be visualized) be in a bath (your skull) always topped up and brimming with water.</p></li>
+</ul>
+
+<h5>Findings</h5>
+<p align="left">What I find since starting this program is that my sinuses have dried out and the pain and pressure is gone!<br>
+The sinus drip is also gone!<br>
+I did burn my cheek a little by bringing the hot air in too close to my face when I started, but now keep it a safe distance away and shielded by facecloths.<br>
+I also found I became dehidrated, possibly breathing in hot air into my lungs.  But this is better after taking in more water before the treatment starts.<br>
+I also feel great "sticking it to the coronavirus critters" and getting some payback which in itself is also incredibly satisfying!<br>
+<br>
+Finally, while this is meant to exterminate the coronavirus, I understand that these "Hot Air Treatments" will work equally well for the common cold and flu.<br>
+Sorry for the "pharmaceutical companies, but per the way I am feeling now, your expensive and, may I say relatively useless medicines and cures, will not be needed by me going forward.<br>
+Not sure yet about the electricity bill.  But the way I am feeling at the moment it will be worth a little rise in electricity costs to maintain this feeling of well being and hopefully protect myself againt infection going forward.</p>
+<h5>How many treatments per day</h5>
+<p align="left">Per the video the idea is to do this 2 x in the morning and 2 x at night.<br>
+If you are infected then, per the Doctors advice from the video you may need to do it more. </p>
+<p align="left">I will keep updating this area with ideas and feedback as I experiement with this treatment.<br>
+<br>
+Bottom line:  Relax and view this as therapy.<br>
+Keep well!</p>
+
+
+<h3>Your Virus Wars BFG - with targeting nozzle!</h3>
+<p align="center"><a href="/homeviewpdf/resources/coron.pdf" target="_blank"><img class="img-fluid" src="/images/coron.jpg" ></a><br>Click the image to download a pdf of it.  <br><p>
+
+<br>
+<br>
+
+
+
+            </div>
+            <div class="card-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<br>
+<br>-->
+
+  <p align="center"><img alt="" class="img-fluid" src="/images/coronposter.jpg" ></p>
+  <hr>
+  <p>Want a solution that works to reduce stress?<br>
+    Here is what works for PMWay:<br>
+    Download these two audio tracks below.<br>
+    Put
+    them on your cell phone and then, with the audio buds in your ears, take 25+
+    minutes each day and recline (on your back) in a safe quite place and just listen.&nbsp;
+    The more you do it, the more you will teach yourself to relax.&nbsp; Trust
+    me.&nbsp; I have been doing this, with just these two tracks, for 20+ years.<br>
+    <a href="/homesave/resources/train.zip" target="_blank">Click here for the train</a><br>
+    <a href="/homesave/resources/pool.zip" target="_blank">Click here for the pool</a></p>
+  <p align="left">The Probometer from "Calm the f*uck down"<br>
+    (thanks Sarah Knight) also helps:</p>
+  <p align="center"><b>I.e. Category (CAT: 1, 2, 3, 4 or 5)?</b></p>
+  <p align="center"><a href="/homesave/resources/calmone.pdf" target="_blank"><img alt="" class="img-fluid" src="/images/probometer.PNG" ></a></p>
+  <br>
+  <p align="left">and her CTFD Flowchart</p>
+  <p align="center"><b> <a name="crateoutside"></a>I.e. Crate Your
+    Emotional Puppies! Now!</b></p>
+  <p align="center"><a href="/homesave/resources/calmone.pdf" target="_blank"><img alt="" class="img-fluid" src="/images/howtocalmthefuckdown.png" ></a></p>
+  <br>
+  <br>
+  <p>A poem to reinforce the puppies idea above:</p>
+  <h3 align="left">When problems seem to lie ahead</h3>
+  <p align="left">When problems seem to lie ahead<br>
+    don't rush forward to meet them<br>
+    as if they're long-lost friends -<br>
+    let them lie there, let them wait.</p>
+  <p align="left">Let them sleep until it's time to meet<br>
+    then give them due attention<br>
+    resolve them as best you can<br>
+    then go on your way, leaving them there<br>
+    without ever looking back.</p>
+  <p align="left">Or even, when the appointment comes,<br>
+    you might find yourself waiting, waiting, waiting<br>
+    until you realize that you've been tricked<br>
+    that there was never a problem and there's nothing here<br>
+    except a long thin shadow, cast by your thoughts.</p>
+  <h5>More Inspirational Poems</h5>
+  <p><i>Each link below opens in a new tab</i></p>
+  <p><a href="/home/invictus" target="_blank">Invictus</a></p>
+  <p><a href="/home/if" target="_blank">If</a></p>
+  <p><a href="/home/desiderata" target="_blank">Desiderata</a></p>
+  <p align="center">Take it easy, take it easy<br>
+    Don't let the sound of your own wheels drive you crazy<br>
+    <i>Words from the song "Take it Easy" by the Eagles</i></p>
+  <br>
+  <br>
+</div>
+{% endif %}
+
+
+{% if not user %}<div class="container" align="left" ><h3 align="left">Please log on to access the content on this page</h3><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>{% endif %}{% if not current_user and false %}
+<div class="container">
+<h3>The Coronavirus (Covid - 19) Pandemic.</h3>
+<hr>
+<p><a href="/home/coronaudio" target="_blank">Click here for a short 8 minute interview with someone (back from China) who has the virus.</a></p>
+<p><a href="/homeviewpdf/resources/smartlockdown.pdf" target="_blank">Click here for the Smart Lockdown Strategy of the DA.</a></p>
+<p><a href="/homesave/resources/coronbook.pdf" target="_blank">Click here for short book about the Coronovirus.</a></p>
+<p><a href="https://ourworldindata.org/coronavirus" target="_blank">Click here for a balanced and informed report from Oxford University (by Max Roser and Hannah Ritchie).</a></p>
+<p><a href="https://www.worldometers.info/coronavirus/" target="_blank">Click here for the Coronavirus World Meter.</a></p>
+<p><a href ="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank">Click here for the Gisandata world map.</a></p>
+<p><a href="#playlist">PLAYLIST</a></p>
+<div id="player" align="center">
+  <!-- video source and track elements will be populated from playlist -->
+  <video id="video1" preload="false" data-able-player playsinline ></video>
+</div>
+<div id="playlist">
+  <h2><a name="playlist"></a>Playlist</h2>
+  <!-- an AblePlayer playlist is any <ul> with class="able-playlist" -->
+  <!-- The value of data-player must match the id of the media element -->
+  <!-- see documentation for additional details -->
+  <ul class="able-playlist" data-player="video1">
+    <li  data-poster="/images/coronovirus.jpg" data-width="480" data-height="360"> <span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/coron.mp4"> </span>
+      <button type="button"> <img src="/images/coronovirus.jpg" alt="">Breakthrough:  The Coronavirus (Covid - 19) Pandemic. </button>
+    </li>
+    <li  data-poster="/images/itsnotflu.jpg" data-width="480" data-height="360"> <span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/itsnotflu.mp4"> </span>
+      <button type="button"> <img src="/images/itsnotflu.jpg" alt="">Covid - 19 - It's NOT LIKE FLU! </button>
+    </li>
+    <li  data-poster="/images/covidspecial.jpg" data-width="480" data-height="360"> <span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/covidspecial.mp4"> </span>
+      <button type="button"> <img src="/images/covidspecial.jpg" alt="">Covid - 19 - BBC Special (1 hour documentary) </button>
+    </li>
+    <li  data-poster="/images/sevensteps.jpg" data-width="480" data-height="360"> <span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/sevensteps.mp4"> </span>
+      <button type="button"> <img src="/images/sevensteps.jpg" alt="">Seven Steps to Stop the Spread of the Coronavirus (Covid - 19) Pandemic. </button>
+    </li>
+    <li  data-poster="/images/twominutefacemask.jpg" data-width="480" data-height="360"> <span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/twominutefacemask.mp4"> </span>
+      <button type="button"> <img src="/images/twominutefacemask.jpg" alt="">2 minute face mask from paper towel Pandemic. </button>
+    <li  data-poster="/images/unicefmessageofhope.jpg" data-width="480" data-height="360"> <span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/unicefmessageofhope.mp4"> </span>
+      <button type="button"> <img src="/images/unicefmessageofhope.jpg" alt="">Into the Lockdown - day 4.  UNICEF message of hope. </button>
+
+      <!--<li  data-poster="/images/hotair.jpg" data-width="480" data-height="360">
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="/ablelvids/coron/hotairtherapy.mp4">
+
+		</span>
+
+				<button type="button">
+					<img src="/images/hotair.jpg" alt="">HOT AIR THERAPY - Kill the Covid-19 virus <br>where it is cool and calculating...
+				</button>
+			</li>-->
+
+  </ul>
+  <!--<br>
+			<br>
+
+<p>Could HOT AIR THERAPY be the miracle cure?</b>  <br>
+Log on to this page in PMWay to continue the discussion.</p>-->
+
+  <!--
+<div align="center">
+
+<button class="btn btn-primary align-center clearfix" type="button" data-toggle=
+"collapse" data-target="#collapsecoron" aria-expanded="false" aria-controls=
+        "collapsecoron">Virus Wars<br>
+        "Hot Air Treatments"<br>How To <br>
+        kill the viruses stone dead<br>with your BFG
+;~)
+</button>
+
+<div class="collapse" id="collapsecoron">
+    <div class="container">
+        <div class="card text-center">
+<h5 class="card-header" align="center">Below are "my ideas" about the "Hot Air Treatments"<br>
+If interested follow me as I "Experiment" and "Inspect" and "Adapt" my use of
+the treatment updating my feedback below</h5>
+<p align="center"><img class="img-fluid"src="/images/inspectadaptsmall.png"></p>
+            <div class="card-body text-center">
+
+
+
+<h3 align="center">Virus Wars - taking the battle to the Coronavirus</h3>
+<hr>
+
+<p align="left"><i>Note while the subject is serious I have written this section below in
+a light hearted and fun way comparing the Hair Dryer with a Big F*cking Gun
+(BFG) from the viewpoint of our enemy, the viruses.  </i></p>
+<p align="left">OK. So I have been experimenting with the &quot;Hot Air Treatments&quot;
+and the points below are my findings, opinions and &quot;how to&quot; instructions.&nbsp;
+Understanding that I am not a medical practitioner you are welcome to follow my lead and use these instructions or implement your own (or decide not to bother,
+which I suspect will be the case with most people).<br>
+				</p>
+
+<ul align="left">
+<li align="left"><p align="left">Note the picture below.  This is your BFG (Big F*cking Gun) that you will need to win the VIRUS WARS!<br>
+With the Hot Air Treatment the goal is to use the BFG to <b>gently</b> raise the temperature in your nose, throat and lungs to "pop" or "burst" the
+coronavirus and, as they are fragile and are sensitive to heat, to systematically kill them off. <br>
+Instead of them having you up against the ropes, now it is time for you (with your BFG) to get them against the ropes and
+exterminate the little critters!
+<br>Note the nozzle at the end of the BFG in the image below.<br>
+This needs to be positioned so that when you hold the BFG, and point it towards your face (at your nose), the nozzle is horizontal with the ground (both sides aligned under your eyes).<br>
+You need to keep it far away from your face that you do not burn your skin, but close enough to blow hot "dry" air into your nostrils as you breath the air in.<br>
+When you turn on your BFG at position 1 or lowest "on" setting you need to find a sweet spot so that, moving the nozzle around under your nose, you feel air hitting both your ears equally.<br>
+If you get this right then hot air will flow equally via the "sweet spot" up into your nostrils, delivering the BFG's heated payload directly into your nostril cavity, where they live and breed.<br></li>
+<li align="left"><p align="left">While the Hot Air Treatment video below asks for a water spraying bottle I must admit that I could not find any.  <br>This was probably due to the high demand for spray bottles to use for cleaning purposes to kill the
+coronavirus.<br>
+What I have found works is to use 2 dry facecloths which I put one over my forehead and down to and covering my eyes and the second facecloth covering my cheeks up to my eyes, leaving my nostrils peepoing out and open to receive the hot air from the BFG.<br>
+To get this to work I need to lie on my back on a bed with head on a pillow and then get the facecloths ready.
+</p></li>
+<li align="left"><p align="left">Now lets get started.  To do this grab you can use a cell phone and find the countdown timer.  <br>
+Set it to 5 minutes and click start countdown. <br>
+Or peeping out through the cloths you can keep an eye on a clock if you have one near. </p></li>
+<li align="left"><p align="left">Now with facecloths in place and timer started I switch on the BFG to its lowest setting (typically #1).     </p></li>
+<li align="left"><p align="left">With the sweet spot found, I close my mouth and slowly breath in the hot air through your nose.<br>
+With my other hand holding the facecloths in place if needed these protect my cheeks (skin around eyes etc.) from being burned by hot air.<br>
+The idea is to "heat up" the air being breathed into your nostril cavity in order to raise the temperature there to "kill the nasty little critters!"<br>
+But do this <b>without hurting yourself!</b><br>
+If you have ever been in a sauna you know that dry hot air must be breathed in gently and carefully.  Wet air (water put onto the hot stones) can burn your lungs if you breath it in.</p></li>
+<li align="left"><p align="left">At the top of your breath, breathing in through your nose point the BFG away (up towards the ceiling) and breath out through your mouth.</p></li>
+<li align="left"><p align="left">Now try to relax and breath in and breath out slowly and be able to do this calmly for 5 minutes until the countdown timer tells you your treatment time is up.<br>
+</p></li>
+<li align="left"><p align="left">Note:  While I only apply heat through the nose during the 5 minutes, afterwards I also open my mouth and apply hot air at the back of my throat as well while breathing in through my mouth into my lungs.<br>
+I do this for a short while (a minute) until I feel I have gently "nuked them there as well!"</p></li>
+<li align="left"><p align="left">Note:  I have found that you need to do this slowly and calmly.  I.e. breath in slowly and calmly.  Remember you want to "keep coming back" so make it an enjoyable experience.<br>
+Think of this as meditative breathing.   And the end of the session you should actually feel energised and calmer.  <br>
+</p></li>
+<li align="left"><p align="left">Note:  It is a good idea to drink a big glass of water before you start (each session).  I have noticed that the treatment can dehydrate you so topping up your water supply will counter dehydration while giving you a milestone (each time you do the treatment) to get much needed water into your body. <br>I understand, your brain, to function well, must (this is an image to be visualized) be in a bath (your skull) always topped up and brimming with water.</p></li>
+</ul>
+
+<h5>Findings</h5>
+<p align="left">What I find since starting this program is that my sinuses have dried out and the pain and pressure is gone!<br>
+The sinus drip is also gone!<br>
+I did burn my cheek a little by bringing the hot air in too close to my face when I started, but now keep it a safe distance away and shielded by facecloths.<br>
+I also found I became dehidrated, possibly breathing in hot air into my lungs.  But this is better after taking in more water before the treatment starts.<br>
+I also feel great "sticking it to the coronavirus critters" and getting some payback which in itself is also incredibly satisfying!<br>
+<br>
+Finally, while this is meant to exterminate the coronavirus, I understand that these "Hot Air Treatments" will work equally well for the common cold and flu.<br>
+Sorry for the "pharmaceutical companies, but per the way I am feeling now, your expensive and, may I say relatively useless medicines and cures, will not be needed by me going forward.<br>
+Not sure yet about the electricity bill.  But the way I am feeling at the moment it will be worth a little rise in electricity costs to maintain this feeling of well being and hopefully protect myself againt infection going forward.</p>
+<h5>How many treatments per day</h5>
+<p align="left">Per the video the idea is to do this 2 x in the morning and 2 x at night.<br>
+If you are infected then, per the Doctors advice from the video you may need to do it more. </p>
+<p align="left">I will keep updating this area with ideas and feedback as I experiement with this treatment.<br>
+<br>
+Bottom line:  Relax and view this as therapy.<br>
+Keep well!</p>
+
+
+<h3>Your Virus Wars BFG - with targeting nozzle!</h3>
+<p align="center"><a href="/homeviewpdf/resources/coron.pdf" target="_blank"><img class="img-fluid" src="/images/coron.jpg" ></a><br>Click the image to download a pdf of it.  <br><p>
+
+<br>
+<br>
+
+
+
+            </div>
+            <div class="card-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>-->
+  <br>
+  <br>
+  <p align="center"><img alt="" class="img-fluid" src="/images/coronposter.jpg" ></p>
+  <hr>
+  <p>Want a solution that works to reduce stress?<br>
+    Here is what works for PMWay:<br>
+    Download these two audio tracks below.<br>
+    Put
+    them on your cell phone and then, with the audio buds in your ears, take 25+
+    minutes each day and recline (on your back) in a safe quite place and just listen.&nbsp;
+    The more you do it, the more you will teach yourself to relax.&nbsp; Trust
+    me.&nbsp; I have been doing this, with just these two tracks, for 20+ years.<br>
+    <a href="/homesave/resources/train.zip" target="_blank">Click here for the train</a><br>
+    <a href="/homesave/resources/pool.zip" target="_blank">Click here for the pool</a></p>
+  <p align="left">The Probometer from "Calm the f*uck down"<br>
+    (thanks Sarah Knight) also helps:</p>
+  <p align="center"><b>I.e. Category (CAT: 1, 2, 3, 4 or 5)?</b></p>
+  <p align="center"><a href="/homesave/resources/calmone.pdf" target="_blank"><img alt="" class="img-fluid" src="/images/probometer.PNG" ></a></p>
+  <br>
+  <p align="left">and her CTFD Flowchart</p>
+  <p align="center"><b> <a name="crateoutside"></a>I.e. Crate Your
+    Emotional Puppies! Now!</b></p>
+  <p align="center"><a href="/homesave/resources/calmone.pdf" target="_blank"><img alt="" class="img-fluid" src="/images/howtocalmthefuckdown.png" ></a></p>
+  <br>
+  <br>
+  <p>A poem to reinforce the puppies idea above:</p>
+  <h3 align="left">When problems seem to lie ahead</h3>
+  <p align="left">When problems seem to lie ahead<br>
+    don't rush forward to meet them<br>
+    as if they're long-lost friends -<br>
+    let them lie there, let them wait.</p>
+  <p align="left">Let them sleep until it's time to meet<br>
+    then give them due attention<br>
+    resolve them as best you can<br>
+    then go on your way, leaving them there<br>
+    without ever looking back.</p>
+  <p align="left">Or even, when the appointment comes,<br>
+    you might find yourself waiting, waiting, waiting<br>
+    until you realize that you've been tricked<br>
+    that there was never a problem and there's nothing here<br>
+    except a long thin shadow, cast by your thoughts.</p>
+  <h5>More Inspirational Poems</h5>
+  <p><i>Each link below opens in a new tab</i></p>
+  <p><a href="/home/invictus" target="_blank">Invictus</a></p>
+  <p><a href="/home/if" target="_blank">If</a></p>
+  <p><a href="/home/desiderata" target="_blank">Desiderata</a></p>
+  <p align="center">Take it easy, take it easy<br>
+    Don't let the sound of your own wheels drive you crazy<br>
+    <i>Words from the song "Take it Easy" by the Eagles</i></p>
+  <br>
+  <br>
+</div>
+{% endif %}
+
+
+
+{% endblock %}

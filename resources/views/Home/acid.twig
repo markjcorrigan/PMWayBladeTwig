@@ -1,0 +1,37 @@
+{% extends 'base.twig' %}
+{% block title %} {% if not user %}PMWay{% endif %} {% if user %}ACID{% endif %}  {% endblock %}
+{% block body %}
+{% if user %}
+<!--BODY-->
+<div class="container" align="left">
+  <h3>Does your data have ACIDity?</h3>
+  <hr>
+  <p>ACID (atomicity, consistency, isolation, and durability) is an acronym and mnemonic device for learning and remembering the four primary attributes ensured to any transaction by a <a href="https://searchcio.techtarget.com/definition/transaction" target=?_blank?>transaction</a> manager (which is also called a transaction monitor). These attributes are:</p>
+  <p><b>Atomicity</b>. In a transaction involving two or more discrete pieces of information, either all of the pieces are committed or none are.</p>
+  <p><b>Consistency</b>. A transaction either creates a new and valid state of data, or, if any failure occurs, returns all data to its state before the transaction was started.</p>
+  <p><b>Isolation</b>. A transaction in process and not yet committed must remain isolated from any other transaction.</p>
+  <p><b>Durability</b>. Committed data is saved by the system such that, even in the event of a failure and system restart, the data is available in its correct state.</p>
+  <p>The ACID concept is described in ISO/IEC 10026-1:1992 Section 4. Each of these attributes can be measured against a <a href="https://searchcio.techtarget.com/definition/benchmark" target="_blank" >benchmark</a>. In general, however, a transaction manager or monitor is designed to realize the ACID concept. In a <a href="https://whatis.techtarget.com/definition/distributed" target="_blank">distributed</a> system, one way to achieve ACID is to use a two-phase commit (2PC), which ensures that all involved sites must commit to transaction completion or none do, and the transaction is rolled back (see <a href="https://searchsqlserver.techtarget.com/definition/rollback" target="_blank" >rollback</a>).</p>
+</div>
+<!-- Content Container ends here -->
+
+{% endif %}
+
+
+{% if not user %}<div class="container" align="left" ><h3 align="left">Please log on to access the content on this page</h3><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>{% endif %}{% if not current_user and false %}
+<div class="container" align="left">
+  <!--SWITCH ON AND OFF-->
+  <!--The insecure stuff goens here-->
+  <h3>Does you data have ACIDity?</h3>
+  <hr>
+  <p>ACID (atomicity, consistency, isolation, and durability) is an acronym and mnemonic device for learning and remembering the four primary attributes ensured to any transaction by a <a href="https://searchcio.techtarget.com/definition/transaction" target=?_blank?>transaction</a> manager (which is also called a transaction monitor). These attributes are:</p>
+  <p><b>Atomicity</b>. In a transaction involving two or more discrete pieces of information, either all of the pieces are committed or none are.</p>
+  <p><b>Consistency</b>. A transaction either creates a new and valid state of data, or, if any failure occurs, returns all data to its state before the transaction was started.</p>
+  <p><b>Isolation</b>. A transaction in process and not yet committed must remain isolated from any other transaction.</p>
+  <p><b>Durability</b>. Committed data is saved by the system such that, even in the event of a failure and system restart, the data is available in its correct state.</p>
+  <p>The ACID concept is described in ISO/IEC 10026-1:1992 Section 4. Each of these attributes can be measured against a <a href="https://searchcio.techtarget.com/definition/benchmark" target="_blank" >benchmark</a>. In general, however, a transaction manager or monitor is designed to realize the ACID concept. In a <a href="https://whatis.techtarget.com/definition/distributed" target="_blank">distributed</a> system, one way to achieve ACID is to use a two-phase commit (2PC), which ensures that all involved sites must commit to transaction completion or none do, and the transaction is rolled back (see <a href="https://searchsqlserver.techtarget.com/definition/rollback" target="_blank" >rollback</a>).</p>
+</div>
+{% endif %}
+
+
+{% endblock %}

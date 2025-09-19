@@ -1,0 +1,48 @@
+<?php
+
+
+  if (session_id() === "") { session_start(); }
+
+$id = $_SESSION['user_id'];
+
+
+require __DIR__ . '/connect.php';
+
+
+$conn = new PDO(DSN, USERNAME, PASSWORD);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+if ( ! isset($_SESSION['user_id'])) {   // from App\Auth::getUser
+
+    header('Location: http://' . $_SERVER['HTTP_HOST'] . $url, true, 303);   // from Core\Controller::redirect
+
+    exit;
+
+} 
+
+$stmt = $conn->query("SELECT is_admin FROM users WHERE id = " . $conn->quote($id));  // quote just in case
+//$stmt = $conn->query("SELECT is_admin FROM users WHERE id = 137"); 
+//$stmt = $conn->query("SELECT name FROM users WHERE id = 137"); // quote just in case
+$user = $stmt->fetch();
+
+//var_dump($user);
+
+if ($user['is_admin'] != 1) {
+ 
+     header('Location: http://' . $_SERVER['HTTP_HOST'] . $url, true, 303);   // from Core\Controller::redirect
+
+     exit;
+    
+    
+}
+
+?>
+
+<?php
+rest of the code...
+?>
+
+NB I need the /connect.php script to ensure above can connect to the user table in the db.
+I also need the 
+  if (session_id() === "") { session_start(); } if I get the error:  session already started.
+This must go above any code where sessions may have started.

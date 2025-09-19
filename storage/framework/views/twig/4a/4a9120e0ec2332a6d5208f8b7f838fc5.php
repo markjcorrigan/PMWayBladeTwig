@@ -1,0 +1,686 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+use Twig\TemplateWrapper;
+
+/* C:\xampp\htdocs\pmway\resources\views/Home/scrumdashboards.twig */
+class __TwigTemplate_773a59661eb3d35163acefa4aaeb455f extends Template
+{
+    private Source $source;
+    /**
+     * @var array<string, Template>
+     */
+    private array $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'body' => [$this, 'block_body'],
+        ];
+    }
+
+    protected function doGetParent(array $context): bool|string|Template|TemplateWrapper
+    {
+        // line 1
+        return "base.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $context = TwigBridge\Node\EventNode::triggerLaravelEvents($this->getTemplateName(), $context);
+        $this->parent = $this->load("base.twig", 1);
+        yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 2
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_title(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        yield "SCRUM Dashboards Overview";
+        yield from [];
+    }
+
+    // line 3
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_body(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        // line 4
+        yield "
+\t";
+        // line 5
+        if ((($tmp = ($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+            // line 6
+            yield "<div class=\"container\" align=\"center\"> <br>
+  <h3 class=\"center\"><b>Scrum Method in 6 minutes</b></h3>
+  <a href=\"/home/scrumsixmins\" target=\"_blank\"> <img class=\"img-fluid\" src=\"/images/scruminsixmins.png\" title=\"Scrum in Just Six Minutes\"></a><br>
+  <br>
+  <h3 class=\"center\"><b>Scrum Values</b></h3>
+  <br>
+  <a href=\"/homeviewvideo/resources/scrumvalues.mp4\" target=\"_blank\" title=\"Click the image for a video on the Scrum Values\"><img alt=\"Scrum Values\" class=\"img-fluid\" src=\"/images/scrumvaluesnew.png\" ></a> <br>
+  <br>
+  <br>
+  <h3 align=\"center\"><b>Scrum Principles, Processes and Aspects</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img class=\"img-fluid\" title=\"Click the image for Video's on the subject\" alt=\"PrinciplesAspectsProcesses\"  src=\"/images/principlesaspectsprocesses.png\" ></a> <br>
+  <br>
+  <h3 align=\"center\"><b>Scrum Principles</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img class=\"img-fluid\" title=\"Click the image for Video's on the subject\"  src=\"/images/principles.png\"  ></a> <br>
+  <a name=\"processes\"></a> <br>
+  <h3 align=\"center\"><b>Scrum Processes</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img class=\"img-fluid\" title=\"Click the image for Video's on the subject\"   src=\"/images/scrumdash.png\"   ></a> <br>
+  <br>
+  <h3 align=\"center\"><b>Scrum Aspects</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img alt=\"\" title=\"Click the image for Video's on the subject\"  class=\"img-fluid\" src=\"/images/aspects.jpg\" ></a><br>
+  <br>
+  <a name=\"demoapproved\"></a> <br>
+  <h3 align=\"center\"><b>Governance in Scrum <br>
+    (Operating @ Capability Maturity Level 2+)</b></h3>
+  <br>
+  <p>Click below to find out why the PO role is crucial (NOT TO MANAGE OR RIDE THE SCRUM TEAM) but rather to define User Stories (WHAT WHEN) and approve the demo deck after each sprint</p>
+  <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsescrumgovernance\" aria-expanded=\"false\" aria-controls=
+        \"collapsescrumgovernance\">Governance in Scrum</button>
+  <div class=\"collapse\" id=\"collapsescrumgovernance\">
+    <div class=\"container\">
+      <div class=\"card text-center\">
+        <h5 class=\"card-header\" align=\"center\"></h5>
+        <div class=\"card-body text-center\"> <img alt=\"\" title=\"scrum governance\" class=\"img-fluid\" src=\"/images/scrumgovernance.png\" > </div>
+        <div class=\"card-footer\"> Page above from Scrum for Dummies 2018 </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsescrumvaluemodelessence\" aria-expanded=\"false\" aria-controls=
+        \"collapsescrumvaluemodelessence\">The Scrum Essence <br>
+  (for Capability Maturity Level 2+) </button>
+  <div class=\"collapse\" id=\"collapsescrumvaluemodelessence\">
+    <div class=\"container\">
+      <div class=\"card text-center\">
+        <p align=\"center\"><i><small>The image below is the very essence of Scrum Success at CM L2!<br>
+          Hover over the Scrum V(Valued) Model for more detail or click the image for the Scrum V(Valued) Model in pdf</small></i></p>
+        <div align=\"center\"> <a href=\"/homeviewpdf/resources/scrumvalued.pdf\" target=\"_blank\"><img alt=\"Scrum Value Model essence\" class=\"img-fluid\" src=\"/images/scrumvaluedessence.jpg\" title=\"Click the image to download a pdf\"   onmouseover=\"this.src='/images/scrumvalued.jpg'\" onmouseout=\"this.src='/images/scrumvaluedessence.jpg'\" ></a><br>
+          <a href=\"/home/freedoms\" target=\"_blank\">To understand why, the (stepwise) goose, click here.</a> <br>
+          <br>
+          <br>
+          <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapseshoothorses\" aria-expanded=\"false\" aria-controls=
+        \"collapsepshoothorses\">Scrum run correctly<br>
+          is like riding a horse </button>
+          <div class=\"collapse\" id=\"collapseshoothorses\">
+            <div class=\"container\">
+              <div class=\"card text-center\">
+                <h5 class=\"card-header\" align=\"center\">They shoot horses don't they?</h5>
+                <div class=\"card-body text-center\">
+                  <p>Look at the horse images below.  Can you see the truth being presented?<br>
+                    Remember, our goal is Capability Maturity (and especially People Capability Maturity) @ Level 2+</p>
+                  <br>
+                  <p align=\"center\"> <img alt=\"out of control\" class=\"img-fluid\" src=\"/images/scrumexhorsetion.jpg\" onmouseover=\"this.src='/images/horseoutofcontroladjusted.jpg'\" onmouseout=\"this.src='/images/scrumexhorsetion.jpg'\" title=\"How under control is your project actually?\"> </p>
+                  <br>
+                  <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapseoutofsaddle\" aria-expanded=\"false\" aria-controls=
+        \"collapsepoutofsaddle\">Scrum<br>
+                  digging in the spurs! </button>
+                  <div class=\"collapse\" id=\"collapseoutofsaddle\">
+                    <div class=\"container\">
+                      <div class=\"card text-center\">
+                        <h5 class=\"card-header\" align=\"center\">PMWay suggests that most Scrum Teams (developers) will react badly if they are pushed too hard</h5>
+                        <div class=\"card-body text-center\">
+                          <p align=\"center\"><img class=\"img-fluid\" alt=\"Do not put a scrum team too hard\" src=\"/images/outofthesaddle.jpg\"><br>
+                            The best way to \"push scrum teams\" is through the correct use of the \"<a href=\"/userstories\" target=\"_blank\"><u>Professional User Story</u></a>\" and Product Owner approving team demo's at the end of each sprint.</p>
+                          </p>
+                        </div>
+                        <div class=\"card-footer\"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <h3><b>The image below is much better!</b></h3>
+                  <p align=\"center\"><img alt=\"Better!\" class=\"img-fluid\" src=\"/images/horsewellridden.png\" title=\"Under control, following process, scrum working and delivering results!\"></p>
+                  <p align=\"center\">Scrum method is under control, following scrum process in a stepwise manner; delivering results!<br>
+                    FYI, if you do not know this already: <b>the Scrum Master is in the saddle</b><br>
+                    and the developers are clear about the track and are not whipped, wild and frothing at the mouth.<br>
+                    <b>The Product Owner's ONLY JOB is to manage the track!</b></p>
+\t\t\t\t\t<p>The following is taken from page 179 or the the book \"<a href=\"/homeviewpdf/resources/professionalproductowner.pdf#page=179\" target=\"_blank\">The Professional Product Owner - Leaveraging Scrum As Competitive Advantage\"</a><br><i>Product Owner and the Sprint Backlog
+The Sprint Backlog belongs to the Development Team. It is their plan on how
+best to meet the Sprint Goal. As the Product Owner, you can determine the
+most important Product Backlog items for the Development Team to consider
+in their Sprint plan, <b>but you cannot dictate how much they take on or how
+they will break down their work</b>.
+This is an essential part in building a mutually respectful relationship
+between these two roles. A Development Team that truly owns the plan for
+the Sprint will demonstrate much more accountability and ownership over the
+work of the Sprint.
+Together with the Development Team, you define the Sprint Goal in Sprint
+Planning and then trust them to create the Sprint Backlog and maintain it
+throughout the Sprint.
+Sprint Goal → Sprint Backlog = Forecasted Product Backlog items
+(what) + Plan to deliver them (how)</i></p>
+                  <br>
+                  <br>
+                  <p align=\"center\">Here is the concept in more detail<br>
+                    <img alt=\"Better!\" class=\"img-fluid\" src=\"/images/horserace.jpg\" title=\"Away racing and geared for DevOps!\"></p>
+                </div>
+                <div class=\"card-footer\"> </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <p align=\"center\">The image below shows what Scrum roles are accountable for which Scrum Processes<br>
+            <a href=\"/homesave/resources/scrumprocessroles.pdf\" target=\"_blank\"><img alt=\"Better!\" class=\"img-fluid\" src=\"/images/scrumprocessroles.jpg\" title=\"The buck stops here!\"></a></p>
+          <p align=\"center\"><a href=\"/home/dml\" target=\"_blank\">Click here for more about CI/CD, the DML (ITIL) and DevOps</a>.</p>
+          <p align=\"center\"><a href=\"/pmway/?slide=7\" target=\"_blank\">And here for the V Model.  I.e. Mind The Gap!</a></p>
+          <p align=\"center\"><a href=\"/scrumroles\" target=\"_blank\">And here for an article on Scrum Master or Product Owner doing other role as well.</a></p>
+          <p align=\"center\"><a href=\"/raci\" target=\"_blank\">And here for the low down on RACI to assist with ROLE clarity.</a></p>
+          <p align=\"center\"><a href=\"/scrumrca#indexc\" target=\"_blank\">And here for the scrum dysfunctions and ways to fix these.</a></p>
+          <br>
+          <br>
+        </div>
+        <div class=\"card-footer\"> </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+";
+        }
+        // line 152
+        yield "
+
+";
+        // line 154
+        if ((($tmp =  !($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+            yield "<div class=\"container\" align=\"left\" ><h3 align=\"left\">Please log on to access the content on this page</h3><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>";
+        }
+        if (( !($context["current_user"] ?? null) && false)) {
+            // line 155
+            yield "<div class=\"container\" align=\"center\"> <br>
+  <h3 class=\"center\"><b>Scrum Method in 6 minutes</b></h3>
+  <a href=\"/home/scrumsixmins\" target=\"_blank\"> <img class=\"img-fluid\" src=\"/images/scruminsixmins.png\" title=\"Scrum in Just Six Minutes\"></a><br>
+  <br>
+  <h3 class=\"center\"><b>Scrum Values</b></h3>
+  <br>
+  <a href=\"/homeviewvideo/resources/scrumvalues.mp4\" target=\"_blank\" title=\"Click the image for a video on the Scrum Values\"><img alt=\"Scrum Values\" class=\"img-fluid\" src=\"/images/scrumvaluesnew.png\" ></a> <br>
+  <br>
+  <br>
+  <h3 align=\"center\"><b>Scrum Principles, Processes and Aspects</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img class=\"img-fluid\" title=\"Click the image for Video's on the subject\" alt=\"PrinciplesAspectsProcesses\"  src=\"/images/principlesaspectsprocesses.png\" ></a> <br>
+  <br>
+  <h3 align=\"center\"><b>Scrum Principles</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img class=\"img-fluid\" title=\"Click the image for Video's on the subject\"  src=\"/images/principles.png\"  ></a> <br>
+  <a name=\"processes\"></a> <br>
+  <h3 align=\"center\"><b>Scrum Processes</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img class=\"img-fluid\" title=\"Click the image for Video's on the subject\"   src=\"/images/scrumdash.png\"   ></a> <br>
+  <br>
+  <h3 align=\"center\"><b>Scrum Aspects</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img alt=\"\" title=\"Click the image for Video's on the subject\"  class=\"img-fluid\" src=\"/images/aspects.jpg\" ></a><br>
+  <br>
+  <a name=\"demoapproved\"></a> <br>
+  <h3 align=\"center\"><b>Governance in Scrum <br>
+    (Operating @ Capability Maturity Level 2+)</b></h3>
+  <br>
+  <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsescrumgovernance\" aria-expanded=\"false\" aria-controls=
+        \"collapsescrumgovernance\">Governance in Scrum</button>
+  <div class=\"collapse\" id=\"collapsescrumgovernance\">
+    <div class=\"container\">
+      <div class=\"card text-center\">
+        <h5 class=\"card-header\" align=\"center\"></h5>
+        <div class=\"card-body text-center\"> <img alt=\"\" title=\"scrum governance\" class=\"img-fluid\" src=\"/images/scrumgovernance.png\" > </div>
+        <div class=\"card-footer\"> Page above from Scrum for Dummies 2018 </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsescrumvaluemodelessence\" aria-expanded=\"false\" aria-controls=
+        \"collapsescrumvaluemodelessence\">The Scrum Essence <br>
+  (for Capability Maturity Level 2+) </button>
+  <div class=\"collapse\" id=\"collapsescrumvaluemodelessence\">
+    <div class=\"container\">
+      <div class=\"card text-center\">
+        <p align=\"center\"><i><small>The image below is the very essence of Scrum Success at CM L2!<br>
+          Hover over the Scrum V(Valued) Model for more detail or click the image for the Scrum V(Valued) Model in pdf</small></i></p>
+        <div align=\"center\"> <a href=\"/homeviewpdf/resources/scrumvalued.pdf\" target=\"_blank\"><img alt=\"Scrum Value Model essence\" class=\"img-fluid\" src=\"/images/scrumvaluedessence.jpg\" title=\"Click the image to download a pdf\"   onmouseover=\"this.src='/images/scrumvalued.jpg'\" onmouseout=\"this.src='/images/scrumvaluedessence.jpg'\" ></a><br>
+          <a href=\"/home/freedoms\" target=\"_blank\">To understand why, the (stepwise) goose, click here.</a> <br>
+          <br>
+          <br>
+          <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapseshoothorses\" aria-expanded=\"false\" aria-controls=
+        \"collapsepshoothorses\">Scrum run correctly<br>
+          is like riding a horse </button>
+          <div class=\"collapse\" id=\"collapseshoothorses\">
+            <div class=\"container\">
+              <div class=\"card text-center\">
+                <h5 class=\"card-header\" align=\"center\">They shoot horses don't they?</h5>
+                <div class=\"card-body text-center\">
+                  <p>Look at the horse images below.  Can you see the truth being presented?<br>
+                    Remember, our goal is Capability Maturity (and especially People Capability Maturity) @ Level 2+</p>
+                  <br>
+                  <p align=\"center\"> <img alt=\"out of control\" class=\"img-fluid\" src=\"/images/scrumexhorsetion.jpg\" onmouseover=\"this.src='/images/horseoutofcontroladjusted.jpg'\" onmouseout=\"this.src='/images/scrumexhorsetion.jpg'\" title=\"How under control is your project actually?\"> </p>
+                  <br>
+                  <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapseoutofsaddle\" aria-expanded=\"false\" aria-controls=
+        \"collapsepoutofsaddle\">Scrum<br>
+                  digging in the spurs! </button>
+                  <div class=\"collapse\" id=\"collapseoutofsaddle\">
+                    <div class=\"container\">
+                      <div class=\"card text-center\">
+                        <h5 class=\"card-header\" align=\"center\">PMWay suggests that most Scrum Teams (developers) will react badly if they are pushed too hard</h5>
+                        <div class=\"card-body text-center\">
+                          <p align=\"center\"><img class=\"img-fluid\" alt=\"Do not put a scrum team too hard\" src=\"/images/outofthesaddle.jpg\"><br>
+                            The best way to \"push scrum teams\" is through the correct use of the \"<a href=\"/userstories\" target=\"_blank\"><u>Professional User Story</u></a>\" and Product Owner approving team demo's at the end of each sprint.</p>
+                          </p>
+                        </div>
+                        <div class=\"card-footer\"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <h3><b>The image below is much better!</b></h3>
+                  <p align=\"center\"><img alt=\"Better!\" class=\"img-fluid\" src=\"/images/horsewellridden.png\" title=\"Under control, following process, scrum working and delivering results!\"></p>
+                  <p align=\"center\">Scrum method is under control, following scrum process in a stepwise manner; delivering results!<br>
+                    FYI, if you do not know this already: <b>the Scrum Master is in the saddle</b><br>
+                    and the developers are clear about the track and are not whipped, wild and frothing at the mouth.<br>
+                    <b>The Product Owner's ONLY JOB is to manage the track!</b></p>
+                  <br>
+                  <br>
+                  <p align=\"center\">Here is the concept in more detail<br>
+                    <img alt=\"Better!\" class=\"img-fluid\" src=\"/images/horserace.jpg\" title=\"Away racing and geared for DevOps!\"></p>
+                </div>
+                <div class=\"card-footer\"> </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <p align=\"center\">The image below shows what Scrum roles are accountable for which Scrum Processes<br>
+            <a href=\"/homesave/resources/scrumprocessroles.pdf\" target=\"_blank\"><img alt=\"Better!\" class=\"img-fluid\" src=\"/images/scrumprocessroles.jpg\" title=\"The buck stops here!\"></a></p>
+          <p align=\"center\"><a href=\"/home/dml\" target=\"_blank\">Click here for more about CI/CD, the DML (ITIL) and DevOps</a>.</p>
+          <p align=\"center\"><a href=\"/pmway/?slide=7\" target=\"_blank\">And here for the V Model.  I.e. Mind The Gap!</a></p>
+          <p align=\"center\"><a href=\"/scrumroles\" target=\"_blank\">And here for an article on Scrum Master or Product Owner doing other role as well.</a></p>
+          <p align=\"center\"><a href=\"/raci\" target=\"_blank\">And here for the low down on RACI to assist with ROLE clarity.</a></p>
+          <p align=\"center\"><a href=\"/scrumrca#indexc\" target=\"_blank\">And here for the scrum dysfunctions and ways to fix these.</a></p>
+          <br>
+          <br>
+        </div>
+        <div class=\"card-footer\"> </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+";
+        }
+        // line 285
+        yield "
+
+";
+        yield from [];
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName(): string
+    {
+        return "C:\\xampp\\htdocs\\pmway\\resources\\views/Home/scrumdashboards.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable(): bool
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo(): array
+    {
+        return array (  365 => 285,  233 => 155,  228 => 154,  224 => 152,  76 => 6,  74 => 5,  71 => 4,  64 => 3,  53 => 2,  41 => 1,);
+    }
+
+    public function getSourceContext(): Source
+    {
+        return new Source("{% extends 'base.twig' %}
+{% block title %}SCRUM Dashboards Overview{% endblock %}
+{% block body %}
+
+\t{% if user %}
+<div class=\"container\" align=\"center\"> <br>
+  <h3 class=\"center\"><b>Scrum Method in 6 minutes</b></h3>
+  <a href=\"/home/scrumsixmins\" target=\"_blank\"> <img class=\"img-fluid\" src=\"/images/scruminsixmins.png\" title=\"Scrum in Just Six Minutes\"></a><br>
+  <br>
+  <h3 class=\"center\"><b>Scrum Values</b></h3>
+  <br>
+  <a href=\"/homeviewvideo/resources/scrumvalues.mp4\" target=\"_blank\" title=\"Click the image for a video on the Scrum Values\"><img alt=\"Scrum Values\" class=\"img-fluid\" src=\"/images/scrumvaluesnew.png\" ></a> <br>
+  <br>
+  <br>
+  <h3 align=\"center\"><b>Scrum Principles, Processes and Aspects</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img class=\"img-fluid\" title=\"Click the image for Video's on the subject\" alt=\"PrinciplesAspectsProcesses\"  src=\"/images/principlesaspectsprocesses.png\" ></a> <br>
+  <br>
+  <h3 align=\"center\"><b>Scrum Principles</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img class=\"img-fluid\" title=\"Click the image for Video's on the subject\"  src=\"/images/principles.png\"  ></a> <br>
+  <a name=\"processes\"></a> <br>
+  <h3 align=\"center\"><b>Scrum Processes</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img class=\"img-fluid\" title=\"Click the image for Video's on the subject\"   src=\"/images/scrumdash.png\"   ></a> <br>
+  <br>
+  <h3 align=\"center\"><b>Scrum Aspects</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img alt=\"\" title=\"Click the image for Video's on the subject\"  class=\"img-fluid\" src=\"/images/aspects.jpg\" ></a><br>
+  <br>
+  <a name=\"demoapproved\"></a> <br>
+  <h3 align=\"center\"><b>Governance in Scrum <br>
+    (Operating @ Capability Maturity Level 2+)</b></h3>
+  <br>
+  <p>Click below to find out why the PO role is crucial (NOT TO MANAGE OR RIDE THE SCRUM TEAM) but rather to define User Stories (WHAT WHEN) and approve the demo deck after each sprint</p>
+  <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsescrumgovernance\" aria-expanded=\"false\" aria-controls=
+        \"collapsescrumgovernance\">Governance in Scrum</button>
+  <div class=\"collapse\" id=\"collapsescrumgovernance\">
+    <div class=\"container\">
+      <div class=\"card text-center\">
+        <h5 class=\"card-header\" align=\"center\"></h5>
+        <div class=\"card-body text-center\"> <img alt=\"\" title=\"scrum governance\" class=\"img-fluid\" src=\"/images/scrumgovernance.png\" > </div>
+        <div class=\"card-footer\"> Page above from Scrum for Dummies 2018 </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsescrumvaluemodelessence\" aria-expanded=\"false\" aria-controls=
+        \"collapsescrumvaluemodelessence\">The Scrum Essence <br>
+  (for Capability Maturity Level 2+) </button>
+  <div class=\"collapse\" id=\"collapsescrumvaluemodelessence\">
+    <div class=\"container\">
+      <div class=\"card text-center\">
+        <p align=\"center\"><i><small>The image below is the very essence of Scrum Success at CM L2!<br>
+          Hover over the Scrum V(Valued) Model for more detail or click the image for the Scrum V(Valued) Model in pdf</small></i></p>
+        <div align=\"center\"> <a href=\"/homeviewpdf/resources/scrumvalued.pdf\" target=\"_blank\"><img alt=\"Scrum Value Model essence\" class=\"img-fluid\" src=\"/images/scrumvaluedessence.jpg\" title=\"Click the image to download a pdf\"   onmouseover=\"this.src='/images/scrumvalued.jpg'\" onmouseout=\"this.src='/images/scrumvaluedessence.jpg'\" ></a><br>
+          <a href=\"/home/freedoms\" target=\"_blank\">To understand why, the (stepwise) goose, click here.</a> <br>
+          <br>
+          <br>
+          <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapseshoothorses\" aria-expanded=\"false\" aria-controls=
+        \"collapsepshoothorses\">Scrum run correctly<br>
+          is like riding a horse </button>
+          <div class=\"collapse\" id=\"collapseshoothorses\">
+            <div class=\"container\">
+              <div class=\"card text-center\">
+                <h5 class=\"card-header\" align=\"center\">They shoot horses don't they?</h5>
+                <div class=\"card-body text-center\">
+                  <p>Look at the horse images below.  Can you see the truth being presented?<br>
+                    Remember, our goal is Capability Maturity (and especially People Capability Maturity) @ Level 2+</p>
+                  <br>
+                  <p align=\"center\"> <img alt=\"out of control\" class=\"img-fluid\" src=\"/images/scrumexhorsetion.jpg\" onmouseover=\"this.src='/images/horseoutofcontroladjusted.jpg'\" onmouseout=\"this.src='/images/scrumexhorsetion.jpg'\" title=\"How under control is your project actually?\"> </p>
+                  <br>
+                  <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapseoutofsaddle\" aria-expanded=\"false\" aria-controls=
+        \"collapsepoutofsaddle\">Scrum<br>
+                  digging in the spurs! </button>
+                  <div class=\"collapse\" id=\"collapseoutofsaddle\">
+                    <div class=\"container\">
+                      <div class=\"card text-center\">
+                        <h5 class=\"card-header\" align=\"center\">PMWay suggests that most Scrum Teams (developers) will react badly if they are pushed too hard</h5>
+                        <div class=\"card-body text-center\">
+                          <p align=\"center\"><img class=\"img-fluid\" alt=\"Do not put a scrum team too hard\" src=\"/images/outofthesaddle.jpg\"><br>
+                            The best way to \"push scrum teams\" is through the correct use of the \"<a href=\"/userstories\" target=\"_blank\"><u>Professional User Story</u></a>\" and Product Owner approving team demo's at the end of each sprint.</p>
+                          </p>
+                        </div>
+                        <div class=\"card-footer\"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <h3><b>The image below is much better!</b></h3>
+                  <p align=\"center\"><img alt=\"Better!\" class=\"img-fluid\" src=\"/images/horsewellridden.png\" title=\"Under control, following process, scrum working and delivering results!\"></p>
+                  <p align=\"center\">Scrum method is under control, following scrum process in a stepwise manner; delivering results!<br>
+                    FYI, if you do not know this already: <b>the Scrum Master is in the saddle</b><br>
+                    and the developers are clear about the track and are not whipped, wild and frothing at the mouth.<br>
+                    <b>The Product Owner's ONLY JOB is to manage the track!</b></p>
+\t\t\t\t\t<p>The following is taken from page 179 or the the book \"<a href=\"/homeviewpdf/resources/professionalproductowner.pdf#page=179\" target=\"_blank\">The Professional Product Owner - Leaveraging Scrum As Competitive Advantage\"</a><br><i>Product Owner and the Sprint Backlog
+The Sprint Backlog belongs to the Development Team. It is their plan on how
+best to meet the Sprint Goal. As the Product Owner, you can determine the
+most important Product Backlog items for the Development Team to consider
+in their Sprint plan, <b>but you cannot dictate how much they take on or how
+they will break down their work</b>.
+This is an essential part in building a mutually respectful relationship
+between these two roles. A Development Team that truly owns the plan for
+the Sprint will demonstrate much more accountability and ownership over the
+work of the Sprint.
+Together with the Development Team, you define the Sprint Goal in Sprint
+Planning and then trust them to create the Sprint Backlog and maintain it
+throughout the Sprint.
+Sprint Goal → Sprint Backlog = Forecasted Product Backlog items
+(what) + Plan to deliver them (how)</i></p>
+                  <br>
+                  <br>
+                  <p align=\"center\">Here is the concept in more detail<br>
+                    <img alt=\"Better!\" class=\"img-fluid\" src=\"/images/horserace.jpg\" title=\"Away racing and geared for DevOps!\"></p>
+                </div>
+                <div class=\"card-footer\"> </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <p align=\"center\">The image below shows what Scrum roles are accountable for which Scrum Processes<br>
+            <a href=\"/homesave/resources/scrumprocessroles.pdf\" target=\"_blank\"><img alt=\"Better!\" class=\"img-fluid\" src=\"/images/scrumprocessroles.jpg\" title=\"The buck stops here!\"></a></p>
+          <p align=\"center\"><a href=\"/home/dml\" target=\"_blank\">Click here for more about CI/CD, the DML (ITIL) and DevOps</a>.</p>
+          <p align=\"center\"><a href=\"/pmway/?slide=7\" target=\"_blank\">And here for the V Model.  I.e. Mind The Gap!</a></p>
+          <p align=\"center\"><a href=\"/scrumroles\" target=\"_blank\">And here for an article on Scrum Master or Product Owner doing other role as well.</a></p>
+          <p align=\"center\"><a href=\"/raci\" target=\"_blank\">And here for the low down on RACI to assist with ROLE clarity.</a></p>
+          <p align=\"center\"><a href=\"/scrumrca#indexc\" target=\"_blank\">And here for the scrum dysfunctions and ways to fix these.</a></p>
+          <br>
+          <br>
+        </div>
+        <div class=\"card-footer\"> </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+{% endif %}
+
+
+{% if not user %}<div class=\"container\" align=\"left\" ><h3 align=\"left\">Please log on to access the content on this page</h3><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>{% endif %}{% if not current_user and false %}
+<div class=\"container\" align=\"center\"> <br>
+  <h3 class=\"center\"><b>Scrum Method in 6 minutes</b></h3>
+  <a href=\"/home/scrumsixmins\" target=\"_blank\"> <img class=\"img-fluid\" src=\"/images/scruminsixmins.png\" title=\"Scrum in Just Six Minutes\"></a><br>
+  <br>
+  <h3 class=\"center\"><b>Scrum Values</b></h3>
+  <br>
+  <a href=\"/homeviewvideo/resources/scrumvalues.mp4\" target=\"_blank\" title=\"Click the image for a video on the Scrum Values\"><img alt=\"Scrum Values\" class=\"img-fluid\" src=\"/images/scrumvaluesnew.png\" ></a> <br>
+  <br>
+  <br>
+  <h3 align=\"center\"><b>Scrum Principles, Processes and Aspects</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img class=\"img-fluid\" title=\"Click the image for Video's on the subject\" alt=\"PrinciplesAspectsProcesses\"  src=\"/images/principlesaspectsprocesses.png\" ></a> <br>
+  <br>
+  <h3 align=\"center\"><b>Scrum Principles</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img class=\"img-fluid\" title=\"Click the image for Video's on the subject\"  src=\"/images/principles.png\"  ></a> <br>
+  <a name=\"processes\"></a> <br>
+  <h3 align=\"center\"><b>Scrum Processes</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img class=\"img-fluid\" title=\"Click the image for Video's on the subject\"   src=\"/images/scrumdash.png\"   ></a> <br>
+  <br>
+  <h3 align=\"center\"><b>Scrum Aspects</b></h3>
+  <br>
+  <a href=\"/home/scrumstudy\" target=\"_blank\"><img alt=\"\" title=\"Click the image for Video's on the subject\"  class=\"img-fluid\" src=\"/images/aspects.jpg\" ></a><br>
+  <br>
+  <a name=\"demoapproved\"></a> <br>
+  <h3 align=\"center\"><b>Governance in Scrum <br>
+    (Operating @ Capability Maturity Level 2+)</b></h3>
+  <br>
+  <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsescrumgovernance\" aria-expanded=\"false\" aria-controls=
+        \"collapsescrumgovernance\">Governance in Scrum</button>
+  <div class=\"collapse\" id=\"collapsescrumgovernance\">
+    <div class=\"container\">
+      <div class=\"card text-center\">
+        <h5 class=\"card-header\" align=\"center\"></h5>
+        <div class=\"card-body text-center\"> <img alt=\"\" title=\"scrum governance\" class=\"img-fluid\" src=\"/images/scrumgovernance.png\" > </div>
+        <div class=\"card-footer\"> Page above from Scrum for Dummies 2018 </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapsescrumvaluemodelessence\" aria-expanded=\"false\" aria-controls=
+        \"collapsescrumvaluemodelessence\">The Scrum Essence <br>
+  (for Capability Maturity Level 2+) </button>
+  <div class=\"collapse\" id=\"collapsescrumvaluemodelessence\">
+    <div class=\"container\">
+      <div class=\"card text-center\">
+        <p align=\"center\"><i><small>The image below is the very essence of Scrum Success at CM L2!<br>
+          Hover over the Scrum V(Valued) Model for more detail or click the image for the Scrum V(Valued) Model in pdf</small></i></p>
+        <div align=\"center\"> <a href=\"/homeviewpdf/resources/scrumvalued.pdf\" target=\"_blank\"><img alt=\"Scrum Value Model essence\" class=\"img-fluid\" src=\"/images/scrumvaluedessence.jpg\" title=\"Click the image to download a pdf\"   onmouseover=\"this.src='/images/scrumvalued.jpg'\" onmouseout=\"this.src='/images/scrumvaluedessence.jpg'\" ></a><br>
+          <a href=\"/home/freedoms\" target=\"_blank\">To understand why, the (stepwise) goose, click here.</a> <br>
+          <br>
+          <br>
+          <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapseshoothorses\" aria-expanded=\"false\" aria-controls=
+        \"collapsepshoothorses\">Scrum run correctly<br>
+          is like riding a horse </button>
+          <div class=\"collapse\" id=\"collapseshoothorses\">
+            <div class=\"container\">
+              <div class=\"card text-center\">
+                <h5 class=\"card-header\" align=\"center\">They shoot horses don't they?</h5>
+                <div class=\"card-body text-center\">
+                  <p>Look at the horse images below.  Can you see the truth being presented?<br>
+                    Remember, our goal is Capability Maturity (and especially People Capability Maturity) @ Level 2+</p>
+                  <br>
+                  <p align=\"center\"> <img alt=\"out of control\" class=\"img-fluid\" src=\"/images/scrumexhorsetion.jpg\" onmouseover=\"this.src='/images/horseoutofcontroladjusted.jpg'\" onmouseout=\"this.src='/images/scrumexhorsetion.jpg'\" title=\"How under control is your project actually?\"> </p>
+                  <br>
+                  <button class=\"btn btn-primary align-center clearfix\" type=\"button\" data-toggle=
+\"collapse\" data-target=\"#collapseoutofsaddle\" aria-expanded=\"false\" aria-controls=
+        \"collapsepoutofsaddle\">Scrum<br>
+                  digging in the spurs! </button>
+                  <div class=\"collapse\" id=\"collapseoutofsaddle\">
+                    <div class=\"container\">
+                      <div class=\"card text-center\">
+                        <h5 class=\"card-header\" align=\"center\">PMWay suggests that most Scrum Teams (developers) will react badly if they are pushed too hard</h5>
+                        <div class=\"card-body text-center\">
+                          <p align=\"center\"><img class=\"img-fluid\" alt=\"Do not put a scrum team too hard\" src=\"/images/outofthesaddle.jpg\"><br>
+                            The best way to \"push scrum teams\" is through the correct use of the \"<a href=\"/userstories\" target=\"_blank\"><u>Professional User Story</u></a>\" and Product Owner approving team demo's at the end of each sprint.</p>
+                          </p>
+                        </div>
+                        <div class=\"card-footer\"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <h3><b>The image below is much better!</b></h3>
+                  <p align=\"center\"><img alt=\"Better!\" class=\"img-fluid\" src=\"/images/horsewellridden.png\" title=\"Under control, following process, scrum working and delivering results!\"></p>
+                  <p align=\"center\">Scrum method is under control, following scrum process in a stepwise manner; delivering results!<br>
+                    FYI, if you do not know this already: <b>the Scrum Master is in the saddle</b><br>
+                    and the developers are clear about the track and are not whipped, wild and frothing at the mouth.<br>
+                    <b>The Product Owner's ONLY JOB is to manage the track!</b></p>
+                  <br>
+                  <br>
+                  <p align=\"center\">Here is the concept in more detail<br>
+                    <img alt=\"Better!\" class=\"img-fluid\" src=\"/images/horserace.jpg\" title=\"Away racing and geared for DevOps!\"></p>
+                </div>
+                <div class=\"card-footer\"> </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <p align=\"center\">The image below shows what Scrum roles are accountable for which Scrum Processes<br>
+            <a href=\"/homesave/resources/scrumprocessroles.pdf\" target=\"_blank\"><img alt=\"Better!\" class=\"img-fluid\" src=\"/images/scrumprocessroles.jpg\" title=\"The buck stops here!\"></a></p>
+          <p align=\"center\"><a href=\"/home/dml\" target=\"_blank\">Click here for more about CI/CD, the DML (ITIL) and DevOps</a>.</p>
+          <p align=\"center\"><a href=\"/pmway/?slide=7\" target=\"_blank\">And here for the V Model.  I.e. Mind The Gap!</a></p>
+          <p align=\"center\"><a href=\"/scrumroles\" target=\"_blank\">And here for an article on Scrum Master or Product Owner doing other role as well.</a></p>
+          <p align=\"center\"><a href=\"/raci\" target=\"_blank\">And here for the low down on RACI to assist with ROLE clarity.</a></p>
+          <p align=\"center\"><a href=\"/scrumrca#indexc\" target=\"_blank\">And here for the scrum dysfunctions and ways to fix these.</a></p>
+          <br>
+          <br>
+        </div>
+        <div class=\"card-footer\"> </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+{% endif %}
+
+
+{% endblock %}
+", "C:\\xampp\\htdocs\\pmway\\resources\\views/Home/scrumdashboards.twig", "C:\\xampp\\htdocs\\pmway\\resources\\views/Home/scrumdashboards.twig");
+    }
+}

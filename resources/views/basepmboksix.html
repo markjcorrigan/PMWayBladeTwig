@@ -1,0 +1,504 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="/bootstrapfourfivetwo/css/bootstrap.css" />
+	<!--<link rel="stylesheet" href="/bootstrapfouroneone/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">-->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="/bootstrapfourthreeone/fontawesomeprowebfivetwo/css/all.css">
+	<link rel="stylesheet" href="/bootstrapfourthreeone/css/jquery-ui.css">
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+<!--<body class="d-flex flex-column">-->
+
+<body class="d-flex flex-column" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+	<div id="page-content"> <!--NB ties to sticky footer below--->
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+			<a class="navbar-brand" href="/">PMWay.co.za</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+				<span class="navbar-toggler-icon" .co.za></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+
+					{% if not user %}
+
+
+
+					<li class="nav-item">
+						<a class="nav-link" href="/contacts/new">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</a>
+						<!-- </li class="nav-item">
+								<li class="nav-item">
+									<a class="nav-link" href="/register" id="register">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</a>
+								</li class="nav-item">
+								<li class="nav-item">
+									<a class="nav-link" href="/login" id="login">
+										<i class="fa fa-unlock" aria-hidden="true"></i>
+									</a>
+								</li class="nav-item">  -->
+
+
+
+						{% endif %}
+
+						{% if user %}
+						<!-- Global Site Tag (gtag.js) - Google Analytics -->
+						<!--<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-31126291-1');
+</script>-->
+
+
+						<!--<li class="nav-item">
+                      <a class="nav-link" href="/search/search.php"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Search</a>
+                  </li class="nav-item">-->
+
+						<!--NB trying to get Contact and Blog to work-->
+
+						<!-----------------------------
+                   				<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-search" aria-hidden="true"></i>&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+
+                              <!--<a class="dropdown-item" href="/blog/index.php"><i class="fab fa-blogger" aria-hidden="true"></i>&nbsp;Blog</a>-->
+						<!--------------------------------<a class="dropdown-item" href="/search/search"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Search</a>
+                             <a class="dropdown-item" href="/blog/contactpmway.php"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Contact</a>
+
+                              </div>
+                              </li class="nav-item">----------------------------------->
+
+						<!--<li class="nav-item">
+									<a class="nav-link" href="/contact">
+										<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Contact
+									</a>
+								</li class="nav-item">  ---NB trying to get Contact and Blog working-->
+
+						<!--<li class="nav-item">
+                      <a class="nav-link" href="/home/intwomins"><i class="fa fa-info" aria-hidden="true"></i>&nbsp;(in2minutes)</a>
+                  </li class="nav-item">
+                  	 <li class="nav-item">
+                      <a class="nav-link" href="/home/intenmins"><i class="fa fa-info" aria-hidden="true"></i>&nbsp;(in10minutes)</a>
+                  </li class="nav-item">
+
+                        <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-cogs"></i>&nbsp;PMWays
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="/">&nbsp;PMBOK Dashboard</a>
+                                <a class="dropdown-item" href="/home/pmbokprocessnutshell">&nbsp;PMBOK (Dashboard with 'Teaching Overlay / How To')</a>
+                              <a class="dropdown-item" href="/default.php" onclick="return confirm_alert(this);"></a>-->
+						<!--<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarNav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fa fa-lock"></i>&nbsp;Logout
+
+									</a>
+									<div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownPortfolio">
+										<a class="dropdown-item" href="/logout">
+											<i class="fa fa-lock" aria-hidden="true"></i>&nbsp;Logout
+										</a>
+										<a class="dropdown-item" href="/logoutb">
+											<i class="fa fa-unlock" aria-hidden="true"></i>&nbsp;ticked
+											<br>remember?
+											</a>-->
+						<!--<li class="nav-item">
+									<a class="nav-link" href="/profile/show">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</a>
+								</li class="nav-item">
+
+											<!--
+											<li class="nav-item">
+												<a class="nav-link" href="/home/contact">
+													<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Contact
+												</a>
+											</li class="nav-item">-->
+						<!--<li class="nav-item"><a class="nav-link" href="/logout"><i class="fa fa-lock" aria-hidden="true"></i></a></li class="nav-item">-->
+
+
+						{% endif %}
+
+			</div>
+		</nav>
+
+
+
+
+
+		{% for message in flash_messages %}
+
+		<div style="text-align:center" class="alert alert-{{ message.type }}">
+			{{ message.body }}
+		</div>
+		{% endfor %}
+
+		{% block body %}
+
+		<div class="container" style="text-align:center">
+
+
+
+
+
+
+			{% endblock %}
+
+		</div>
+
+		<script src="/bootstrapfourthreeone/js/jquery.js"></script>
+		<script src="/bootstrapfourthreeone/js/bootstrap.js"></script>
+		<script src="/bootstrapfourthreeone/js/popper.min.js"></script>
+		<script src="/bootstrapfourthreeone/js/jquery-ui.js"></script>
+
+
+
+		<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<table style="width: 100%">
+							<tr>
+								<td>
+									<!-- <h5 class="modal-title text-sm-left" id="contactModalTitle">
+										<a href="#">Login</a>
+									</h5> -->
+								</td>
+								<!--<td><h5 class="modal-title text-sm-right align-bottom"><a href="/register" role="button"><small>Register</small></a></h5></td><td><button class="close" data-dismiss="modal"><span>&times;</span></button></td>-->
+							</tr>
+						</table>
+					</div>
+					<div class="modal-body">
+						<!-- <form action="/login/create" method="post" role="form" style="display: block; ">
+							<div class="form-group">
+								<input type="text" name="email" id="email" tabindex="1"
+									class="form-control bg-light border border-primary rounded" placeholder="Email"
+									autofocus required>
+							</div>
+							<div class="form-group">
+								<p style="text-align:left">
+									<font color="navy">
+										<input type="password" name="password" id="login-password" tabindex="2"
+											class="form-control bg-light border border-primary rounded"
+											placeholder="Password" required>
+									</font>
+								</p>
+							</div>
+							<div class="form-group text-center">
+								<p style="text-align:left">
+									<font color="navy">
+										<label>
+											<input type="checkbox" name="remember_me" id="remember">
+											<label for="remember"> Remember Me</label>
+									</font>
+								</p>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-6 col-sm-offset-3">
+										<p style="text-align:left">
+											<font color="navy">
+												<input type="submit" name="login-submit" id="login-submit" tabindex="4"
+													class="form-control text-white btn btn-login bg-primary border border-primary rounded"
+													value="Log In">
+											</font>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="text-center">
+											<p style="text-align:left">
+												<font color="navy">
+													<a href="/password/forgot" tabindex="5"
+														class="forgot-password">Forgot Password?</a>
+												</font>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form> -->
+					</div>
+					<div class="modal-footer">
+						<p style="text-align:left">
+							<font color="navy">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+							</font>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="contactModalRegister" tabindex="-1" role="dialog"
+			aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<table style="width: 100%">
+							<tr>
+								<td>
+									<h5 class="modal-title text-sm-left" id="contactModalTitle">
+										<a href="#">Register</a>
+									</h5>
+								</td>
+								<!--<td><h5 class="modal-title text-sm-right align-bottom"><a href="/login" role="button"><small>Login</small></a></h5></td><td><button class="close" data-dismiss="modal"><span>&times;</span></button></td>-->
+							</tr>
+						</table>
+					</div>
+					<div class="modal-body">
+						<!-- <form method="post" action="/signup/create" id="formSignup">
+							<div class="form-group">
+								<p style="text-align:left">
+									<label for="inputName">
+										<font color="navy">Name</font>
+									</label>
+									<input id="inputName" name="name" placeholder="Name" autofocus
+										value="{{ user.name }}" required class="form-control" />
+								</p>
+							</div>
+							<div class="form-group">
+								<p style="text-align:left">
+									<font color="navy">
+										<label for="inputEmail">Email address</label>
+										<input id="inputEmail" name="email" placeholder="email address"
+											value="{{ user.email }}" required type="email" class="form-control" />
+									</font>
+								</p>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword">Password</label>
+								<p style="text-align:left">
+									<font color="navy">
+										<input type="password" id="inputPassword" name="password" placeholder="Password"
+											required class="form-control" />
+									</font>
+								</p>
+							</div>
+							<p style="text-align:left">
+								<font color="navy">
+									<button type="submit" class="btn btn-primary">Sign up</button>
+								</font>
+							</p>
+						</form> -->
+					</div>
+					<div class="modal-footer">
+						<p style="text-align:left">
+							<font color="navy">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+							</font>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script>
+			$("a#login").on("click", function (e) {
+				e.preventDefault();
+				$('#contactModal').modal('show');
+			});
+		</script>
+		<script>
+			$("a#register").on("click", function (e) {
+				e.preventDefault();
+				$('#contactModalRegister').modal('show');
+			});
+		</script>
+
+
+		<script type="text/javascript" src="/tinymce/tinymce.min.js"></script>
+		<script type="text/javascript">
+			tinymce.init({
+				selector: "textarea",
+				plugins: [
+					"advlist autolink lists link image charmap print preview anchor",
+					"searchreplace visualblocks code fullscreen",
+					<!-- "insertdatetime media table contextmenu paste moxiemanager" -->
+				],
+				toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+			});
+		</script>
+
+
+
+		<script>
+			$(document).ready(function () {
+				$('.nav-toggle').click(function () {
+					//get collapse content selector
+					var collapse_content_selector = $(this).attr('href');
+
+					//make the collapse content to be shown or hide
+					var toggle_switch = $(this);
+					$(collapse_content_selector).toggle(function () {
+						if ($(this).css('display') == 'none') {
+							//change the button label to be 'Show'
+							toggle_switch.html('Show');
+						} else {
+							//change the button label to be 'Hide'
+							toggle_switch.html('Hide');
+						}
+					});
+				});
+
+			});
+		</script>
+		<style>
+			.round-border {
+				border: 1px solid #eee;
+				border: 1px solid rgba(0, 0, 0, 0.05);
+				-webkit-border-radius: 4px;
+				-moz-border-radius: 4px;
+				border-radius: 4px;
+				padding: 10px;
+				margin-bottom: 5px;
+			}
+		</style>
+
+
+
+
+
+
+		<map id="imgmap2" name="imgmap2">
+
+			<area coords="223, 128, 350, 232" href="/pmboksix/fourone" shape="rect">
+			<area coords="347, 128, 469, 231" href="/pmboksix/fourtwo" shape="rect">
+			<area coords="470, 130, 590, 180" href="/pmboksix/fourthree" shape="rect">
+			<area coords="471, 180, 591, 232" href="/pmboksix/fourfour" shape="rect">
+			<area coords="593, 130, 719, 181" href="/pmboksix/fourfive" shape="rect">
+			<area coords="594, 181, 717, 231" href="/pmboksix/foursix" shape="rect">
+			<area coords="224, 49, 349, 133" href="/pmboksix/initiate" shape="rect">
+			<area coords="352, 46, 468, 132" href="/pmboksix/plan" shape="rect">
+			<area coords="467, 46, 591, 132" href="/pmboksix/execute" shape="rect">
+			<area coords="593, 43, 717, 132" href="/pmboksix/monitorandcontrol" shape="rect">
+			<area coords="717, 44, 837, 133" href="/pmboksix/close" shape="rect">
+			<area coords="350, 232, 469, 270" href="/pmboksix/fiveone" shape="rect">
+			<area coords="348, 267, 466, 297" href="/pmboksix/fivetwo" shape="rect">
+			<area coords="348, 296, 467, 314" href="/pmboksix/fivethree" shape="rect">
+			<area coords="349, 310, 467, 331" href="/pmboksix/fivefour" shape="rect">
+			<area coords="593, 232, 715, 253" href="/pmboksix/fivefive" shape="rect">
+			<area coords="593, 252, 714, 271" href="/pmboksix/fivesix" shape="rect">
+			<area coords="346, 331, 471, 367" href="/pmboksix/sixone" shape="rect">
+			<area coords="345, 368, 471, 397" href="/pmboksix/sixtwo" shape="rect">
+			<area coords="345, 395, 471, 428" href="/pmboksix/sixthree" shape="rect">
+			<area coords="346, 426, 465, 456" href="/pmboksix/sixfour" shape="rect">
+			<area coords="344, 454, 467, 493" href="/pmboksix/sixfive" shape="rect">
+			<area coords="594, 331, 713, 494" href="/pmboksix/sixsix" shape="rect">
+			<area coords="347, 494, 468, 530" href="/pmboksix/sevenone" shape="rect">
+			<area coords="344, 526, 466, 546" href="/pmboksix/seventwo" shape="rect">
+			<area coords="348, 542, 467, 580" href="/pmboksix/seventhree" shape="rect">
+			<area coords="593, 493, 713, 583" href="/pmboksix/sevenfour" shape="rect">
+			<area coords="343, 580, 469, 643" href="/pmboksix/eightone" shape="rect">
+			<area coords="466, 581, 597, 641" href="/pmboksix/eighttwo" shape="rect">
+			<area coords="593, 581, 716, 643" href="/pmboksix/eightthree" shape="rect">
+			<area coords="347, 642, 467, 678" href="/pmboksix/nineone" shape="rect">
+			<area coords="347, 676, 467, 713" href="/pmboksix/ninetwo" shape="rect">
+			<area coords="468, 639, 593, 674" href="/pmboksix/ninethree" shape="rect">
+			<area coords="469, 671, 592, 692" href="/pmboksix/ninefive" shape="rect">
+			<area coords="343, 711, 471, 774" href="/pmboksix/tenone" shape="rect">
+			<area coords="467, 709, 590, 772" href="/pmboksix/tentwo" shape="rect">
+			<area coords="588, 712, 716, 772" href="/pmboksix/tenthree" shape="rect">
+			<area coords="345, 773, 470, 808" href="/pmboksix/elevenone" shape="rect">
+			<area coords="345, 806, 466, 826" href="/pmboksix/eleventwo" shape="rect">
+			<area coords="344, 824, 470, 868" href="/pmboksix/eleventhree" shape="rect">
+			<area coords="347, 868, 467, 916" href="/pmboksix/elevenfour" shape="rect">
+			<area coords="346, 912, 468, 948" href="/pmboksix/elevenfive" shape="rect">
+			<area coords="469, 770, 592, 811" href="/pmboksix/elevensix" shape="rect">
+			<area coords="347, 949, 465, 1014" href="/pmboksix/twelveone" shape="rect">
+			<area coords="465, 950, 595, 1013" href="/pmboksix/twelvetwo" shape="rect">
+			<area coords="591, 949, 717, 1012" href="/pmboksix/twelvethree" shape="rect">
+			<area coords="220, 1009, 344, 1068" href="/pmboksix/thirteenone" shape="rect">
+			<area coords="347, 1012, 468, 1070" href="/pmboksix/thirteentwo" shape="rect">
+			<area coords="469, 1009, 595, 1070" href="/pmboksix/thirteenthree" shape="rect">
+			<area coords="592, 1011, 717, 1070" href="thirteenfour" shape="rect">
+			<area coords="719, 130, 834, 233" href="/pmboksix/fourseven" shape="rect">
+			<area coords="591, 643, 718, 716" href="/pmboksix/ninesix" shape="rect">
+			<area coords="592, 773, 716, 814" href="/pmboksix/elevenseven" shape="rect">
+			<area coords="85, 1010, 224, 1067" href="/pmboksix/stakeholder" shape="rect">
+			<area coords="82, 131, 226, 236" href="/pmboksix/integration" shape="rect">
+			<area coords="85, 231, 224, 334" href="/pmboksix/scope" shape="rect">
+			<area coords="86, 330, 220, 491" href="/pmboksix/schedule" shape="rect">
+			<area coords="84, 492, 225, 580" href="/pmboksix/cost" shape="rect">
+			<area coords="86, 578, 219, 640" href="/pmboksix/quality" shape="rect">
+			<area coords="86, 641, 223, 715" href="/pmboksix/resource" shape="rect">
+			<area coords="83, 714, 223, 774" href="/pmboksix/communication" shape="rect">
+			<area coords="84, 773, 221, 952" href="/pmboksix/risk" shape="rect">
+			<area coords="84, 950, 224, 1010" href="/pmboksix/procurement" shape="rect">
+
+		</map>
+		<br>
+		<br>
+
+
+
+
+
+
+
+
+	</div>
+	{% block footer %}
+
+	<div class="container text-center">
+		<!--<p>This may not be needed</p>-->
+	</div>
+	</div>
+	<footer id="sticky-footer" class=""
+		style="background-color: #111827; text-white-50; padding-top: 20px; padding-bottom: 20px;">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-7 offset-md-1">
+					<p style="text-align:center" class="text-white">Project &amp; Process Management <span
+							lang="en-za">Best
+							Practice</span> <br>at
+						<!--<a href="/cmmi" title="Where are you at? Click here for PMWay's 1 minute self assessment challenge. We dare you to take the pin test now!" >-->CM
+						Level 2<!--</a>--> and above
+					</p>
+					<p align="center"><!--<a href="/gamestats">-->
+						<!--<img alt="Up Stat or Down Stat" class="img-fluid" src="/images/devopsimagemedium.png" title="How are your game stats?">--><!--</a>-->
+						<a href="/gamestats" target="_blanik"><img alt="Up Stat or Down Stat" class="img-fluid"
+								src="/images/devopsimagemedium.png" onmouseover="this.src='/images/devops2.gif'"
+								onmouseout="this.src='/images/devopsimagemedium.png'"
+								title="How are your game stats? Click here for more"></a>
+					</p>
+					<p style="text-align:center" class="text-white">underpinned by
+						<!--<a href="/home/itil">-->ITIL<!--</a>-->
+					</p>
+				</div>
+				<div class="col-md-11 text-right small align-self-end text-white"
+					style="margin-right: 0px; margin-left: 30px;">
+					2009 PMWay<br><small>People Process Technology Governance Execution</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	{% if user %}
+	{% endif %}
+	{% endblock %}
+</body>
+
+</html>

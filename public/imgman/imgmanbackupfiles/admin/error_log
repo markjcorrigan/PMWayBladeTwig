@@ -1,0 +1,17 @@
+[07-Dec-2019 13:30:48 UTC] PHP Notice:  Constant DSN already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 8
+[07-Dec-2019 13:30:48 UTC] PHP Notice:  Constant USERNAME already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 9
+[07-Dec-2019 13:30:48 UTC] PHP Notice:  Constant PASSWORD already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 10
+[07-Dec-2019 13:41:44 UTC] PHP Notice:  Constant DSN already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 8
+[07-Dec-2019 13:41:44 UTC] PHP Notice:  Constant USERNAME already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 9
+[07-Dec-2019 13:41:44 UTC] PHP Notice:  Constant PASSWORD already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 10
+[07-Dec-2019 15:45:42 UTC] PHP Notice:  Undefined index: user_id in /home/f3608940/public_html/imgman/admin/index.view.php on line 3
+[07-Dec-2019 15:45:42 UTC] PHP Notice:  Constant DSN already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 8
+[07-Dec-2019 15:45:42 UTC] PHP Notice:  Constant USERNAME already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 9
+[07-Dec-2019 15:45:42 UTC] PHP Notice:  Constant PASSWORD already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 10
+[07-Dec-2019 15:45:42 UTC] PHP Notice:  Undefined variable: url in /home/f3608940/public_html/imgman/admin/index.view.php on line 19
+[07-Dec-2019 15:46:43 UTC] PHP Notice:  Constant DSN already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 8
+[07-Dec-2019 15:46:43 UTC] PHP Notice:  Constant USERNAME already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 9
+[07-Dec-2019 15:46:43 UTC] PHP Notice:  Constant PASSWORD already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 10
+[16-Jan-2020 17:39:11 UTC] PHP Notice:  Undefined index: user_id in /home/f3608940/public_html/imgman/admin/index.view.php on line 3
+[16-Jan-2020 17:39:11 UTC] PHP Notice:  Undefined variable: url in /home/f3608940/public_html/imgman/admin/index.view.php on line 19
+[01-Apr-2020 13:40:22 UTC] PHP Warning:  unlink(.././../images/testupload.png): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15

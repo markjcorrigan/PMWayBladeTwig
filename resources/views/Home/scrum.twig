@@ -1,0 +1,68 @@
+{% extends 'base.twig' %}
+{% block title %} {% if not user %}PMWay{% endif %} {% if user %}Essential
+Links for Scrum{% endif %}  {% endblock %}
+{% block body %}
+{% if user %}
+<!--BODY-->
+<div class="container" align="left">
+<h3>Essential Links for Scrum + some other important books</h3>
+<hr>
+<ol>
+  <li><a href="/homeviewpdf/resources/sbok.pdf" target="_blank">The SBOK 3rd Edition 2017</a></li>
+  <li><a href="/homeviewpdf/resources/sbok2016.pdf" target="_blank">The SBOK 2nd Edition 2016.pdf</a></li>
+  <li><a href="/homeviewpdf/resources/sbok2p.pdf" target="_blank">The Essence of Scrum in 2 pages. (sbok2p.pdf)</a></li>
+  <li><a href="/homeviewpdf/resources/scrumguide.pdf" target="_blank">The Scrum Guide. (The short 19 page guide by the inventors of Scrum.)</a></li>
+  <li><a href="/homeviewpdf/resources/scrumjeff.pdf" target="_blank">The art of doing twice the work in half the time.</a></li>
+  <li><a href="/homeviewvideo/resources/scrumvalues.mp4" target="_blank">Scrum Values Video</a></li>
+  <li><a href="/homeviewvideo/resources/kanban.mp4" target="_blank">Personal KanBan Video</a></li>
+  <li><a href="/homeviewpdf/resources/principles.pdf" target="_blank">Scrum Principles.pdf</a></li>
+  <li><a href="/homeviewpdf/resources/aspects.pdf" target="_blank">Scrum Aspects.pdf</a></li>
+  <li><a href="/homeviewpdf/resources/agileprinciples.pdf" target="_blank">Agile Principles.pdf</a></li>
+  <li><a href="/homeviewpdf/resources/workingsoftware.pdf" target="_blank">Working Software.pdf</a></li>
+  <li><a href="/homeviewpdf/resources/headfirstagile.pdf" target="_blank">Head First Agile.pdf</a></li>
+  <li><a href="/homeviewpdf/resources/sbokito.pdf" target="_blank">The SBOBITO.pdf</a></li>
+  <li><a href="/homeviewpdf/resources/scrumito.pdf" target="_blank">The SBOKITO+.pdf  (more detail thatSBOTITO above</a></li>
+  <li><a href="/homeviewpdf/resources/sbrief.pdf" target="_blank">Scrum Breathtakingly Brief.pdf (Scrum in 40 pages)</a></li>
+  <li><a href="/homeviewpdf/resources/navigatinghybridscrumenvironments2019.pdf" target="_blank">Navigating Hybrid Scrum Environments Understanding the Essentials,
+    Avoiding the Pitfalls </a></li>
+  <li><a href="/homeviewpdf/resources/scrumfordummies.pdf" target="_blank">Scrum for Dummies 2018</a></li>
+  <li><a href="/homeviewpdf/resources/stories.pdf" target="_blank">Agile UX Stories.pdf</a></li>
+  <li><a href="/homeviewpdf/resources/professionalproductowner.pdf" target="_blank">The Professional Product Owner.pdf</a></li>
+  <li><a href="/homeviewpdf/resources/safe.pdf" target="_blank">SAFe.pdf</a></li>
+  <li><a href="/homesave/resources/thenewoneminutemanager.zip" target="_blank">The New One Minute Manager.zip</a></li>
+  <li><a href="/homeviewpdf/resources/innovate.pdf" target="_blank">Innovate.pdf</a></li>
+  <li><a href="/homeviewpdf/resources/devopshandbook.pdf" target="_blank">DevOps Handbook.pdf</a></li>
+  <li><a href="/homeviewpdf/resources/accelerate.pdf" target="_blank">Accelerate.pdf</a></li>
+  <li><a href="/homesave/resources/itilanddevops.pdf" target="_blank">ITIL and Devops.pdf</a></li>
+  <li><a href="/homeviewpdf/resources/cmmiandagile.pdf" target="_blank">CMMi and Agile.pdf</a></li>
+  <li><a href="/homesave/resources/agileandtoc.chm" target="_blank">Agile and SE and TOC.chm</a></li>
+  <li><a href="/homesave/resources/IntegratingCMMIandagiledevelopmentCasestudiesandproventechniques2011.pdf" target="_blank">IntegratingCMMIandagiledevelopmentCasestudies.pdf</a></li>
+  <li><a href="/homesave/resources/CMMIforDevelopmentImplementationGuide2017.pdf" target="_blank">CMMIforDevelopmentImplementationGuide2017</a></li>
+  <li><a href="/homesave/resources/CMMiDev3rd.pdf" target="_blank">CMMi Dev 3rd  Edition</a></li>
+  <li><a href="/homesave/resources/CMMIHighMaturityHandBook.pdf" target="_blank">CMMI High Maturity Hand Book.pdf</a></li>
+  <li><a href="/homesave/resources/CMMPeople.pdf" target="_blank">CMM People</a></li>
+  <li><a href="/homesave/resources/controllibrarycurrent.xltx" target="_blank">Control Library (Full list 221 but not JIRA ready)</a></li>
+  <!--<li><a href="/homesave/resources/20190124compliancestories.csv" target="_blank">Controls JIRA ready but not full list only 136 stories)</a></li>-->
+  <li><a href="/homesave/resources/ControlLibraryCurrentforJIRAFinal.csv" target="_blank">Controls Final for import into JIRA 222 stories (NB map task, summary and description only)</a></li>
+  <li><a href="/homesave/resources/jql.pdf" target="_blank">Search JIRA like a boss with JQL</a></li>
+  <li><a href="/homesave/resources/jql.zip" target="_blank">JQL and setups for Jira and Confluence</a></li>
+  <li><a href="/homesave/resources/pmwaylinksfromconfluence.zip" target="_blank">Confluence Page of Resources for Scrum and links to PMWay in html</a></li>
+  <li><a href="/homesave/resources/jqlcheatsheet.pdf" target="_blank">JQL Cheat Sheet.pdf</a></li>
+  <li><a href="/homesave/resources/standupregister.zip" target="_blank">Scrum Stand-up Register.zip</a></li>
+  <br>
+  <br>
+  <br>
+</ol>
+{% endif %}
+
+
+{% if not user %}<div class="container" align="left" ><h3 align="left">Please log on to access the content on this page</h3><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>{% endif %}{% if not current_user and false %}
+<div class="container" align="center">
+  <!--SWITCH ON AND OFF-->
+  <!--The insecure stuff goens here-->
+
+</div>
+{% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,30 @@
+
+<?php
+
+session_start();
+
+if ( ! isset($_SESSION['user_id'])) {   // from App\Auth::getUser
+
+    header('Location: http://' . $_SERVER['HTTP_HOST'] . $url, true, 303);   // from Core\Controller::redirect
+
+    exit;
+
+}
+
+
+
+
+
+$id = $_SESSION['id'];
+ 
+$pdo = new PDO(  ...  );   // pass in connection details here
+ 
+$stmt = $pdo->query("SELECT is_admin FROM users WHERE id = " . $pdo->quote($id));  // quote just in case
+ 
+$user = $stmt->fetch();
+ 
+if ($user['is_admin'] != 1) {
+ 
+   header('Location....
+   exit;
+}

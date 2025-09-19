@@ -1,0 +1,50 @@
+<?php
+
+namespace App\Livewire;
+
+use Carbon\Carbon;
+use Livewire\Component;
+use App\Models\Appointment;
+use Illuminate\Contracts\View\View;
+use Illuminate\Database\Eloquent\Collection;
+
+class DateTimeAvailability extends Component
+{
+    public string $date;
+
+    public array $availableTimes = [];
+
+    public Collection $appointments;
+
+    public string $designTemplate = 'tailwind';
+
+    public function mount(): void
+    {
+        $this->date = now()->format('Y-m-d');
+
+        $this->getIntervalsAndAvailableTimes();
+    }
+
+    public function updatedDate(): void
+    {
+        $this->getIntervalsAndAvailableTimes();
+    }
+
+    public function render(): View
+    {
+        return view('livewire.' . $this->designTemplate . '.date-time-availability');
+    }
+
+    protected function getIntervalsAndAvailableTimes(): void
+    {
+        $this->reset('availableTimes');
+
+        $carbonIntervals = Carbon::parse($this->date . ' 8 am')->toPeriod($this->date . ' 8 pm', 1, 'hours');
+
+        $this->appointments = Appointment::whereDate('start_time', $this->date)->get();
+
+        foreach ($carbonIntervals as $interval) {
+            $this->availableTimes[$interval->format('hA')] = !$this->appointments->contains( 'start_time', $interval);;
+        }
+    }
+}

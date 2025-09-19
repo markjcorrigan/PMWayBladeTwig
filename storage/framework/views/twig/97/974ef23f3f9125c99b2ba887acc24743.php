@@ -1,0 +1,814 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+use Twig\TemplateWrapper;
+
+/* base.twig */
+class __TwigTemplate_a7967c864771784375503803a1ce9f7a extends Template
+{
+    private Source $source;
+    /**
+     * @var array<string, Template>
+     */
+    private array $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'body' => [$this, 'block_body'],
+            'footer' => [$this, 'block_footer'],
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $context = TwigBridge\Node\EventNode::triggerLaravelEvents($this->getTemplateName(), $context);
+        // line 1
+        yield "<!DOCTYPE html>
+<html lang=\"en\">
+
+<head>
+    <meta charset=\"utf-8\">
+    <meta name=\"viewport\"
+        content=\"width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1, user-scalable=yes\">
+    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
+    <meta name=\"description\" content=\"PMWay (Project and Process Management Excellence Way): \">
+    <meta name=\"keywords\"
+        content=\"consulting, project management, Project Management Way, scrum, PMBOK, SBOK, itil, Scrumbok, jira, confluence, safe, scaled agile framework\">
+    <!--NB testing below to try to solve the modal stuck problem-->
+    <style>
+        .modal-backdrop {
+            display: none;
+        }
+    </style>
+    <title>";
+        // line 18
+        yield from $this->unwrap()->yieldBlock('title', $context, $blocks);
+        yield "</title>
+
+
+
+";
+        // line 25
+        yield "
+
+    <link rel=\"stylesheet\" href=\"/bootstrapfourfivetwo/css/bootstrap.css\" />
+
+    <link rel=\"stylesheet\" href=\"/fontawesome6/css/all.css\" >
+    <link rel=\"stylesheet\" href=\"/bootstrapfourthreeone/css/jquery-ui.css\">
+    <link rel=\"stylesheet\" href=\"/css/styles.css\">
+
+
+";
+        // line 35
+        yield "</head>
+
+<!--<body class=\"d-flex flex-column\">-->
+
+";
+        // line 40
+        yield "
+<body class=\"d-flex flex-column\">
+    <div id=\"page-content\">
+        <nav class=\"navbar navbar-expand-sm navbar-dark bg-dark mb-3\">
+            <a class=\"navbar-brand\" href=\"/\">PMWay </a>
+            <button class=\"navbar-toggler\" data-toggle=\"collapse\" data-target=\"#navbarNav\">
+                <span class=\"navbar-toggler-icon\"></span>
+            </button>
+            <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
+                <ul class=\"navbar-nav ml-auto\">
+
+                    ";
+        // line 51
+        if ((($tmp = ($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+            // line 52
+            yield "
+
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/contacts/new\" title=\"Contact PMWay\"> <i class=\"fad fa-envelope\"
+                                aria-hidden=\"true\"></i></a>
+                    </li class=\"nav-item\">
+
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/cv/index.html\" title=\"Who am I, my Portfolio Web and CV\"
+                            target=\"_blank\">
+                            <!-- <i class=\"fad fa-envelope\" aria-hidden=\"true\"></i>-->
+                            <i class=\"fad fa-id-card-alt\"></i>
+                            <!--<i class=\"fad fa-address-book\" aria-hidden=\"true\"></i>-->
+                        </a>
+                    </li class=\"nav-item\">
+
+
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/home/about\" title=\"Why PMWay?\"><i
+                                class=\"fad fa-info\"></i>&nbsp;&nbsp;</a>
+                    </li class=\"nav-item\">
+
+
+
+                    <li class=\"nav-item dropdown\">
+                        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownPortfolio\" data-toggle=\"dropdown\"
+                            aria-haspopup=\"true\" aria-expanded=\"false\">
+                            <i class=\"fad fa-cogs\"></i>
+                        </a>
+                        <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"navbarDropdownPortfolio\">
+                            <a class=\"dropdown-item\" href=\"/home/pmbokprocessnutshell\"
+                                title=\"Find out how to use the PMBok Dashboard\"><i class=\"fad fa-cogs\"></i>&nbsp;HowTo
+                            </a>
+
+                            <a class=\"dropdown-item\" href=\"/home/agile\" title=\"Want an overview of Lean and Agile\"><i
+                                    class=\"fad fa-cogs\"></i>&nbsp;Agile</a>
+                            <a class=\"dropdown-item\" href=\"/home/carousel\"
+                                title=\"See the PMBOK in the Greater Scheme by Connecting the Dots here\"><i
+                                    class=\"fad fa-cogs\"></i>&nbsp;TheDots</a>
+
+                        </div>
+
+                    </li class=\"nav-item\">
+
+
+                    ";
+        }
+        // line 97
+        yield " ";
+        if ((($tmp =  !($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+            // line 98
+            yield "
+
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/home/about\" title=\"Why PMWay?\"><i class=\"fad fa-info\"></i></a>
+                    </li class=\"nav-item\">
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/contacts/new\" title=\"Contact PMWay\">
+                            <i class=\"fad fa-envelope\" aria-hidden=\"true\"></i>
+                        </a>
+                    </li class=\"nav-item\">
+
+
+
+
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/home/waterfallvsagile\" title=\"Lean and Agile?\"><i class=\"fad fa-cogs\"></i></a>
+                    </li class=\"nav-item\">
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/cv/index.html\" title=\"Who am I, my Portfolio Web and CV\"
+                            target=\"_blank\">
+                            <!-- <i class=\"fad fa-envelope\" aria-hidden=\"true\"></i>-->
+                            <i class=\"fad fa-id-card-alt\"></i>
+                            <!--<i class=\"fad fa-address-book\" aria-hidden=\"true\"></i>-->
+                        </a>
+                    </li class=\"nav-item\">
+
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/contacts/contacts\"> </a>
+                    </li class=\"nav-item\">
+
+            </div>
+
+            ";
+        }
+        // line 131
+        yield "            </ul>
+
+
+
+
+        </nav>
+
+        ";
+        // line 138
+        $context['_parent'] = $context;
+        $context['_seq'] = CoreExtension::ensureTraversable(($context["flash_messages"] ?? null));
+        foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
+            // line 139
+            yield "
+        <div style=\"text-align:center\" class=\"alert alert-";
+            // line 140
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(TwigBridge\Node\GetAttrNode::attribute($this->env, $this->source, $context["message"], "type", [], "any", false, false, false, 140), "html", null, true);
+            yield "\">
+            ";
+            // line 141
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(TwigBridge\Node\GetAttrNode::attribute($this->env, $this->source, $context["message"], "body", [], "any", false, false, false, 141), "html", null, true);
+            yield "
+        </div>
+        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_key'], $context['message'], $context['_parent']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 143
+        yield " ";
+        yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
+        // line 148
+        yield "
+        </div>
+
+        ";
+        // line 151
+        if ((($tmp = ($context["user"] ?? null)) && $tmp instanceof Markup ? (string) $tmp : $tmp)) {
+            // line 152
+            yield "
+        ";
+        }
+        // line 154
+        yield "
+
+";
+        // line 160
+        yield "
+
+
+        <script src=\"/bootstrapfouroneone/jquery/jquery.js\"></script>
+        <script src=\"/bootstrapfouroneone/js/bootstrap.js\"></script>
+
+        <script src=\"/bootstrapfouroneone/js/popper.min.js\"></script>
+        <script src=\"/bootstrapfouroneone/jqueryui/jquery-ui.js\"></script>
+
+
+
+        <!--  Create style for the honeypot -->
+";
+        // line 177
+        yield "
+        <!-- honeypot style end -->
+
+";
+        // line 328
+        yield "
+
+
+
+
+
+
+        ";
+        // line 343
+        yield "
+
+
+        ";
+        // line 348
+        yield "        <!-- jQuery library -->
+        <!--        <script src=\"https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js\"></script>-->
+
+        <!-- Popper JS -->
+        <!--        <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\"></script>-->
+
+        <!-- Latest compiled JavaScript -->
+        <!--        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js\"></script>-->
+";
+        // line 368
+        yield "
+    </div> <!-----NB sticky-footer---->
+    ";
+        // line 370
+        yield from $this->unwrap()->yieldBlock('footer', $context, $blocks);
+        // line 413
+        yield "</body>
+
+</html>
+";
+        yield from [];
+    }
+
+    // line 18
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_title(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        yield from [];
+    }
+
+    // line 143
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_body(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        // line 144
+        yield "
+        <div class=\"container\" style=\"text-align:center\">
+
+            ";
+        yield from [];
+    }
+
+    // line 370
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_footer(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        // line 371
+        yield "
+    <div class=\"container text-center\">
+        <!--<p>This may not be needed</p>-->
+    </div>
+    </div>
+
+    <footer id=\"sticky-footer\" class=\"\"
+        style=\"background-color: #111827; text-white-50; padding-top: 20px; padding-bottom: 20px;\">
+        <div class=\"container text-center\">
+            <div class=\"row\">
+                <div class=\"col-md-7 offset-md-1\">
+                    <p style=\"text-align:center\" class=\"text-white\">Project &amp; Process Management <span
+                            lang=\"en-za\">Best
+                            Practice</span> <br>at
+                        <!--<a href=\"/cmmi\" title=\"Where are you at? Click here for PMWay's 1 minute self assessment challenge. We dare you to take the pin test now!\" >-->CM
+                        Level 2<!--</a>--> and above
+                    </p>
+                    <p align=\"center\"><!--<a href=\"/gamestats\">-->
+                        <!--<img alt=\"Up Stat or Down Stat\" class=\"img-fluid\" src=\"/images/devopsimagemedium.png\" title=\"How are your game stats?\">--><!--</a>-->
+                        <a href=\"/gamestats\" target=\"_blanik\"><img alt=\"Up Stat or Down Stat\" class=\"img-fluid\"
+                                src=\"/images/devopsimagemedium.png\" onmouseover=\"this.src='/images/devops2.gif'\"
+                                onmouseout=\"this.src='/images/devopsimagemedium.png'\"
+                                title=\"How are your game stats? Click here for more\"></a>
+                    </p>
+                    <p style=\"text-align:center\" class=\"text-white\">underpinned by
+                        <!--<a href=\"/home/itil\">-->ITIL<!--</a>-->
+                    </p>
+                </div>
+                <div class=\"col-md-11 text-right small align-self-end text-white\"
+                    style=\"margin-right: 0px; margin-left: 30px;\">
+                    2009 PMWay<br><small>People Process Technology Governance Execution</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    ";
+        yield from [];
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName(): string
+    {
+        return "base.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable(): bool
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo(): array
+    {
+        return array (  326 => 371,  319 => 370,  311 => 144,  304 => 143,  294 => 18,  286 => 413,  284 => 370,  280 => 368,  270 => 348,  265 => 343,  256 => 328,  251 => 177,  237 => 160,  233 => 154,  229 => 152,  227 => 151,  222 => 148,  219 => 143,  210 => 141,  206 => 140,  203 => 139,  199 => 138,  190 => 131,  155 => 98,  152 => 97,  104 => 52,  102 => 51,  89 => 40,  83 => 35,  72 => 25,  65 => 18,  46 => 1,);
+    }
+
+    public function getSourceContext(): Source
+    {
+        return new Source("<!DOCTYPE html>
+<html lang=\"en\">
+
+<head>
+    <meta charset=\"utf-8\">
+    <meta name=\"viewport\"
+        content=\"width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1, user-scalable=yes\">
+    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
+    <meta name=\"description\" content=\"PMWay (Project and Process Management Excellence Way): \">
+    <meta name=\"keywords\"
+        content=\"consulting, project management, Project Management Way, scrum, PMBOK, SBOK, itil, Scrumbok, jira, confluence, safe, scaled agile framework\">
+    <!--NB testing below to try to solve the modal stuck problem-->
+    <style>
+        .modal-backdrop {
+            display: none;
+        }
+    </style>
+    <title>{% block title %}{% endblock %}</title>
+
+
+
+{#    <link rel=\"stylesheet\" href=\"/bootstrapfouroneone/css/bootstrap.css\" />#}
+{#    <link rel=\"stylesheet\" href=\"/fontawesome6/fontawesome6/pro/css/all.min.css\">#}
+{#    <link rel=\"stylesheet\" href=\"/bootstrapfouroneone/jqueryui/jquery-ui.css\">#}
+
+
+    <link rel=\"stylesheet\" href=\"/bootstrapfourfivetwo/css/bootstrap.css\" />
+
+    <link rel=\"stylesheet\" href=\"/fontawesome6/css/all.css\" >
+    <link rel=\"stylesheet\" href=\"/bootstrapfourthreeone/css/jquery-ui.css\">
+    <link rel=\"stylesheet\" href=\"/css/styles.css\">
+
+
+{#    @vite(['resources/css/app.css', 'resources/js/app.js'])#}
+</head>
+
+<!--<body class=\"d-flex flex-column\">-->
+
+{#<body class=\"d-flex flex-column\" oncontextmenu=\"return false\" ondragstart=\"return true\" onselectstart=\"return false\">#}
+
+<body class=\"d-flex flex-column\">
+    <div id=\"page-content\">
+        <nav class=\"navbar navbar-expand-sm navbar-dark bg-dark mb-3\">
+            <a class=\"navbar-brand\" href=\"/\">PMWay </a>
+            <button class=\"navbar-toggler\" data-toggle=\"collapse\" data-target=\"#navbarNav\">
+                <span class=\"navbar-toggler-icon\"></span>
+            </button>
+            <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
+                <ul class=\"navbar-nav ml-auto\">
+
+                    {% if user %}
+
+
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/contacts/new\" title=\"Contact PMWay\"> <i class=\"fad fa-envelope\"
+                                aria-hidden=\"true\"></i></a>
+                    </li class=\"nav-item\">
+
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/cv/index.html\" title=\"Who am I, my Portfolio Web and CV\"
+                            target=\"_blank\">
+                            <!-- <i class=\"fad fa-envelope\" aria-hidden=\"true\"></i>-->
+                            <i class=\"fad fa-id-card-alt\"></i>
+                            <!--<i class=\"fad fa-address-book\" aria-hidden=\"true\"></i>-->
+                        </a>
+                    </li class=\"nav-item\">
+
+
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/home/about\" title=\"Why PMWay?\"><i
+                                class=\"fad fa-info\"></i>&nbsp;&nbsp;</a>
+                    </li class=\"nav-item\">
+
+
+
+                    <li class=\"nav-item dropdown\">
+                        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownPortfolio\" data-toggle=\"dropdown\"
+                            aria-haspopup=\"true\" aria-expanded=\"false\">
+                            <i class=\"fad fa-cogs\"></i>
+                        </a>
+                        <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"navbarDropdownPortfolio\">
+                            <a class=\"dropdown-item\" href=\"/home/pmbokprocessnutshell\"
+                                title=\"Find out how to use the PMBok Dashboard\"><i class=\"fad fa-cogs\"></i>&nbsp;HowTo
+                            </a>
+
+                            <a class=\"dropdown-item\" href=\"/home/agile\" title=\"Want an overview of Lean and Agile\"><i
+                                    class=\"fad fa-cogs\"></i>&nbsp;Agile</a>
+                            <a class=\"dropdown-item\" href=\"/home/carousel\"
+                                title=\"See the PMBOK in the Greater Scheme by Connecting the Dots here\"><i
+                                    class=\"fad fa-cogs\"></i>&nbsp;TheDots</a>
+
+                        </div>
+
+                    </li class=\"nav-item\">
+
+
+                    {% endif %} {% if not user %}
+
+
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/home/about\" title=\"Why PMWay?\"><i class=\"fad fa-info\"></i></a>
+                    </li class=\"nav-item\">
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/contacts/new\" title=\"Contact PMWay\">
+                            <i class=\"fad fa-envelope\" aria-hidden=\"true\"></i>
+                        </a>
+                    </li class=\"nav-item\">
+
+
+
+
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/home/waterfallvsagile\" title=\"Lean and Agile?\"><i class=\"fad fa-cogs\"></i></a>
+                    </li class=\"nav-item\">
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/cv/index.html\" title=\"Who am I, my Portfolio Web and CV\"
+                            target=\"_blank\">
+                            <!-- <i class=\"fad fa-envelope\" aria-hidden=\"true\"></i>-->
+                            <i class=\"fad fa-id-card-alt\"></i>
+                            <!--<i class=\"fad fa-address-book\" aria-hidden=\"true\"></i>-->
+                        </a>
+                    </li class=\"nav-item\">
+
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"/contacts/contacts\"> </a>
+                    </li class=\"nav-item\">
+
+            </div>
+
+            {% endif %}
+            </ul>
+
+
+
+
+        </nav>
+
+        {% for message in flash_messages %}
+
+        <div style=\"text-align:center\" class=\"alert alert-{{ message.type }}\">
+            {{ message.body }}
+        </div>
+        {% endfor %} {% block body %}
+
+        <div class=\"container\" style=\"text-align:center\">
+
+            {% endblock %}
+
+        </div>
+
+        {% if user %}
+
+        {% endif %}
+
+
+{#        <script src=\"https://code.jquery.com/jquery-3.6.0.min.js\"></script>#}
+{#        <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\"></script>#}
+{#        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js\"></script>#}
+{#        <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.min.js\"></script>#}
+
+
+
+        <script src=\"/bootstrapfouroneone/jquery/jquery.js\"></script>
+        <script src=\"/bootstrapfouroneone/js/bootstrap.js\"></script>
+
+        <script src=\"/bootstrapfouroneone/js/popper.min.js\"></script>
+        <script src=\"/bootstrapfouroneone/jqueryui/jquery-ui.js\"></script>
+
+
+
+        <!--  Create style for the honeypot -->
+{#        <style>#}
+{#            .hide-robot {#}
+{#                display: none;#}
+{#            }#}
+{#        </style>#}
+
+        <!-- honeypot style end -->
+
+{#        <div class=\"modal fade\" id=\"contactModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\"#}
+{#            aria-hidden=\"true\">#}
+{#            <div class=\"modal-dialog\" role=\"document\">#}
+{#                <div class=\"modal-content\">#}
+{#                    <div class=\"modal-header\">#}
+{#                        <table style=\"width: 100%\">#}
+{#                            <tr>#}
+{#                                <td>#}
+{#                                    <h5 class=\"modal-title text-sm-left\" id=\"contactModalTitle\">#}
+{#                                        <a href=\"#\">Login</a>#}
+{#                                    </h5>#}
+{#                                </td>#}
+{#                                <!--<td><h5 class=\"modal-title text-sm-right align-bottom\"><a href=\"/register\" role=\"button\"><small>Register</small></a></h5></td><td><button class=\"close\" data-dismiss=\"modal\"><span>&times;</span></button></td>-->#}
+{#                            </tr>#}
+{#                        </table>#}
+{#                    </div>#}
+{#                    <div class=\"modal-body\">#}
+{#                        <form action=\"/login/create\" method=\"post\" role=\"form\" style=\"display: block; \">#}
+{#                            <div class=\"form-group\">#}
+{#                                <input type=\"text\" name=\"email\" id=\"email\" tabindex=\"1\"#}
+{#                                    class=\"form-control bg-light border border-primary rounded\" placeholder=\"Email\"#}
+{#                                    autofocus required>#}
+{#                            </div>#}
+{#                            <div class=\"form-group\">#}
+{#                                <p style=\"text-align:left\">#}
+{#                                    <font color=\"navy\">#}
+{#                                        <input type=\"password\" name=\"password\" id=\"login-password\" tabindex=\"2\"#}
+{#                                            class=\"form-control bg-light border border-primary rounded\"#}
+{#                                            placeholder=\"Password\" required>#}
+{#                                    </font>#}
+{#                                </p>#}
+{#                            </div>#}
+{#                            <div class=\"form-group text-center\">#}
+{#                                <p style=\"text-align:left\">#}
+{#                                    <font color=\"navy\">#}
+{#                                        <label>#}
+{#                                            <input type=\"checkbox\" name=\"remember_me\" id=\"remember\"> Remember Me#}
+{#                                        </label>#}
+{#                                    </font>#}
+{#                                </p>#}
+{#                            </div>#}
+{#                            <div class=\"form-group\">#}
+{#                                <div class=\"row\">#}
+{#                                    <div class=\"col-sm-6 col-sm-offset-3\">#}
+{#                                        <p style=\"text-align:left\">#}
+{#                                            <font color=\"navy\">#}
+{#                                                <input type=\"submit\" name=\"login-submit\" id=\"login-submit\" tabindex=\"4\"#}
+{#                                                    class=\"form-control text-white btn btn-login bg-primary border border-primary rounded\"#}
+{#                                                    value=\"Log In\">#}
+{#                                            </font>#}
+{#                                        </p>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class=\"form-group\">#}
+{#                                <div class=\"row\">#}
+{#                                    <div class=\"col-lg-12\">#}
+{#                                        <div class=\"text-center\">#}
+{#                                            <p style=\"text-align:left\">#}
+{#                                                <font color=\"navy\">#}
+{#                                                    <a href=\"/password/forgot\" tabindex=\"5\"#}
+{#                                                        class=\"forgot-password\">Forgot#}
+{#                                                        Password?</a>#}
+{#                                                </font>#}
+{#                                            </p>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </form>#}
+{#                    </div>#}
+{#                    <div class=\"modal-footer\">#}
+{#                        <p style=\"text-align:left\">#}
+{#                            <font color=\"navy\">#}
+{#                                <button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\">Close</button>#}
+{#                            </font>#}
+{#                        </p>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class=\"modal fade\" id=\"contactModalRegister\" tabindex=\"-1\" role=\"dialog\"#}
+{#            aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">#}
+{#            <div class=\"modal-dialog\" role=\"document\">#}
+{#                <div class=\"modal-content\">#}
+{#                    <div class=\"modal-header\">#}
+{#                        <table style=\"width: 100%\">#}
+{#                            <tr>#}
+{#                                <td>#}
+{#                                    <h5 class=\"modal-title text-sm-left\" id=\"contactModalTitle\">#}
+{#                                        <a href=\"#\">Register</a>#}
+{#                                    </h5>#}
+{#                                </td>#}
+{#                                <!--<td><h5 class=\"modal-title text-sm-right align-bottom\"><a href=\"/login\" role=\"button\"><small>Login</small></a></h5></td><td><button class=\"close\" data-dismiss=\"modal\"><span>&times;</span></button></td>-->#}
+{#                            </tr>#}
+{#                        </table>#}
+{#                    </div>#}
+{#                    <div class=\"modal-body\">#}
+{#                        <form method=\"post\" action=\"/signup/create\" id=\"formSignup\">#}
+{#                            <div class=\"form-group\">#}
+{#                                <p style=\"text-align:left\">#}
+{#                                    <label for=\"inputName\">#}
+{#                                        <font color=\"navy\">Name</font>#}
+{#                                    </label>#}
+{#                                    <input id=\"inputName\" name=\"name\" placeholder=\"Name\" autofocus#}
+{#                                        value=\"{{ user.name }}\" required class=\"form-control\" />#}
+{#                                </p>#}
+{#                            </div>#}
+{#                            <div class=\"form-group\">#}
+{#                                <p style=\"text-align:left\">#}
+{#                                    <font color=\"navy\">#}
+{#                                        <label for=\"inputEmail\">Email address</label>#}
+{#                                        <input id=\"inputEmail\" name=\"email\" placeholder=\"email address\"#}
+{#                                            value=\"{{ user.email }}\" required type=\"email\" class=\"form-control\" />#}
+{#                                    </font>#}
+{#                                </p>#}
+{#                            </div>#}
+{#                            <div class=\"form-group\">#}
+{#                                <p style=\"text-align:left\">#}
+{#                                    <font color=\"navy\">#}
+{#                                        <label for=\"inputPassword\">Password</label>#}
+{#                                        <input type=\"password\" id=\"inputPassword\" name=\"password\" placeholder=\"Password\"#}
+{#                                            required class=\"form-control\" />#}
+{#                                    </font>#}
+{#                                </p>#}
+{#                            </div>#}
+{#                            <!-- Create fields for the honeypot -->#}
+{#                            <div class=\"form-group\">#}
+{#                                <input name=\"firstname\" type=\"text\" id=\"firstname\" class=\"hide-robot\">#}
+{#                            </div>#}
+{#                            <!-- honeypot fields end -->#}
+{#                            <p style=\"text-align:left\">#}
+{#                                <font color=\"navy\">#}
+{#                                    <button type=\"submit\" class=\"btn btn-primary\">Sign up</button>#}
+{#                                </font>#}
+{#                            </p>#}
+{#                        </form>#}
+{#                    </div>#}
+{#                    <div class=\"modal-footer\">#}
+{#                        <p style=\"text-align:left\">#}
+{#                            <font color=\"navy\">#}
+{#                                <button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\">Close</button>#}
+{#                            </font>#}
+{#                        </p>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+
+
+
+
+
+
+
+        {#     <script src=\"/bootstrapfourthreeone/jquery/jquery.js\"></script>#}
+{#        <script src=\"/bootstrapfouroneone/jquery/jquery.js\"></script>#}
+{#        \"C:\\xampp\\htdocs\\pmway\\public\\bootstrapfouroneone\\jquery\\jquery.js\"#}
+{#        <script src=\"/bootstrapfouroneone/js/popper.min.js\"></script>#}
+{#        \"C:\\xampp\\htdocs\\pmway\\public\\bootstrapfouroneone\\js\\popper.min.js\"#}
+{#        <script src=\"/bootstrapfouroneone/js/bootstrap.js\"></script>#}
+{#        \"C:\\xampp\\htdocs\\pmway\\public\\bootstrapfouroneone\\js\\bootstrap.js\"#}
+{#        <script src=\"/bootstrapfouroneone/jqueryui/jquery-ui.js\"></script>#}
+
+
+
+        {#        <script src=\"/bootstrapfourfivetwo/js/jquery-ui.js\"></script>#}
+{#        <link rel=\"stylesheet\" href=\"/bootstrapfourfivetwo/css/jquery-ui.css\">#}
+        <!-- jQuery library -->
+        <!--        <script src=\"https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js\"></script>-->
+
+        <!-- Popper JS -->
+        <!--        <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\"></script>-->
+
+        <!-- Latest compiled JavaScript -->
+        <!--        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js\"></script>-->
+{#        <script>#}
+{#            \$(\"a#login\").on(\"click\", function (e) {#}
+{#                e.preventDefault();#}
+{#                \$('#contactModal').modal('show');#}
+{#            });#}
+{#        </script>#}
+{#        <script>#}
+{#            \$(\"a#register\").on(\"click\", function (e) {#}
+{#                e.preventDefault();#}
+{#                \$('#contactModalRegister').modal('show');#}
+{#            });#}
+{#        </script>#}
+
+    </div> <!-----NB sticky-footer---->
+    {% block footer %}
+
+    <div class=\"container text-center\">
+        <!--<p>This may not be needed</p>-->
+    </div>
+    </div>
+
+    <footer id=\"sticky-footer\" class=\"\"
+        style=\"background-color: #111827; text-white-50; padding-top: 20px; padding-bottom: 20px;\">
+        <div class=\"container text-center\">
+            <div class=\"row\">
+                <div class=\"col-md-7 offset-md-1\">
+                    <p style=\"text-align:center\" class=\"text-white\">Project &amp; Process Management <span
+                            lang=\"en-za\">Best
+                            Practice</span> <br>at
+                        <!--<a href=\"/cmmi\" title=\"Where are you at? Click here for PMWay's 1 minute self assessment challenge. We dare you to take the pin test now!\" >-->CM
+                        Level 2<!--</a>--> and above
+                    </p>
+                    <p align=\"center\"><!--<a href=\"/gamestats\">-->
+                        <!--<img alt=\"Up Stat or Down Stat\" class=\"img-fluid\" src=\"/images/devopsimagemedium.png\" title=\"How are your game stats?\">--><!--</a>-->
+                        <a href=\"/gamestats\" target=\"_blanik\"><img alt=\"Up Stat or Down Stat\" class=\"img-fluid\"
+                                src=\"/images/devopsimagemedium.png\" onmouseover=\"this.src='/images/devops2.gif'\"
+                                onmouseout=\"this.src='/images/devopsimagemedium.png'\"
+                                title=\"How are your game stats? Click here for more\"></a>
+                    </p>
+                    <p style=\"text-align:center\" class=\"text-white\">underpinned by
+                        <!--<a href=\"/home/itil\">-->ITIL<!--</a>-->
+                    </p>
+                </div>
+                <div class=\"col-md-11 text-right small align-self-end text-white\"
+                    style=\"margin-right: 0px; margin-left: 30px;\">
+                    2009 PMWay<br><small>People Process Technology Governance Execution</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    {% endblock %}
+</body>
+
+</html>
+", "base.twig", "C:\\xampp\\htdocs\\pmway\\resources\\views/base.twig");
+    }
+}

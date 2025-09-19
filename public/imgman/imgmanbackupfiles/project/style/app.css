@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4DC7A0;
+}
+
+.gallery{
+    width: 500px;
+}
+
+img{
+    width: 500px;
+    height: 300px;
+}

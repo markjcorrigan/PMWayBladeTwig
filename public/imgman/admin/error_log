@@ -1,0 +1,91 @@
+[07-Dec-2019 13:30:48 UTC] PHP Notice:  Constant DSN already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 8
+[07-Dec-2019 13:30:48 UTC] PHP Notice:  Constant USERNAME already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 9
+[07-Dec-2019 13:30:48 UTC] PHP Notice:  Constant PASSWORD already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 10
+[07-Dec-2019 13:41:44 UTC] PHP Notice:  Constant DSN already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 8
+[07-Dec-2019 13:41:44 UTC] PHP Notice:  Constant USERNAME already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 9
+[07-Dec-2019 13:41:44 UTC] PHP Notice:  Constant PASSWORD already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 10
+[07-Dec-2019 15:45:42 UTC] PHP Notice:  Undefined index: user_id in /home/f3608940/public_html/imgman/admin/index.view.php on line 3
+[07-Dec-2019 15:45:42 UTC] PHP Notice:  Constant DSN already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 8
+[07-Dec-2019 15:45:42 UTC] PHP Notice:  Constant USERNAME already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 9
+[07-Dec-2019 15:45:42 UTC] PHP Notice:  Constant PASSWORD already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 10
+[07-Dec-2019 15:45:42 UTC] PHP Notice:  Undefined variable: url in /home/f3608940/public_html/imgman/admin/index.view.php on line 19
+[07-Dec-2019 15:46:43 UTC] PHP Notice:  Constant DSN already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 8
+[07-Dec-2019 15:46:43 UTC] PHP Notice:  Constant USERNAME already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 9
+[07-Dec-2019 15:46:43 UTC] PHP Notice:  Constant PASSWORD already defined in /home/f3608940/public_html/imgman/admin/index.view.php on line 10
+[16-Jan-2020 17:39:11 UTC] PHP Notice:  Undefined index: user_id in /home/f3608940/public_html/imgman/admin/index.view.php on line 3
+[16-Jan-2020 17:39:11 UTC] PHP Notice:  Undefined variable: url in /home/f3608940/public_html/imgman/admin/index.view.php on line 19
+[01-Apr-2020 13:40:22 UTC] PHP Warning:  unlink(.././../images/testupload.png): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 09:57:22 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 09:57:44 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 09:58:03 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 09:58:26 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 10:21:16 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 10:21:39 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 10:29:21 UTC] PHP Parse error:  syntax error, unexpected 'DESC' (T_STRING), expecting ',' or ')' in /home/f3608940/public_html/imgman/admin/index.php on line 27
+[11-Apr-2020 10:34:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1 in /home/f3608940/public_html/imgman/admin/index.php:47
+Stack trace:
+#0 /home/f3608940/public_html/imgman/admin/index.php(47): PDO->query('SELECT * FROM i...')
+#1 {main}
+  thrown in /home/f3608940/public_html/imgman/admin/index.php on line 47
+[11-Apr-2020 10:35:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1 in /home/f3608940/public_html/imgman/admin/index.php:47
+Stack trace:
+#0 /home/f3608940/public_html/imgman/admin/index.php(47): PDO->query('SELECT * FROM i...')
+#1 {main}
+  thrown in /home/f3608940/public_html/imgman/admin/index.php on line 47
+[11-Apr-2020 13:39:42 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 13:40:03 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 13:40:21 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 13:40:38 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 13:40:55 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 13:41:16 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 13:41:34 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 13:41:57 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[11-Apr-2020 14:17:32 UTC] PHP Parse error:  syntax error, unexpected '"' in /home/f3608940/public_html/imgman/admin/index.php on line 29
+[11-Apr-2020 14:22:48 UTC] PHP Warning:  array_reverse() expects parameter 1 to be array, object given in /home/f3608940/public_html/imgman/admin/index.view.php on line 169
+[13-Apr-2020 09:55:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1 in /home/f3608940/public_html/imgman/admin/index.php:48
+Stack trace:
+#0 /home/f3608940/public_html/imgman/admin/index.php(48): PDO->query('SELECT * FROM i...')
+#1 {main}
+  thrown in /home/f3608940/public_html/imgman/admin/index.php on line 48
+[13-Apr-2020 09:56:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1 in /home/f3608940/public_html/imgman/admin/index.php:48
+Stack trace:
+#0 /home/f3608940/public_html/imgman/admin/index.php(48): PDO->query('SELECT * FROM i...')
+#1 {main}
+  thrown in /home/f3608940/public_html/imgman/admin/index.php on line 48
+[13-Apr-2020 09:56:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1 in /home/f3608940/public_html/imgman/admin/index.php:48
+Stack trace:
+#0 /home/f3608940/public_html/imgman/admin/index.php(48): PDO->query('SELECT * FROM i...')
+#1 {main}
+  thrown in /home/f3608940/public_html/imgman/admin/index.php on line 48
+[13-Apr-2020 09:56:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1 in /home/f3608940/public_html/imgman/admin/index.php:48
+Stack trace:
+#0 /home/f3608940/public_html/imgman/admin/index.php(48): PDO->query('SELECT * FROM i...')
+#1 {main}
+  thrown in /home/f3608940/public_html/imgman/admin/index.php on line 48
+[13-Apr-2020 09:56:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1 in /home/f3608940/public_html/imgman/admin/index.php:48
+Stack trace:
+#0 /home/f3608940/public_html/imgman/admin/index.php(48): PDO->query('SELECT * FROM i...')
+#1 {main}
+  thrown in /home/f3608940/public_html/imgman/admin/index.php on line 48
+[13-Apr-2020 09:56:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1 in /home/f3608940/public_html/imgman/admin/index.php:48
+Stack trace:
+#0 /home/f3608940/public_html/imgman/admin/index.php(48): PDO->query('SELECT * FROM i...')
+#1 {main}
+  thrown in /home/f3608940/public_html/imgman/admin/index.php on line 48
+[13-Apr-2020 09:56:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1 in /home/f3608940/public_html/imgman/admin/index.php:48
+Stack trace:
+#0 /home/f3608940/public_html/imgman/admin/index.php(48): PDO->query('SELECT * FROM i...')
+#1 {main}
+  thrown in /home/f3608940/public_html/imgman/admin/index.php on line 48
+[13-Apr-2020 14:34:08 UTC] PHP Warning:  unlink(.././../images/testone..jpg): No such file or directory in /home/f3608940/public_html/imgman/admin/index.php on line 15
+[14-Apr-2020 06:48:05 UTC] PHP Notice:  Undefined index: user_id in /home/f3608940/public_html/imgman/admin/index.view.php on line 3
+[14-Apr-2020 06:48:05 UTC] PHP Notice:  Undefined variable: url in /home/f3608940/public_html/imgman/admin/index.view.php on line 19
+[17-Apr-2020 06:47:09 UTC] PHP Warning:  include(includes/menu.php): failed to open stream: No such file or directory in /home/f3608940/public_html/imgman/admin/index.view.php on line 93
+[17-Apr-2020 06:47:09 UTC] PHP Warning:  include(includes/menu.php): failed to open stream: No such file or directory in /home/f3608940/public_html/imgman/admin/index.view.php on line 93
+[17-Apr-2020 06:47:09 UTC] PHP Warning:  include(): Failed opening 'includes/menu.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/f3608940/public_html/imgman/admin/index.view.php on line 93
+[17-Apr-2020 09:50:32 UTC] PHP Notice:  Undefined variable: url in /home/f3608940/public_html/imgman/admin/index.view.php on line 34
+[04-Jun-2020 06:54:32 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[12-Aug-2020 10:25:10 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[25-Aug-2020 06:51:33 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[27-Aug-2020 16:11:18 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[03-Sep-2020 13:51:41 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0

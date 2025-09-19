@@ -1,0 +1,75 @@
+{% extends 'simplemedia.twig' %}
+{% block title %} {% if not user %}PMWay{% endif %} {% if user %}Coron
+Interview{% endif %}  {% endblock %}
+{% block body %}
+{% if user %}
+
+<!--BODY-->
+
+<div class="container" align="left"> <br>
+  <h3>An 8 minute interview with someone (returned from China) who has the virus</h3>
+  <hr>
+  <div class="container" align="center">
+
+    <!-- use the following markup for each media element -->
+    <audio id="audio1" width="480" preload="auto" data-able-player data-skin="2020" >
+      <!-- source elements are optional when there's a playlist. -->
+      <!-- If ommitted, they will be constructed from the first playlist item -->
+    </audio>
+
+    <!-- use the following markup for each playlist -->
+    <!-- an AblePlayer playlist is any <ul> with class="able-playlist" -->
+    <!-- The value of data-player must match the id of the media element -->
+    <!-- Add data-embedded to embed the playlist into the media player -->
+    <!-- see documentation for additional details about markup -->
+    <ul class="able-playlist" data-player="audio1" data-embedded>
+      <li data-poster="something.jpg"> <span class="able-source"
+  		data-type="audio/mpeg"
+			data-src="/ableaudiotracks/coron/somebodywhohasit.mp3"></span> <span class="able-source"
+  		data-type="audio/ogg"
+			data-src="../media/paulallen.ogg"></span>
+        <button>The Interview</button>
+      </li>
+    </ul>
+  </div>
+</div>
+<br>
+<br>
+
+<!--ENDBODY-->
+{% endif %}
+
+
+{% if not user %}<div class="container" align="left" ><h3 align="left">Please log on to access the content on this page</h3><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>{% endif %}{% if not current_user and false %}
+
+<!--BODY-->
+
+<div class="container" align="left"> <br>
+  <h3>An 8 minute interview with someone (returned from China) who has the virus</h3>
+  <hr>
+  <div class="container" align="center">
+
+    <!-- use the following markup for each media element -->
+    <audio id="audio1" width="480" preload="auto" data-able-player data-skin="2020" >
+      <!-- source elements are optional when there's a playlist. -->
+      <!-- If ommitted, they will be constructed from the first playlist item -->
+    </audio>
+
+    <!-- use the following markup for each playlist -->
+    <!-- an AblePlayer playlist is any <ul> with class="able-playlist" -->
+    <!-- The value of data-player must match the id of the media element -->
+    <!-- Add data-embedded to embed the playlist into the media player -->
+    <!-- see documentation for additional details about markup -->
+    <ul class="able-playlist" data-player="audio1" data-embedded>
+      <li data-poster="something.jpg"> <span class="able-source"
+  		data-type="audio/mpeg"
+			data-src="/ableaudiotracks/coron/somebodywhohasit.mp3"></span>
+        <button>The Interview</button>
+      </li>
+    </ul>
+  </div>
+</div>
+<br>
+<br>
+{% endif %}
+{% endblock %}
