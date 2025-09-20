@@ -22,37 +22,17 @@
 
 
         <!-- Hero -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero__content">
-                    <div class="badge flex justify-center">
-                        {{--              <span--}}
-                        {{--                  class="badge__text bg-primary__light text-primary pt-1 pb-1 pl-2 pr-2 weight-500 rounded-full">--}}
-                        {{--                Real Estate--}}
-                        {{--              </span>--}}
-                    </div>
-                    <h2
-                        class="hero__title text-dark text-4xl mt-2 mb-8 text-center weight-500 sm:text-4xl xs:mb-5">
+        <section class="hero__content">
+            <div class="grid-container">
+                <div class="heading-row">
+                    <h2 class="hero__title text-dark text-4xl mt-2 mb-8 weight-500 sm:text-4xl xs:mb-5">
                         Based on recent project performance, where is your
                         <span class="text-primary">Capability Maturity Level?</span>
                     </h2>
-
-                    <div class="hero__image rounded-3xl overflow-visible relative">
-                        <img class="img-fluid" src="/images/dunningkrugeradjustedforcorruptionb.jpg">
-
-                        <img alt="" id="pin" height="144" src="/images/pinlarge.png" width="152" style="position: absolute; bottom: 0; left: 0; z-index: 9999;">
-
-                    </div>
-
-
-
-
-                    {{--                    <div class="hero__image rounded-3xl overflow-hidden">--}}
-{{--                        <img--}}
-{{--                            class="size-100 cover"--}}
-{{--                            src="assets/images/hero.jpg"--}}
-{{--                            alt="Hero Image" />--}}
-{{--                    </div>--}}
+                </div>
+                <div class="image-row">
+                    <img src="/images/dunningkrugercorruption.jpg" alt="Dunning Kruger" class="image">
+                    <img alt="" id="pin" height="144" src="/images/pinlarge.png" width="152">
                 </div>
             </div>
         </section>
@@ -928,6 +908,7 @@
                             Ready to make your step in real state? Book Now.
                         </h3>
                         <a href="#" class="btn btn-white">View Properties </a>
+
                     </div>
                 </div>
             </div>
@@ -999,9 +980,33 @@
                 <link rel="stylesheet" href="{{ asset('PMWayLanding/css/base.css') }}" />
                 <link rel="stylesheet" href="{{ asset('PMWayLanding/css/style.css') }}" />
 
+                <!-- CSS here -->
+
+                <link rel="stylesheet" href="{{asset('frontend/assets/css/backToTop.css')}}" />
+                <link rel="stylesheet" href="{{asset('frontend/assets/css/odometer-theme-default.css')}}" />
+                <link rel="stylesheet" href="{{asset('frontend/assets/css/font-awesome-pro.min.css')}}" />
+{{--                <link rel="stylesheet" href="{{asset('frontend/assets/css/flaticon_gerold.css')}}" />--}}
+{{--                <link rel="stylesheet" href="{{asset('frontend/assets/css/nice-select.css')}}" />--}}
+
+{{--                <link rel="stylesheet" href="{{asset('frontend/assets/css/owl.carousel.min.css')}}" />--}}
+{{--                <link rel="stylesheet" href="{{asset('frontend/assets/css/swiper.min.css')}}" />--}}
+{{--                <link rel="stylesheet" href="{{asset('frontend/assets/css/odometer-theme-default.css')}}" />--}}
+{{--                <link rel="stylesheet" href="{{asset('frontend/assets/css/magnific-popup.css')}}" />--}}
+{{--                <link rel="stylesheet" href="{{asset('frontend/assets/css/main.css')}}" />--}}
+{{--                <link rel="stylesheet" href="{{asset('frontend/assets/css/light-mode.css')}}" />--}}
+{{--                <link rel="stylesheet" href="{{asset('frontend/assets/css/responsive.css')}}" />--}}
+
+                <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
+                <!-- start: Back To Top -->
+                <div class="progress-wrap" id="scrollUp">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+                    </svg>
+                </div>
 
 
-
+                <!-- end: Back To Top -->
     {{--        <title>Pin test</title>--}}
 
 
@@ -1050,39 +1055,21 @@
 
 {{--        <main class="site-main">--}}
             <!-- Hero -->
-            <section class="hero">
-                <div class="container">
-                    <div class="hero__content">
-                        <div class="badge flex justify-center">
-{{--              <span--}}
-{{--                  class="badge__text bg-primary__light text-primary pt-1 pb-1 pl-2 pr-2 weight-500 rounded-full">--}}
-{{--                Real Estate--}}
-{{--              </span>--}}
+                <section class="hero__content">
+                    <div class="grid-container">
+                        <div class="heading-row">
+                            <h2 class="hero__title text-dark text-4xl mt-2 mb-8 weight-500 sm:text-4xl xs:mb-5">
+                                Based on recent project performance, where is your
+                                <span class="text-primary">Capability Maturity Level?</span>
+                            </h2>
                         </div>
-                        <h2
-                            class="hero__title text-dark text-4xl mt-2 mb-8 text-center weight-500 sm:text-4xl xs:mb-5">
-                            Based on recent project performance, where is your
-                            <span class="text-primary">Capability Maturity Level?</span>
-                        </h2>
-
-                        <div class="hero__image rounded-3xl overflow-visible relative">
-                            <img class="img-fluid" src="/images/dunningkrugereffect2025.jpg">
-
-                            <img alt="" id="pin" height="144" src="/images/pinlarge.png" width="152" style="position: absolute; bottom: 0; left: 0; z-index: 9999;">
-
+                        <div class="image-row">
+                            <img src="/images/dunningkrugereffect2025.jpg" alt="Dunning Kruger" class="image">
+                            <img alt="" id="pin" height="144" src="/images/pinlarge.png" width="152">
                         </div>
-
-
-
-                        {{--                    <div class="hero__image rounded-3xl overflow-hidden">--}}
-                        {{--                        <img--}}
-                        {{--                            class="size-100 cover"--}}
-                        {{--                            src="PMWayLanding/assets/images/hero.jpg"--}}
-                        {{--                            alt="Hero Image" />--}}
-                        {{--                    </div>--}}
                     </div>
-                </div>
-            </section>
+                </section>
+
 
             <!-- Our Vision -->
             <section class="our-vision">
@@ -1950,16 +1937,126 @@
                     <div
                         class="contact__content bg-primary text-white p-3 rounded-2xl text-center">
                         <div class="max-w-md mx-auto">
-                            <p class="text-2xl weight-500 mb-2">Want to Book a Call?</p>
-                            <h3 class="text-5xl weight-500 mb-5 xs:text-3xl">
-                                Ready to make your step in real state? Book Now.
-                            </h3>
-                            <a href="#" class="btn btn-white">View Properties </a>
+                            <p class="text-2xl weight-500 mb-2">Need help to put in the processes that will work for your company?</p>
+                            <br>
+
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-7 order-2 order-md-1">
+                                        <div class="contact-form-box wow fadeInLeft" data-wow-delay=".3s">
+                                            <div class="section-header">
+                                                <h2 class="section-title">Let’s work together!  Contact me via the form below.</h2>
+
+                                            </div>
+
+                                            <div class="tj-contact-form">
+                                                <form method="POST" action="{{ route('store.contact.message') }}">
+                                                    @csrf
+                                                    <div class="row gx-3">
+                                                        <div class="col-sm-6">
+                                                            <div class="form_group">
+                                                                <input type="text" name="fname" id="conName" placeholder="First name"
+                                                                       autocomplete="off" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form_group">
+                                                                <input type="text" name="lname" id="conLName" placeholder="Last name"
+                                                                       autocomplete="off" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form_group">
+                                                                <input type="email" name="email" id="conEmail" placeholder="Email address"
+                                                                       autocomplete="off" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form_group">
+                                                                <input type="tel" name="phone" id="conPhone" placeholder="Phone number"
+                                                                       autocomplete="off" />
+                                                            </div>
+                                                        </div>
+                                                        @php
+                                                            $services = App\Models\Service::all();
+                                                        @endphp
+                                                        <div class="col-12">
+                                                            <div class="form_group">
+                                                                <select name="service_id" id="conService" class="tj-nice-select">
+                                                                    <option value="" selected disabled>Choose Service</option>
+                                                                    @foreach ($services as $service)
+                                                                        <option value="{{ $service->id }}"> {{ Str::title($service->service_title) }} </option>
+                                                                    @endforeach
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form_group">
+                                                                <textarea name="desription" id="conMessage" placeholder="Desription"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form_btn">
+                                                                <button type="submit" class="btn tj-btn-primary">Send Message</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{--                            @php--}}
+                                    {{--                                $siteSettings = App\Models\SiteSettings::findOrFail(1);--}}
+                                    {{--                            @endphp--}}
+
+                                    {{--                            <div class="col-lg-5 offset-lg-1 col-md-5 d-flex flex-wrap align-items-center order-1 order-md-2">--}}
+                                    {{--                                <div class="contact-info-list">--}}
+                                    {{--                                    <ul class="ul-reset">--}}
+                                    {{--                                        <li class="d-flex flex-wrap align-items-center position-relative wow fadeInRight"--}}
+                                    {{--                                            data-wow-delay=".4s">--}}
+                                    {{--                                            <div class="icon-box">--}}
+                                    {{--                                                <i class="flaticon-phone-call"></i>--}}
+                                    {{--                                            </div>--}}
+                                    {{--                                            <div class="text-box">--}}
+                                    {{--                                                <p>Phone</p>--}}
+                                    {{--                                                <a href="tel:{{$siteSettings->phone}}">{{$siteSettings->phone}}</a>--}}
+                                    {{--                                            </div>--}}
+                                    {{--                                        </li>--}}
+                                    {{--                                        <li class="d-flex flex-wrap align-items-center position-relative wow fadeInRight"--}}
+                                    {{--                                            data-wow-delay=".5s">--}}
+                                    {{--                                            <div class="icon-box">--}}
+                                    {{--                                                <i class="flaticon-mail-inbox-app"></i>--}}
+                                    {{--                                            </div>--}}
+                                    {{--                                            <div class="text-box">--}}
+                                    {{--                                                <p>Email</p>--}}
+                                    {{--                                                <a href="mailto:{{$siteSettings->email}}">{{$siteSettings->email}}</a>--}}
+                                    {{--                                            </div>--}}
+                                    {{--                                        </li>--}}
+                                    {{--                                        <li class="d-flex flex-wrap align-items-center position-relative wow fadeInRight"--}}
+                                    {{--                                            data-wow-delay=".6s">--}}
+                                    {{--                                            <div class="icon-box">--}}
+                                    {{--                                                <i class="flaticon-location"></i>--}}
+                                    {{--                                            </div>--}}
+                                    {{--                                            <div class="text-box">--}}
+                                    {{--                                                <p>Address</p>--}}
+                                    {{--                                                <a href="#">{!! Str::wordWrap($siteSettings->address, 24, '<br />') !!}</a>--}}
+                                    {{--                                            </div>--}}
+                                    {{--                                        </li>--}}
+                                    {{--                                    </ul>--}}
+                                    {{--                                </div>--}}
+                                    {{--                            </div>--}}
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </section>
 
+
+                <!-- CONTACT SECTION END -->
 
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
@@ -1988,6 +2085,64 @@
 
                 </script>
 
+            <script>
+
+
+
+                const progressPath = document.querySelector('.progress-wrap path');
+                const progressWrap = document.querySelector('.progress-wrap');
+                const pathLength = progressPath.getTotalLength();
+
+                progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+                progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+                progressPath.style.strokeDashoffset = pathLength;
+                progressPath.getBoundingClientRect();
+                progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+
+                window.addEventListener('scroll', () => {
+                    const scroll = document.body.scrollTop || document.documentElement.scrollTop;
+                    const height = document.documentElement.scrollHeight - window.innerHeight;
+                    const progress = (scroll * pathLength / height);
+                    progressPath.style.strokeDashoffset = pathLength - progress;
+
+                });
+
+
+
+            </script>
+                <!-- CSS here -->
+
+                <script src="{{asset('frontend/assets/js/backToTop.js')}}"></script>
+{{--                <script src="{{asset('frontend/assets/js/smooth-scroll.js')}}"></script>--}}
+
+                <script src="{{asset('frontend/assets/js/validate.min.js')}}"></script>
+
+
+
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+                <script>
+                    @if(Session::has('message'))
+                    var type = "{{ Session::get('alert-type','info') }}"
+                    switch(type){
+                        case 'info':
+                            toastr.info(" {{ Session::get('message') }} ");
+                            break;
+
+                        case 'success':
+                            toastr.success(" {{ Session::get('message') }} ");
+                            break;
+
+                        case 'warning':
+                            toastr.warning(" {{ Session::get('message') }} ");
+                            break;
+
+                        case 'error':
+                            toastr.error(" {{ Session::get('message') }} ");
+                            break;
+                    }
+                    @endif
+                </script>
 
 
         @endguest
