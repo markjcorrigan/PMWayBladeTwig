@@ -54,10 +54,10 @@
                             icon:trailing="chevron-down"> Menu</flux:button>
                         <flux:menu class="!bg-gray-900">
                             @guest
+                                <flux:navbar.item class="text-white" style="color: white !important" href="/" :current="request()->is('/')"> Landing Page </flux:navbar.item>
+
+
                                 <flux:navbar.item class="text-white" style="color: white !important"
-                                                  href="{{ route('pmway') }}" :current="request()->routeIs('pmway')"> PMWay
-                                </flux:navbar.item>
-                            <flux:navbar.item class="text-white" style="color: white !important"
                                 href="{{ route('portfolio') }}" :current="request()->routeIs('portfolio')"> Portfolio
                             </flux:navbar.item>
 {{--                            <flux:navbar.item class="text-white" style="color: white !important"--}}
@@ -66,20 +66,29 @@
                             <flux:navbar.item class="text-white" style="color: white !important"
                                 href="{{ route('blog') }}" :current="request()->routeIs('blog')"> Blog
                             </flux:navbar.item>
+                                <flux:navbar.item class="text-white" style="color: white !important"
+                                                  href="{{ route('pmway') }}" :current="request()->routeIs('pmway')"> PMWay
+                                </flux:navbar.item>
                             <flux:navbar.item class="text-white" style="color: white !important"
                                 href="{{ route('contact') }}" :current="request()->routeIs('contact')"> Contact
                             </flux:navbar.item>
                             @endguest
                             @auth
-                            <flux:navbar.item class="text-white" style="color: white !important"
-                                href="{{ route('pmway') }}" :current="request()->routeIs('pmway')"> PMWay
-                            </flux:navbar.item>
-                            <flux:navbar.item class="text-white" style="color: white !important"
+                                    <flux:navbar.item class="text-white" style="color: white !important" href="/" :current="request()->is('/')"> Landing Page </flux:navbar.item>
+                                    <flux:navbar.item class="text-white" style="color: white !important"
+                                                      href="{{ route('portfolio') }}" :current="request()->routeIs('portfolio')"> Portfolio
+                                    </flux:navbar.item>
+
+
+                                    <flux:navbar.item class="text-white" style="color: white !important"
                                 href="{{ route('blog') }}" :current="request()->routeIs('blog')"> Blog
                             </flux:navbar.item>
                             <flux:navbar.item class="text-white" style="color: white !important"
                                 href="{{ route('writestuff') }}" :current="request()->routeIs('blog')"> Nuvo Blog
                             </flux:navbar.item>
+                                    <flux:navbar.item class="text-white" style="color: white !important"
+                                                      href="{{ route('pmway') }}" :current="request()->routeIs('pmway')"> PMWay
+                                    </flux:navbar.item>
                             @endauth
                             <flux:menu.separator />
                         </flux:menu>

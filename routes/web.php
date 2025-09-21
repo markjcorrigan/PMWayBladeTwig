@@ -167,7 +167,14 @@ Route::get('/simulate-500', function () {
 
 
 //Route::get('/', \App\Livewire\Home::class)->name('home');
-Route::get('/', \App\Livewire\Home::class)->name('home');
+
+Route::get('/', function () {
+    return redirect('/cv/index.html');
+});
+
+
+
+Route::get('/home', \App\Livewire\Home::class)->name('home');
 // Route::get('/pmwayguest', [FrontendController::class, 'pmwayguest'])->name('pmwayguest')->withoutMiddleware([Authenticate::class]);
 //Route::get('/pmwayauth', [FrontendController::class, 'pmwayauth'])->middleware(['auth', 'verified'])->name('pmwayauth');
 Route::get('/laws', \App\Livewire\Pmway\Laws::class)->name('laws');
